@@ -1,0 +1,1 @@
+//for create sprite image

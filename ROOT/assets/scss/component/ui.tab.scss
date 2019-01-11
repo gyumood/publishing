@@ -1,0 +1,7 @@
+/* guide - tab */
+.ui_tab{display:-webkit-box;display:flex}
+.ui_tab li{-webkit-box-flex:1;-webkit-flex:1;flex:1}
+.ui_tab .link_tab{display:block;height:43px;border-bottom:1px solid #D9D9D9;line-height:43px;color:#999;text-align:center}
+.ui_tab .active .link_tab{height:42px;border-bottom:2px solid #FF2626;font-weight:bold;color:#FF2626}
+.ui_tab .link_tab .ico_dot{display:inline-block;width:2px;height:2px;margin:20px 3px 0;border-radius:2px;background-color:#999;vertical-align:top}
+.ui_tab .active .ico_dot{background-color:#FF2626}

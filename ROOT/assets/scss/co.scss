@@ -1,0 +1,60 @@
+@charset 'utf-8';
+
+#container.myindex h3{font-size: 14px; color: #000000; font-weight: bold; margin-bottom: 10px;}
+body.co_login_i01 #header .aside_button {display:none;}
+body.co_login_i01 #header h2.category_title {display:none;}
+body.co_login_i01 #encar_ad {display:none !important;}
+
+/* 2015모바일개선 : 로그인 디자인 개선 */
+body.co .rd_box .bx_head {min-height:0 !important;height:auto !important;margin:45px 16px 0 16px;padding:0;border-radius:0;background:transparent;border-bottom:0;background:url('/images/co/tit_login.png') no-repeat;text-indent:-9999px;overflow:hidden;background-size:53px;display:none;}
+body.co .rd_box.co_login {border-radius:0;border:0;}
+body.co .bx_inner {padding-top:0;}
+fieldset.logon{position:relative;margin:20px 0 0 0;border-top:none;}
+fieldset.logon p.id, fieldset.logon p.pw, fieldset.logon p.code {border:1px solid #a8a8a8;border-radius:2px;}
+fieldset.logon p label{display:none;}
+fieldset.logon p input::-webkit-input-placeholder {font-size:18px;color:#c7c7c7;}
+fieldset.logon p input:-moz-placeholder {/* Firefox 18- */ font-size:18px;color:#c7c7c7;}
+fieldset.logon p input::-moz-placeholder {/* Firefox 19+ */font-size:18px;color:#c7c7c7;}
+fieldset.logon p input:-ms-input-placeholder {text-align:left;font-size:16px;color:#c7c7c7;}
+fieldset.logon .id, fieldset.logon .pw, fieldset.logon .code, fieldset.logon .capcha{position:relative;margin-bottom:8px;}
+fieldset.logon .capcha{}
+fieldset.logon .capcha:after{content:'';display:block;clear:both}
+fieldset.logon .capcha .area_capcha{overflow:hidden;float:left;width:60%;height:60px;text-align:center}
+fieldset.logon .capcha .area_capcha img{height:100%}
+fieldset.logon .capcha .btn_refresh{float:left;width:40%;height:60px;line-height:60px;box-sizing:border-box;border:1px solid #a8a8a8;border-radius:2px;text-align:center}
+fieldset.logon .capcha .btn_refresh span{display:inline-block;padding-left:20px;background:url('/images/co/ico_refresh.gif') no-repeat 0 center;background-size:12px auto;font-size:15px;color:#757575}
+fieldset.logon .id input, fieldset.logon .pw input, fieldset.logon .code input{width:100%;height:45px;font-size:16px;border:0;border-radius:2px;text-indent:10px;overflow:hidden;color:#666;-webkit-appearance:none;box-shadow:inset 0 1px 3px #ddd;}
+fieldset.logon .inTxt{top:14px;background:transparent;font-weight:bold;color:#c7c7c7;font-size:16px;}
+fieldset.logon .check{float:left;margin-right:20px;display:block;padding:4px 0 4px 0;}
+fieldset.logon .check input{display:inline-block;margin:0 5px 0 0;vertical-align: middle;}
+fieldset.logon .check label{display:inline-block;position:relative;top:0;color:#5c5c5c;font-size:16px;letter-spacing:-1px;vertical-align:top;line-height:20px;}
+body.co .clear{right:10px;top:10px;}
+.btnLoign{display:block;margin-bottom:20px;width:100%;border-radius:2px;overflow:hidden;background:#ce0d0d;}
+.btnLoign input{width:100%;height:55px;padding:0;border:0;border-radius:2px;font-size:20px;font-weight:bold;color:#fff;background:none;overflow:hidden;cursor:pointer;}
+.usbtnset{height:30px;margin-top:15px;padding-top:18px;text-align:center;border-top:1px solid #b8bcbf;}
+.usbtnset ul{display:block;margin:0 auto;}
+.usbtnset li{float:left;width:33%;}
+.usbtnset .btnNonM{background:none;height:40px;}
+.usbtnset .btnNonM{color:#5c5c5c;font-size:15px;font-weight:normal;}
+.usbtnset .btnNonM b {font-weight:normal;margin-top:12px;}
+.usbtnset a.idser{border-top-right-radius:0px;border-bottom-right-radius:0px;}
+.usbtnset a.pwser{border-left:0;margin-left:-1px;}
+.usbtnset a.usjoin{margin-left:15px;border:1px solid #ce0d0d;color:#ce0d0d;}
+
+/* 이용정지 안내 */
+.userstop{padding:10px 10px 5px 10px;}
+.userstop h2{display:none;}
+.userstop h3{padding-top:10px;font-size:20px;color:#cc0000;letter-spacing:-1px;}
+.userstop .ustop_head{margin-top:7px;}
+.userstop .ustop_head strong{color:#cc0000;}
+.userstop .ustop_con{margin-top:20px;}
+.userstop .ustop_con h4{font-size:16px;font-weight:bold;margin-bottom:10px;}
+.userstop .ustop_con ol li{padding:1px 0 1px 0;}
+.userstop .Bt{display:block;width:100%;padding-top:30px;border-top:1px solid #c2c2c2;}
+.userstop .Bt .hisback{display:inline-block;width:170px;}
+
+/*로그인 하단 배너*/
+.login_banner {margin-top:30px;}
+.login_banner .bn_link {display:block;width:100%;}
+.login_banner .bn_link img {display:block;width:100%;max-width:320px;margin:0 auto;}
+.login_banner .bn_link.bn_carnu_open {background-color:#1465d1;}

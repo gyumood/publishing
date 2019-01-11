@@ -1,0 +1,1 @@
+require('scss/mocha.scss');

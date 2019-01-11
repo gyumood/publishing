@@ -1,0 +1,1 @@
+require('scss/pr_new.scss');

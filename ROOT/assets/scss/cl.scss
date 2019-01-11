@@ -1,0 +1,170 @@
+@charset 'utf-8';
+
+/*클린엔카 공통*/
+body.cl #header {border-bottom:0;}
+.clean_snb {width:100%;overflow:hidden;}
+.clean_snb li {float:left;width:33%;}
+.clean_snb li.snb_false {width:34%;}
+.clean_snb li a {display:block;height:27px;padding-top:15px;text-align:center;}
+.clean_snb li a span {color:#4d4d4d;font-size:15px;font-weight:500;letter-spacing:-1px;}
+.clean_snb li.on a span {display:inline-block;padding:0 5px;height:25px;color:#ff4444;border-bottom:2px solid #ff4444;}
+
+/*인덱스*/
+body.cl_index_v01 #container {padding-bottom:0;}
+.clean_visual_index {height:200px;margin-bottom:10px;border-bottom:7px solid #ebebeb;background:url(/images/cl/cl_index_visual.jpg) no-repeat;background-size:cover;text-align:center;}
+.clean_visual_index h3 {padding-top:55px;text-align:center;color:#fff;font-style:italic;font-weight:normal;font-size:13px;}
+.clean_visual_index p {padding-top:10px;text-align:center;color:#fff;font-size:20px;line-height:28px;letter-spacing:-1px;}
+.clean_visual_index p strong {color:#fff;letter-spacing:-1px;}
+.clean_role {}
+.clean_role .content_tit {padding-top:40px;text-align:center;letter-spacing:-1px;color:#363636;font-weight:normal;font-size:16px;}
+.clean_role .role {padding:25px 0 30px 0;text-align:center;background:#fff;}
+.clean_role .visual {display:inline-block;}
+.clean_role .role2,
+.clean_role .role4 {background:#f6f6f6;}
+.clean_role .role1 .visual {width:254px;height:175px;background:url(/images/cl/visual_index1.png) no-repeat;background-size:254px;}
+.clean_role .role2 .visual {width:265px;height:155px;background:url(/images/cl/visual_index2.png) no-repeat;background-size:265px;}
+.clean_role .role3 .visual {width:245px;height:167px;background:url(/images/cl/visual_index3.png) no-repeat;background-size:245px;}
+.clean_role .role4 .visual {width:279px;height:167px;background:url(/images/cl/visual_index4.png) no-repeat;background-size:279px;}
+.clean_role .txt {text-align:center;}
+.clean_role .txt h5 {color:#1a6fd6;text-align:center;font-size:16px;}
+.clean_role .txt p {margin-top:10px;line-height:18px;color:#666;font-size:13px;}
+.clean_role .txt .tiptxt {display:block;text-align:center;margin-top:15px;color:#999;font-size:12px;}
+
+/*허위매물 유형*/
+#container.cl_cleanencar {padding-bottom:0;}
+.clean_visual_cleantype {height:200px;border-bottom:7px solid #ebebeb;background:url(/images/cl/cl_cleantype_visual.jpg) no-repeat;background-size:cover;text-align:center;}
+.clean_visual_cleantype h3 {padding-top:63px;text-align:center;color:#fff;font-size:20px;line-height:28px;letter-spacing:-1px;}
+.clean_visual_cleantype p {margin-top:10px;color:#fff;font-size:13px;line-height:18px;}
+.clean_tab {width:100%;overflow:hidden;text-align:center;}
+.clean_tab a {float:left;width:50%;text-align:center;padding:18px 0 0 0;height:32px;border-bottom:2px solid #e6e6e6;color:#6a6a6a;font-size:13px;font-weight:600;}
+.clean_tab a.on {color:#6a6a6a;}
+.clean_tab .active a {border-bottom:2px solid #5b5b5b;color:#333;}
+.clean_false_type {width:100%;margin:0 auto;display:none;}
+.clean_false_type h5 {padding-top:33px;text-align:center;font-weight:normal;}
+.clean_false_type h5 strong {}
+.clean_false_type.active {display:block;}
+.clean_false_type .false_type {padding:200px 0 20px 0;background-size:320px;background-repeat:no-repeat;background-position:50% 30px;}
+.clean_false_type .false_type dl {text-align:center;}
+.clean_false_type .false_type dt {padding-bottom:20px;font-size:16px;line-height:20px;font-weight:600;letter-spacing:-1px;}
+.clean_false_type .false_type dd {padding-bottom:20px;color:#666;letter-spacing:-1px;}
+.clean_false_type .false_type dd.ex {color:#999;}
+.clean_false_type .false_type dd a {color:#ff4444;font-size:11px;text-decoration:underline;}
+.clean_false_type .false_type.off_type1,
+.clean_false_type .false_type.on_type1 {border-top:0;}
+.clean_false_type .false_type.on_type1 {background-image:url(/images/cl/visual_online_define1.jpg);}
+.clean_false_type .false_type.on_type2 {background-image:url(/images/cl/visual_online_define2.jpg);}
+.clean_false_type .false_type.on_type3 {background-image:url(/images/cl/visual_online_define3.jpg);}
+.clean_false_type .false_type.on_type4 {background-image:url(/images/cl/visual_online_define4.jpg);}
+.clean_false_type .false_type.on_type5 {background-image:url(/images/cl/visual_online_define5.jpg);}
+.clean_false_type .false_type.on_type6 {background-image:url(/images/cl/visual_online_define6.jpg);}
+.clean_false_type .false_type.off_type1 {background-image:url(/images/cl/visual_offline_define1.jpg);}
+.clean_false_type .false_type.off_type2 {background-image:url(/images/cl/visual_offline_define2.jpg);}
+.clean_false_type .false_type.off_type3 {background-image:url(/images/cl/visual_offline_define3.jpg);}
+.clean_false_type .false_type.off_type4 {background-image:url(/images/cl/visual_offline_define4.jpg);}
+.clean_false_type .false_type.on_type2,
+.clean_false_type .false_type.on_type4,
+.clean_false_type .false_type.on_type6,
+.clean_false_type .false_type.off_type2,
+.clean_false_type .false_type.off_type4 {background-color:#f6f6f6;}
+
+/*허위매물 신고*/
+#container.cl_falsecar {padding-bottom:0;}
+.report_tip {padding:5px 10px;}
+.report_tip p {color:#979797;font-size:12px;text-indent:-10px;margin-left:10px;letter-spacing:-1px;}
+.report_tip p.emp {color:#e2323d;}
+.clean_visual_falsecar {height:200px;margin-bottom:10px;border-bottom:7px solid #ebebeb;background:url(/images/cl/cl_falsecar_visual.jpg) no-repeat;background-size:cover;text-align:center;}
+.clean_visual_falsecar h3 {padding-top:63px;text-align:center;color:#fff;font-size:20px;line-height:28px;letter-spacing:-1px;}
+.clean_visual_falsecar p {margin-top:10px;color:#fff;font-size:13px;line-height:18px;}
+.report_wrap {margin:10px;border-top:1px dashed #e5e5e5;}
+.report_wrap .report_item .ip_wrap {display:block;}
+.report_wrap .report_item .ip_wrap input {width:100%;height:40px;padding:0 10px;border:1px solid #bebebe;border-radius:3px;outline:none;box-sizing:border-box;}
+.report_wrap .report_item .ip_wrap input.on {border:1px solid #f40d29;box-shadow:0px 0px 10px #fdd1d7}
+.report_wrap .report_item.input_contact .ip_wrap {display:none;}
+.report_wrap .report_item.input_contact .ip_wrap.view {display:block;}
+.report_wrap .report_item textarea {width:100%;height:215px;padding:10px;border:1px solid #bebebe;border-radius:3px;outline:none;resize:none;box-sizing:border-box;-webkit-appearance:none;}
+.report_wrap .report_item textarea.on {border:1px solid #f40d29;box-shadow:0px 0px 10px #fdd1d7;}
+.report_wrap .report_item.input_contact .ip_wrap {position:relative;padding-right:45px;margin-bottom:5px;}
+.report_wrap .report_item.input_contact .ip_wrap .btn_add {position:absolute;right:0;top:2px;width:34px;height:34px;background:url(/images/cl/btn_add.png) no-repeat 50% 50%;background-size:34px;text-indent:-9999px;overflow:hidden;}
+.report_item .tit {display:block;padding:20px 0 5px 0;color:#666;font-weight:800;}
+.report_wrap .report_btn {margin:10px 0 0 0;}
+.report_wrap .report_btn button {width:100%;height:45px;background:#e2323d;color:#fff;font-size:15px;border-radius:3px;}
+.input_category .con {width:100%;overflow:hidden;}
+.input_category .ck_wrap {float:left;width:50%;margin-bottom:12px;}
+.input_category .ck_wrap label {font-size:15px;}
+.report_banner {height:105px;background:url(/images/cl/cl_falsecar_banner.jpg) no-repeat;background-size:cover;text-align:center;}
+.report_banner p {padding-top:25px;font-size:15px;font-weight:600;color:#fff;text-align:center;}
+.report_banner .btn_view_layerpop {display:inline-block;margin-top:10px;padding:5px 15px;border:1px solid #dcdcdc;border-radius:20px;color:#dcdcdc;}
+.report_mobile {height:260px;text-align:center;background:#f6f6f6 url(/images/cl/cl_pcmoblie_visual.jpg) no-repeat 50% 87px;background-size:298px;}
+.report_mobile p {padding-top:45px;font-size:15px;font-weight:600;color:#333;letter-spacing:-1px}
+.report_layer_pop {position:absolute;left:10px;top:100px;right:10px;padding:15px 10px;background:#fff;z-index:1002;display:none;}
+.report_layer_pop.view {display:block;}
+.report_layer_pop h3 {padding-bottom:15px;color:#000;border-bottom:1px solid #e5e5e5;}
+.report_layer_pop .flow_report {text-align:center;}
+.report_layer_pop .flow_report img {width:263px;}
+.report_layer_pop .btn_layer_close {position:absolute;right:0px;top:0px;width:50px;height:50px;background:url(/images/cl/btn_close.gif) no-repeat 50% 50%;text-indent:-9999px;overflow:hidden;background-size:12px;}
+.report_layer_pop h4 {margin-top:15px;font-size:13px;line-height:13px;font-weight:600;}
+.report_layer_pop .flow_report {padding:20px 0 0 0;}
+.report_layer_pop .tb_wrap {margin:10px 0 35px 0;}
+.report_layer_pop .tb_wrap table {width:100%;border-top:2px solid #707070;}
+.report_layer_pop .tb_wrap th {height:25px;background:#ebebeb;text-align:center;letter-spacing:-1px;}
+.report_layer_pop .tb_wrap th,
+.report_layer_pop .tb_wrap td {padding:10px 5px;border:1px solid #b7b7b7;vertical-align:middle;}
+.report_layer_pop .tb_wrap td.al_c {text-align:center;padding:10px 0;}
+.report_layer_pop .tb_wrap td dl {margin:20px 0;}
+.report_layer_pop .tb_wrap td dt {font-weight:500;color:#333;}
+.report_layer_pop .tb_wrap td dd {margin:2px 0;color:#666;}
+#clDmm {width:100%;height:100%;position:fixed;top:0;right:0;left:0;bottom:0;background-color:rgba(0,0,0,0.8);-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-webkit-user-drag:none;z-index:999;}
+
+/*클린엔카 규정*/
+#container.cl_cleanencar {padding-bottom:0;}
+.clean_visual_cleanrule {height:200px;border-bottom:7px solid #ebebeb;background:url(/images/cl/cl_cleanrule_visual.jpg) no-repeat;background-size:cover;text-align:center;}
+.clean_visual_cleanrule h3 {padding-top:63px;text-align:center;color:#fff;font-size:20px;line-height:28px;letter-spacing:-1px;}
+.clean_visual_cleanrule p {margin-top:10px;color:#fff;font-size:13px;line-height:18px;}
+.clean_rule {padding:30px 10px 0 10px;;}
+.clean_rule .rule_section {margin-bottom:30px;}
+.clean_rule .rule_tit {padding-bottom:15px;margin-bottom:16px;font-size:15px;line-height:15px;font-weight:600;border-bottom:1px solid #707070;color:#333;letter-spacing:-1px;}
+.clean_rule .rule_stit {padding:10px 0 15px 0;font-size:15px;line-height:15px;font-weight:600;letter-spacing:-1px;color:#333;}
+.clean_rule .rule_con {}
+.clean_rule .rule_con li {margin-bottom:10px;color:#333;color:#4d4d4d;letter-spacing:-1px;}
+.clean_rule .emp {margin-top:12px;color:#ff3333;letter-spacing:-1px;}
+
+/*차량상세 허위매물신고*/
+.cl_falsecar_i01 .clean_snb {display:none;}
+.cl_falsecar_i01 .reporttip{font-size:12px;color:#000;font-weight:bold;padding:15px 10px 10px 10px;border-bottom:1px solid #d0d0d0;}
+.cl_falsecar_i01 .reporttip strong{color:#cf0000;}
+.cl_falsecar_i01 .usbox{border-bottom:1px solid #d0d0d0;margin-bottom:20px;}
+.cl_falsecar_i01 .comple_info li{overflow:hidden;}
+.cl_falsecar_i01 .comple_info strong{width:60px;}
+.cl_falsecar_i01 .comple_info span{padding-left:10px;font-weight:normal;float:left;width:70%;text-indent:-10px;margin-left:10px;}
+.cl_falsecar_i01 h4.caution{color:#000;}
+.cl_falsecar_i01 fieldset{padding:20px 0 10px 0;margin:0 10px;border-top:1px dotted #c6c6c6;}
+.cl_falsecar_i01 .formst_a dt{font-weight:bold;width:45px !important;}
+.cl_falsecar_i01 .formst_a dd{width:100%;}
+.cl_falsecar_i01 .form_desc{color:#e46f00;letter-spacing:-1px;padding:5px 0 17px 0;margin:0 10px;border-bottom:0;}
+.cl_falsecar_i01 .BtLi{border-top:0;padding-top:0 !important;}
+.cl_falsecar_i01 .cl_form{position:static;padding:0;}
+.cl_falsecar_i01 .cl_form dt{display:block;position:static;color:#000;}
+.cl_falsecar_i01 .cl_form dd{width:50%;min-height:20px;float:left;margin-bottom:12px;}
+/*공통으로 common에서 처리 .cl_falsecar_i01 input[type=checkbox], .cl_falsecar_i01 input[type=radio]{width:20px;height:20px;margin:0 5px 0 0;vertical-align:middle;}*/
+.cl_falsecar_i01 label{font-weight:bold;color:#666;vertical-align:top;}
+.dvc_i .cl_falsecar_i01 label{vertical-align:middle;}
+.cl_falsecar_i01 .cl_txtarea{padding-left:45px;}
+.cl_falsecar_i01 .cl_txtarea label{color:#000;}
+.cl_falsecar_i01 .cl_txtarea input{background:#fff;}
+.cl_falsecar_i01 textarea{width:98%;padding-left:5px;height:125px;padding-top:4px;border:1px solid #d0d0d0;-webkit-border-radius:2px;-webkit-appearance:none;}
+.cl_falsecar_i01 .falsecar{position:relative;}
+.cl_falsecar_i01 .falsecar a.btnNonM{position:absolute;right:10px;top:10px;width:74px;font-size:11px;height:24px;}
+.cl_falsecar_i01 .falsecar a.btnNonM b{margin-top:5px;}
+.usoutst{width:100%;height:28px;text-indent:5px;border:1px solid #d0d0d0;background-color:#fbfbfb;-webkit-border-radius: 2px;-moz-border-radius: 2px;color:#333333;-webkit-appearance:none;}
+.BtLi.us{margin-top:0;}
+.BtLi.us .btNon.cancel , .BtLi.us .btNon.gohome{float:left;width:145px;}
+.BtLi.us .btNon.agree , .BtLi.us .btNon.okmit  , .BtLi.us .btNon.login, .BtLi.us .btNon.ipinok{float:right;width:145px;}
+.usbox{overflow:hidden;background-color:#fbfbfb;border-bottom:1px solid #d0d0d0;}
+.comple_info{padding:20px 10px 15px;}
+.comple_info li{clear:both;margin-bottom:5px;font-weight:normal !important;}
+.comple_info strong{float:left;width:85px;font-weight:normal !important;}
+.comple_info span{padding-left:5px;font-weight:bold;color:#000;}
+.comple_info dd{float:left;}
+.formst_a dl{position:relative;min-height:28px;padding-left:83px;margin-bottom:10px;}
+.formst_a dt{display:block;position:absolute;left:0;top:0;width:83px;height:28px;line-height:30px;}
+.formst_a dd{display:inline-block;width:99.5%;}

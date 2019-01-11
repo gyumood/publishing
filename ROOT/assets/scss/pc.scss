@@ -1,0 +1,576 @@
+@charset 'utf-8';
+
+@import 'scss/component/reset.scss';
+@import 'scss/component/ui.search.scss';
+@import 'scss/component/ui.align.scss';
+@import 'scss/component/ui.input.select.scss';
+@import 'scss/component/ui.btn.scss';
+@import 'scss/spr/spr.pc.scss';
+@import 'scss/spr/spr.part.scss';
+@import 'scss/spr/util.scss';
+
+@import 'js/component/ui.layer.scss';
+@import 'js/component/ui.page.scss';
+
+html,body{width:100%;height:100%}
+
+.spr_purchase {display:inline-block;overflow:hidden;@include util-sprite($pc-acc-ticket);text-indent:-10000em}
+
+#header{position:relative;height:56px}
+#header .h2_header{line-height:56px;font-size:19px;font-weight:bold;color:rgba(38,38,38,1);text-align:center}
+#header .btn_back{position:absolute;left:0;top:0;width:49px;height:56px;line-height:56px;padding-left:20px;box-sizing:border-box}
+#header .btn_back:before{content:'';display:inline-block;@include util-sprite($pc-arr-left-b);vertical-align:middle}
+
+.pc_index_v01 #wrap{height:100%;box-sizing:border-box}
+.pc_index_v01 #header{display:none}
+.pc_index_v01 #wrap #container{position:relative;height:100%;padding:0 20px;background-image:-webkit-linear-gradient(135deg,#3A4EB7 0%,#283796 50%);background-image:-o-linear-gradient(135deg,#3A4EB7 0%,#283796 50%);background-image:linear-gradient(135deg,#3A4EB7 0%,#283796 50%)}
+
+.pc_index_v01 .area_carnum{display:flex;display:-webkit-box;-webkit-box-align:center;height:100%;padding-bottom:108px;box-sizing:border-box}
+.pc_index_v01 .area_carnum .inner_carnum{width:100%}
+.area_carnum .inner_carnum .label_num{line-height:36px;font-size:30px;color:rgba(255,255,255,1)}
+.area_carnum .inner_carnum .inner_frm{position:relative;margin-top:40px}
+.area_carnum .inner_frm .input_carnum{width:100%;border:0;background:none;border-bottom:1px solid rgba(255,255,255,0.2);font-size:25px;color:rgba(255,255,255,1)}
+.area_carnum .inner_frm .input_carnum::-webkit-input-placeholder{color:rgba(255,255,255,0.2)}
+.area_carnum .inner_frm .btn_car_num{position:absolute;right:-10px;bottom:0;padding:10px}
+.area_carnum .inner_frm .btn_car_num .ico_zoom{display:inline-block;overflow:hidden;text-indent:-10000em;@include util-unit($pc-zoom)}
+.area_carnum .inner_frm .btn_delete{display:none;position:absolute;right:40px;bottom:12px;@include util-unit($pc-delete)}
+.area_carnum .inner_frm .btn_delete.show{display:block;}
+.area_carnum .inner_carnum .inner_etc{ padding-top:40px;font-size:15px;color:rgba(255,255,255,1)}
+.area_carnum .inner_etc .link_unknown{color:rgba(255,255,255,1)}
+
+.pc_index_v01 .area_tickets{position:absolute;left:50%;bottom:40px;width:320px;margin-left:-160px;box-sizing:border-box}
+.pc_index_v01 .area_tickets .list_tickets{width:100%;border-radius:15px;background:rgba(0,0,0,0.2);line-height:1.2}
+.pc_index_v01 .area_tickets .list_tickets:after{content:'';display:block;clear:both}
+.area_tickets .list_tickets li{position:relative;float:left;width:50%;height:68px;padding:17px 19px 13px 19px;box-sizing:border-box}
+.area_tickets .list_tickets li:first-child{padding-right:19px}
+.area_tickets .list_tickets li:last-child:before{content:'';position:absolute;left:0;top:18px;width:1px;height:32px;background:rgba(255,255,255,0.25)}
+.area_tickets .list_tickets .inner_tickets{position:relative;display:block;width:100%;padding-left:41px;box-sizing:border-box}
+.area_tickets .list_tickets .inner_tickets:before{content:'';position:absolute;left:0;top:1px;@include util-sprite($pc-acc-ticket)}
+.area_tickets .list_tickets .buy_ticket:before{@include util-unit($pc-buy-ticket)}
+.area_tickets .list_tickets .acc_ticket:before{@include util-unit($pc-acc-ticket)}
+.list_tickets .inner_tickets .tit_tickets{display:block;padding-bottom:2px;font-size:13px;font-weight:normal;color:rgba(255,255,255,0.7)}
+.list_tickets .inner_tickets .txt_tickets{font-size:17px;color:rgba(255,255,255,1)}
+
+.pc_carsearch_l01 .area_tickets{position:fixed;left:50%;bottom:20px;width:320px;margin-left:-160px;border-radius:15px;background:rgba(0,0,0,0.8);line-height:1.2}
+.pc_carsearch_l01 .area_tickets .caution_tickets{padding-top:15px;font-size:15px;color:rgba(255,255,255,1);text-align:center}
+.pc_carsearch_l01 .area_tickets .list_tickets:after{content:'';display:block;clear:both}
+.pc_carsearch_l01 .area_tickets .list_tickets li{position:relative;float:left;width:50%;height:68px;padding:14px 20px 14px 19px;box-sizing:border-box}
+.pc_carsearch_l01 .area_tickets .list_tickets li:first-child{padding-right:19px}
+
+.pc_menu_util{padding:0;border-top:1px solid #E6E6E6}
+.pc_menu_util .uialign_item{padding:0}
+.pc_menu_util .uialign_item .link_util{display:flex;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;height:56px;background:#fff;font-size:10px;color:#595959}
+.pc_menu_util .link_util .txt_util{position:relative;display:inline-block;padding-top:28px}
+.pc_menu_util .link_util .txt_util:before{content:'';position:absolute;left:50%;top:0;margin-left:-12px;@include util-sprite($pc-acc-ticket);box-sizing:border-box}
+.pc_menu_util .link_util .util_calc:before{@include util-unit($pc-calc)}
+.pc_menu_util .active .util_calc:before{@include sprite-position($pc-calc-on)}
+.pc_menu_util .link_util .util_admin:before{@include util-unit($pc-admin)}
+.pc_menu_util .active .util_admin:before{@include sprite-position($pc-admin-on)}
+.pc_menu_util .link_util .util_setting:before{@include util-unit($pc-setting)}
+.pc_menu_util .active .util_setting:before{@include sprite-position($pc-setting-on)}
+.pc_menu_util .active .txt_util{color:#0059C3}
+
+.pc_login_v01 #wrap{height:100%;padding-bottom:56px;box-sizing:border-box}
+.pc_login_v01 #wrap #container{height:100%;background-image:-webkit-linear-gradient(135deg,#4C97ED 0%,#0066CC 50%);background-image:-o-linear-gradient(135deg,#4C97ED 0%,#0066CC 50%);background-image:linear-gradient(135deg,#4C97ED 0%,#0066CC 50%)}
+
+.pc_login_v01 .area_login{position:relative;height:100%;padding-bottom:343px;box-sizing:border-box}
+.pc_login_v01 .area_login .h1_ci{display:flex;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;height:100%;line-height:50px;font-size:50px;color:rgba(255,255,255,1)}
+.pc_login_v01 .area_login .inner_login{position:absolute;left:0;bottom:60px;width:100%;padding:0 20px;box-sizing:border-box}
+.area_login .inner_login .slogan_login{line-height:27px;padding-bottom:35px;font-size:21px;color:rgba(255,255,255,0.6);text-align:center}
+.area_login .inner_login .list_frm_login{padding-bottom:40px}
+.area_login .list_frm_login li{position:relative;padding-top:35px}
+.area_login .list_frm_login li:first-child{padding-top:0}
+.area_login .list_frm_login li:before{content:'';position:absolute;left:0;bottom:6px;@include util-sprite($pc-acc-ticket)}
+.area_login .list_frm_login .li_id:before{@include util-unit($pc-id)}
+.area_login .list_frm_login .li_pw:before{@include util-unit($pc-pw)}
+.area_login .list_frm_login .input_login{ width:100%;height:30px;line-height:30px;padding:0 30px;background:none;border:0;border-bottom:1px solid rgba(255,255,255,0.3);box-sizing:border-box;font-size:17px;color:rgba(255,255,255,1)}
+.area_login .list_frm_login .input_login::-webkit-input-placeholder{color:rgba(255,255,255,0.2)}
+.area_login .list_frm_login .caution_frm{display:none;position:absolute;left:0;bottom:-23px;font-size:13px;color:rgba(255,255,255 ,1)}
+.area_login .list_frm_login .active{display:block}
+.area_login .area_btn_login .uibtn{height:55px;line-height:55px;border:0;color:rgba(0,102,204,1)}
+
+.pc_carsearch_l01 #container{padding-bottom:55px;background:rgba(245,245,245,1)}
+.search_purchase .list_search li{border-top:1px solid rgba(240,240,240,1)}
+.search_purchase .list_search .link_search{display:block;position:relative;height:60px;line-height:60px;padding-left:20px;background:rgba(255,255,255,1);font-size:17px;color:rgba(38,38,38,1)}
+.search_purchase .list_search .link_search:after{content:'';position:absolute;right:20px;bottom:24px;@include util-sprite($pc-arr-right-g)}
+.search_purchase .list_search .disabled{background:rgba(250,250,250,1);color:rgba(191,191,191,1)}
+.search_purchase .section_search{padding:0 20px 40px;margin-top:10px;background:rgba(255,255,255,1)}
+.search_purchase .area_button_calc .link_calc {position:fixed;left:0;bottom:0;width:100%}
+.search_purchase .section_search .area_h3{padding:40px 0 10px}
+.search_purchase .section_search .area_h3:after{content:'';display:block;clear:both}
+.section_search .area_h3 .h3_search{float:left;font-size:17px;font-weight:bold}
+.section_search .area_h3 .btn_sub{float:right;margin-top:1px;font-size:15px;color:rgba(0,102,204,1)}
+.section_search .area_h3 .btn_sub.temp{color:#bfbfbf}
+.section_search .uiinput_oblong input:checked+label{border-color:rgba(0,102,204,1);color:rgba(0,102,204,1)}
+.section_search .uiinput_oblong label.active{border-color:rgba(0,102,204,1);color:rgba(0,102,204,1)}
+.section_search .uiinput_oblong select{position:absolute;width:93%;height:45px;opacity:0;border:0 none}
+.section_search .area_accident_button{display:none;padding-top:15px}
+.section_search .area_accident_button.active{display:block;padding-top:15px}
+.section_search .area_accident_button .uibtn{border-color:rgba(0,102,204,1);color:rgba(0,102,204,1)}
+.search_purchase .section_search .inner_input{position:relative;font-size:17px;color:rgba(89,89,89,1)}
+.section_search .inner_input .input_txt{width:100%;height:30px;line-height:30px;padding-right:40px;border:0;border-bottom:1px solid rgba(229,229,229,1);box-sizing:border-box;text-align:right;font-size:17px;color:rgba(38,38,38,1)}
+.section_search .area_distance .input_txt{padding-right:31px}
+.section_search .inner_input .unit_txt{position:absolute;right:0;bottom:3px}
+.section_search .uiinput_color .circle .color,
+.section_search .uiinput_color .circle .color.outline:after{width:35px;height:35px;border-radius:20px}
+.section_search .uiinput_color .circle .color:before{top:17.5px;margin:-11px 0 0 -11px}
+.section_search .uiinput_color .circle .color var{height:35px}
+.section_search .uiinput_color .circle{width:16.66%}
+
+.section_search .area_price .label_price{display:block;padding:20px 0 5px;font-size:15px;color:rgba(89,89,89,1)}
+.section_search .area_price .label_maintenance{padding-top:10px}
+.section_search .area_price .inner_exterior:after{content:'';display:block;clear:both}
+.area_price .inner_exterior .inner_select{position:relative;float:left;width:49%}
+.area_price .inner_exterior .inner_select:after{content:'';position:absolute;right:0;bottom:12px;@include util-sprite($pc-arr-bottom-g)}
+.area_price .inner_exterior .mdl_select{width:100%;height:30px;line-height:30px;border:0;border-bottom:1px solid rgba(229,229,229,1);border-radius:0;-webkit-appearance:none;background:none;font-size:17px;color:rgba(38,38,38,1)}
+.area_price .inner_exterior .inner_input{float:right;width:49%}
+
+.search_purchase .area_button_calc .link_calc{display:block;height:55px;line-height:55px;background:rgba(217,217,217,1);font-size:17px;font-weight:bold;color:rgba(255,255,255,1);text-align:center}
+.search_purchase .area_button_calc .active{background:rgba(40,55,150,1)}
+
+.uilayer_accident .uilayer_box .area_right_btn,
+.uilayer_search_acc .uilayer_box .area_right_btn,
+.uilayer_search_none .uilayer_box .area_right_btn,
+.uilayer_ticket_add .uilayer_box .area_right_btn{padding-top:20px;text-align:right}
+.uilayer_box .area_right_btn .link_layer_control{font-size:15px;color:rgba(0,102,204,1)}
+.uilayer_box .area_right_btn .link_layer_control:first-child{padding-right:40px}
+.uilayer_search_none .area_right_btn .link_layer_control:first-child,
+.uilayer_ticket_add .area_right_btn .link_layer_control:first-child{padding-right:0}
+
+.pc_carsearch_l01 .tab_accident:after{content:'';display:block;clear:both}
+.pc_carsearch_l01 .tab_accident li{float:left;width:50%}
+.pc_carsearch_l01 .tab_accident .link_product{display:block;width:100%;height:43px;line-height:43px;border-bottom:1px solid rgba(229,229,229,1);font-size:15px;color:rgba(38,38,38,1);text-align:center}
+.pc_carsearch_l01 .tab_accident .active{border-bottom:1px solid rgba(0,102,204,1);color:rgba(0,102,204,1)}
+
+.uipage_accident .uipage_container{padding-bottom:95px}
+.uipage_accident .uipage_container .area_accident_type{padding-top:21px;text-align:center}
+.uipage_accident .area_accident_type .txt_type{display:inline-block;padding:0 20px;font-size:15px}
+.uipage_accident .area_accident_type .change{color:rgba(255,38,38,1)}
+.uipage_accident .area_accident_type .txt_type:before{content:'';display:inline-block;margin-right:5px;vertical-align:middle}
+.uipage_accident .area_accident_type .change:before{@include util-sprite($pc-change)}
+.uipage_accident .area_accident_type .sheet:before{@include util-sprite($pc-sheet)}
+.uipage_accident .area_accident_type .sheet{color:rgba(255,127,0,1)}
+.uipage_accident .uipage_container .car_map{position:relative;width:320px;height:293px;margin:15px auto 0;background:none no-repeat 0 0;background-size:320px auto}
+.uipage_accident .uipage_container .map_pannel{height:298px;background-image:url('/images/pc/car_map_front.png')}
+.uipage_accident .uipage_container .map_frame{background-image:url('/images/pc/car_map_back.png')}
+
+.uipage_accident .car_map .link_status{position:absolute}
+.uipage_accident .car_map .link_status:before{content:'';display:none;position:absolute;left:0;top:0}
+.uipage_accident .car_map .txt_status{position:absolute;overflow:hidden;text-indent:-10000em;z-index:1000}
+.uipage_accident .car_map .status_change{@include util-unit($pc-change)}
+.uipage_accident .car_map .status_sheet{@include util-unit($pc-sheet)}
+
+@mixin unit-scale($sprite){
+  width: nth($sprite, 5)/2;
+  height: nth($sprite, 6)/2;
+}
+
+.uipage_accident .car_map .pannel1{left:106px;top:6px;@include unit-scale($part-pannel1)}
+.uipage_accident .car_map .pannel1.active:before{display:block;@include util-sprite($part-pannel1)}
+.uipage_accident .car_map .pannel1 .txt_status{left:47px;top:22px}
+
+.uipage_accident .car_map .pannel2{left:17px;top:8px;@include unit-scale($part-pannel2)}
+.uipage_accident .car_map .pannel2.active:before{display:block;@include util-sprite($part-pannel2)}
+.uipage_accident .car_map .pannel2 .txt_status{left:28px;top:38px}
+
+.uipage_accident .car_map .pannel3{left:251px;top:8px;@include unit-scale($part-pannel3)}
+.uipage_accident .car_map .pannel3.active:before{display:block;@include util-sprite($part-pannel3)}
+.uipage_accident .car_map .pannel3 .txt_status{left:9px;top:38px}
+
+.uipage_accident .car_map .pannel4{left:17px;top:87px;@include unit-scale($part-pannel4)}
+.uipage_accident .car_map .pannel4.active:before{display:block;@include util-sprite($part-pannel4)}
+.uipage_accident .car_map .pannel4 .txt_status{left:28px;top:29px}
+
+.uipage_accident .car_map .pannel5{left:253px;top:87px;@include unit-scale($part-pannel5)}
+.uipage_accident .car_map .pannel5.active:before{display:block;@include util-sprite($part-pannel5)}
+.uipage_accident .car_map .pannel5 .txt_status{left:8px;top:29px}
+
+.uipage_accident .car_map .pannel6{left:17px;top:166px;@include unit-scale($part-pannel6)}
+.uipage_accident .car_map .pannel6.active:before{display:block;@include util-sprite($part-pannel6)}
+.uipage_accident .car_map .pannel6 .txt_status{left:28px;top:15px}
+
+.uipage_accident .car_map .pannel7{left:253px;top:166px;@include unit-scale($part-pannel7)}
+.uipage_accident .car_map .pannel7.active:before{display:block;@include util-sprite($part-pannel7)}
+.uipage_accident .car_map .pannel7 .txt_status{left:8px;top:15px}
+
+.uipage_accident .car_map .pannel8{left:112px;top:249px;@include unit-scale($part-pannel8)}
+.uipage_accident .car_map .pannel8.active:before{display:block;@include util-sprite($part-pannel8)}
+.uipage_accident .car_map .pannel8 .txt_status{left:40px;top:18px}
+
+.uipage_accident .car_map .pannel9{left:104px;top:3px;@include unit-scale($part-pannel9)}
+.uipage_accident .car_map .pannel9.active:before{display:block;@include util-sprite($part-pannel9)}
+.uipage_accident .car_map .pannel9 .txt_status{left:49px;top:-5px}
+
+.uipage_accident .car_map .pannel10{left:121px;top:121px;@include unit-scale($part-pannel10)}
+.uipage_accident .car_map .pannel10.active:before{display:block;@include util-sprite($part-pannel10)}
+.uipage_accident .car_map .pannel10 .txt_status{left:32px;top:43px}
+
+.uipage_accident .car_map .pannel11{left:12px;top:196px;@include unit-scale($part-pannel11)}
+.uipage_accident .car_map .pannel11.active:before{display:block;@include util-sprite($part-pannel11)}
+.uipage_accident .car_map .pannel11 .txt_status{left:38px;top:50px}
+
+.uipage_accident .car_map .pannel12{left:249px;top:196px;@include unit-scale($part-pannel12)}
+.uipage_accident .car_map .pannel12.active:before{display:block;@include util-sprite($part-pannel12)}
+.uipage_accident .car_map .pannel12 .txt_status{left:6px;top:50px}
+
+.uipage_accident .car_map .pannel13{left:12px;top:84px;@include unit-scale($part-pannel13)}
+.uipage_accident .car_map .pannel13.active:before{display:block;@include util-sprite($part-pannel13)}
+.uipage_accident .car_map .pannel13 .txt_status{left:-5px;top:55px}
+
+.uipage_accident .car_map .pannel14{left:302px;top:84px;@include unit-scale($part-pannel14)}
+.uipage_accident .car_map .pannel14.active:before{display:block;@include util-sprite($part-pannel14)}
+.uipage_accident .car_map .pannel14 .txt_status{left:-5px;top:55px}
+
+.uipage_accident .car_map .frame1{left:113px;top:16px;@include unit-scale($part-frame1)}
+.uipage_accident .car_map .frame1.active:before{display:block;@include util-sprite($part-frame1)}
+.uipage_accident .car_map .frame1 .txt_status{left:39px;top:1px}
+
+.uipage_accident .car_map .frame2{left:108px;top:93px;@include unit-scale($part-frame2)}
+.uipage_accident .car_map .frame2.active:before{display:block;@include util-sprite($part-frame2)}
+.uipage_accident .car_map .frame2 .txt_status{left:44px;top:-3px}
+
+.uipage_accident .car_map .frame3{left:113px;top:36px;@include unit-scale($part-frame3)}
+.uipage_accident .car_map .frame3.active:before{display:block;@include util-sprite($part-frame3)}
+.uipage_accident .car_map .frame3 .txt_status{left:1px;top:9px}
+
+.uipage_accident .car_map .frame4{left:189px;top:36px;@include unit-scale($part-frame4)}
+.uipage_accident .car_map .frame4.active:before{display:block;@include util-sprite($part-frame4)}
+.uipage_accident .car_map .frame4 .txt_status{left:1px;top:9px}
+
+.uipage_accident .car_map .frame5{left:113px;top:264px;@include unit-scale($part-frame5)}
+.uipage_accident .car_map .frame5.active:before{display:block;@include util-sprite($part-frame5)}
+.uipage_accident .car_map .frame5 .txt_status{left:39px;top:-1px}
+
+.uipage_accident .car_map .frame6{left:147px;top:233px;@include unit-scale($part-frame6)}
+.uipage_accident .car_map .frame6.active:before{display:block;@include util-sprite($part-frame6)}
+.uipage_accident .car_map .frame6 .txt_status{left:5px;top:6px}
+
+.uipage_accident .car_map .frame7{left:133px;top:36px;@include unit-scale($part-frame7)}
+.uipage_accident .car_map .frame7.active:before{display:block;@include util-sprite($part-frame7)}
+.uipage_accident .car_map .frame7 .txt_status{left:1px;top:18px}
+
+.uipage_accident .car_map .frame8{left:170px;top:36px;@include unit-scale($part-frame8)}
+.uipage_accident .car_map .frame8.active:before{display:block;@include util-sprite($part-frame8)}
+.uipage_accident .car_map .frame8 .txt_status{left:1px;top:18px}
+
+.uipage_accident .car_map .frame9{left:130px;top:233px;@include unit-scale($part-frame9)}
+.uipage_accident .car_map .frame9.active:before{display:block;@include util-sprite($part-frame9)}
+.uipage_accident .car_map .frame9 .txt_status{left:-1px;top:6px}
+
+.uipage_accident .car_map .frame10{left:174px;top:233px;@include unit-scale($part-frame10)}
+.uipage_accident .car_map .frame10.active:before{display:block;@include util-sprite($part-frame10)}
+.uipage_accident .car_map .frame10 .txt_status{left:0px;top:6px}
+
+.uipage_accident .car_map .frame11{left:111px;top:71px;@include unit-scale($part-frame11)}
+.uipage_accident .car_map .frame11.active:before{display:block;@include util-sprite($part-frame11)}
+.uipage_accident .car_map .frame11 .txt_status{left:2px;top:2px}
+
+.uipage_accident .car_map .frame12{left:189px;top:71px;@include unit-scale($part-frame12)}
+.uipage_accident .car_map .frame12.active:before{display:block;@include util-sprite($part-frame12)}
+.uipage_accident .car_map .frame12 .txt_status{left:2px;top:2px}
+
+.uipage_accident .car_map .frame13{left:108px;top:233px;@include unit-scale($part-frame13)}
+.uipage_accident .car_map .frame13.active:before{display:block;@include util-sprite($part-frame13)}
+.uipage_accident .car_map .frame13 .txt_status{left:2px;top:2px}
+
+.uipage_accident .car_map .frame14{left:191px;top:233px;@include unit-scale($part-frame14)}
+.uipage_accident .car_map .frame14.active:before{display:block;@include util-sprite($part-frame14)}
+.uipage_accident .car_map .frame14 .txt_status{left:2px;top:2px}
+
+.uipage_accident .car_map .frame15{left:65px;top:81px;@include unit-scale($part-frame15)}
+.uipage_accident .car_map .frame15.active:before{display:block;@include util-sprite($part-frame15)}
+.uipage_accident .car_map .frame15 .txt_status{left:13px;top:24px}
+
+.uipage_accident .car_map .frame16{left:218px;top:81px;@include unit-scale($part-frame16)}
+.uipage_accident .car_map .frame16.active:before{display:block;@include util-sprite($part-frame16)}
+.uipage_accident .car_map .frame16 .txt_status{left:8px;top:24px}
+
+.uipage_accident .car_map .frame17{left:65px;top:161px;@include unit-scale($part-frame17)}
+.uipage_accident .car_map .frame17.active:before{display:block;@include util-sprite($part-frame17)}
+.uipage_accident .car_map .frame17 .txt_status{left:7px;top:-4px}
+
+.uipage_accident .car_map .frame18{left:224px;top:161px;@include unit-scale($part-frame18)}
+.uipage_accident .car_map .frame18.active:before{display:block;@include util-sprite($part-frame18)}
+.uipage_accident .car_map .frame18 .txt_status{left:7px;top:-4px}
+
+.uipage_accident .car_map .frame19{left:69px;top:164px;@include unit-scale($part-frame19)}
+.uipage_accident .car_map .frame19.active:before{display:block;@include util-sprite($part-frame19)}
+.uipage_accident .car_map .frame19 .txt_status{left:9px;top:50px}
+
+.uipage_accident .car_map .frame20{left:218px;top:164px;@include unit-scale($part-frame20)}
+.uipage_accident .car_map .frame20.active:before{display:block;@include util-sprite($part-frame20)}
+.uipage_accident .car_map .frame20 .txt_status{left:8px;top:50px}
+
+.uipage_accident .car_map .frame21{left:108px;top:199px;@include unit-scale($part-frame21)}
+.uipage_accident .car_map .frame21.active:before{display:block;@include util-sprite($part-frame21)}
+.uipage_accident .car_map .frame21 .txt_status{left:44px;top:0px}
+
+.uipage_accident .car_map .frame22{left:108px;top:107px;@include unit-scale($part-frame22)}
+.uipage_accident .car_map .frame22.active:before{display:block;@include util-sprite($part-frame22)}
+.uipage_accident .car_map .frame22 .txt_status{left:44px;top:-1px}
+
+.uipage_accident .car_map .frame23{left:116px;top:122px;@include unit-scale($part-frame23)}
+.uipage_accident .car_map .frame23.active:before{display:block;@include util-sprite($part-frame23)}
+.uipage_accident .car_map .frame23 .txt_status{left:36px;top:27px}
+
+.uipage_accident .uipage_container .list_accident{padding-top:10px}
+.uipage_accident .uipage_container .list_accident:after{content:'';display:block;clear:both}
+.uipage_accident .list_accident > li{position:relative;float:left;width:50%;padding:20px 70px 0 20px;box-sizing:border-box;font-size:12px}
+.uipage_accident .list_accident .tit_accident{position:relative;float:left;height:30px;padding-right:10px;padding-left:15px;font-weight:normal;color:rgba(38,38,38,1)}
+.uipage_accident .tit_accident .txt_number{position:absolute;left:0;top:0}
+.uipage_accident .list_accident .list_status{position:absolute;right:20px;top:20px;width:52px;color:rgba(191,191,191,1)}
+.list_accident .list_status .change{float:left}
+.list_accident .list_status .sheet{float:right}
+.list_accident .list_status .active{color:rgba(0,102,204,1)}
+
+.layer_accident .list_status{padding:10px 0 25px}
+.layer_accident .list_status li{padding-top:30px;font-size:17px;color:rgba(89,89,89,1)}
+.layer_accident .list_status li:first-child{padding-top:0}
+.layer_accident .list_status .link_status:before{content:'';display:inline-block;margin-right:5px;vertical-align:middle}
+.layer_accident .li_change .link_status:before{@include util-sprite($pc-change-off)}
+.layer_accident .li_sheet .link_status:before{@include util-sprite($pc-sheet-off)}
+.layer_accident .li_change .active:before{@include util-sprite($pc-change)}
+.layer_accident .li_sheet .active:before{@include util-sprite($pc-sheet)}
+.layer_accident .li_change .active{color:rgba(255,38,38,1)}
+.layer_accident .li_sheet .active{color:rgba(255,127,0,1)}
+
+/* 검색 모듈 */
+.uipage .uipage_header{height:56px;border:0}
+.uipage_header h1{height:56px;line-height:56px}
+.uipage_header .btn_page_close{position:absolute;right:20px;top:21px;@include util-unit($pc-close)}
+.uipage_header .page_color{left:20px}
+.ui_selectcar .tit_selectcar{display:block;height:40px;line-height:40px;padding-left:15px;background:rgba(245,245,245,1);box-sizing:border-box;font-size:13px;font-weight:normal;color:#999}
+.ui_selectcar .selected_manufacturer{display:block;padding:10px 0 10px 15px;background:#F6F6F6}
+.ui_selectcar .selected_manufacturer .txt_selected{display:inline-block;height:30px;line-height:30px;padding:0 10px;background:#FFF;border-radius:15px;font-size:13px;color:#666;letter-spacing:-0.5px}
+.ui_selectcar .selected_manufacturer .uiico{margin:-2px 0 0 5px}
+.ui_selectcar .list_selectcar li{border-bottom:1px solid #F0F0F0;box-sizing:border-box}
+.ui_selectcar .selectcar_depth2 li{background:#FAFAFA;border-color:#F0F0F0}
+.ui_selectcar .selectcar_depth2 li:last-child{border-bottom:0 none}
+.ui_selectcar .selectcar_depth3 li{background:#F5F5F5;border-color:#E5E5E5}
+.ui_selectcar .list_selectcar .link_item{position:relative;display:block;padding:20px 150px 20px 20px;box-sizing:border-box}
+.ui_selectcar .selectcar_depth2 .link_item{padding-left:25px}
+.ui_selectcar .selectcar_depth3 .link_item{padding-left:35px}
+.ui_selectcar .list_selectcar .txt_sub{display:block;font-size:13px;color:#999}
+.ui_selectcar .list_menufacturer .link_item{position:relative}
+.ui_selectcar .active .txt_item{color:#FF2626}
+.ui_selectcar .list_selectcar .txt_item{display:block;line-height:20px;font-size:15px;letter-spacing:-0.5px;word-break:break-all;color:rgba(38,38,38,1)}
+.ui_selectcar .selectcar_depth2 .txt_item,
+.ui_selectcar .selectcar_depth3 .txt_item{position:relative;padding-left:18px}
+.ui_selectcar .selectcar_depth2 .txt_item:before,
+.ui_selectcar .selectcar_depth3 .txt_item:before{content:'';position:absolute;left:0;top:4px;width:8px;height:8px;border:1px solid #999;border-width:0 0 1px 1px}
+.ui_selectcar .list_selectcar .txt_price{position:absolute;right:15px;top:23px;line-height:17px;font-size:13px;color:rgba(102,102,102,1);letter-spacing:-0.5px}
+.ui_selectcar .active .txt_item{color:rgba(0,102,204,1)}
+.ui_selectcar .uiinput_color .circle{width:16.6%;padding-top:21px}
+.ui_selectcar .uiinput_color .circle .color,
+.ui_selectcar .uiinput_color .circle .color.outline:after{width:35px;height:35px;border-radius:20px}
+.ui_selectcar .uiinput_color .circle .color:before{top:17.5px;margin:-11px 0 0 -11px}
+.ui_selectcar .uiinput_color .circle .color var{height:35px}
+.ui_selectcar .uiinput_color{padding:0 25px}
+.uipage .uipage_fix_btn{position:fixed;left:0;bottom:0;width:100%}
+.uipage .uipage_fix_btn .btn_color_sure{display:block;width:100%;height:55px;line-height:55px;background:rgba(217,217,217,1);text-align:center;font-size:17px;color:rgba(255,255,255,1);font-weight:bold}
+.uipage .uipage_fix_btn .active{background:rgba(40,55,150,1)}
+
+.uiTab .uiTabContainer .uiTabContent{display:none}
+.uiTab .uiTabContainer .active{display:block}
+
+.pc_purchase_l02 .tab_product:after{content:'';display:block;clear:both}
+.pc_purchase_l02 .tab_product li{float:left;width:50%}
+.pc_purchase_l02 .tab_product .link_product{display:block;width:100%;height:43px;line-height:43px;border-bottom:1px solid rgba(229,229,229,1);font-size:15px;color:rgba(38,38,38,1);text-align:center}
+.pc_purchase_l02 .tab_product .active{border-bottom:1px solid rgba(0,102,204,1);color:rgba(0,102,204,1)}
+
+.pc_purchase_l02 .area_filter_product{padding-top:20px}
+.pc_purchase_l02 .area_filter_product .inner_product{position:relative;padding:0 20px}
+.area_filter_product .inner_product .input_product{width:100%;height:30px;line-height:30px;padding-right:30px;border:0;border-bottom:1px solid rgba(229,229,229,1);box-sizing:border-box;font-size:17px;color:rgba(38,38,38,1)}
+.area_filter_product .inner_product .btn_product{position:absolute;right:20px;bottom:6px;@include util-unit($pc-zoom-b)}
+.area_filter_product .scroll_filter{position:relative;margin-left:20px}
+.area_filter_product .scroll_filter:after{content:'';position:absolute;right:0;top:15px;width:20px;height:26px;background:-webkit-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));background:-o-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1))}
+.area_filter_product .scroll_filter .scroll_inner{display:table;table-layout:fixed}
+.area_filter_product .scroll_filter .filter_item{display:table-cell;padding:15px 5px 0 0}
+.area_filter_product .scroll_filter .filter_item:last-child{padding-right:20px}
+.scroll_filter .filter_item .inner_item{position:relative;display:block;height:26px;line-height:26px;padding:0 23px 0 10px;border:1px solid rgba(0,102,204,0.5);border-radius:15px;font-size:13px;color:rgba(0,102,204,1);letter-spacing:-0.5px;white-space:nowrap}
+.scroll_filter .inner_item .btn_filter_delete{position:absolute;right:10px;top:9px;@include util-unit($pc-delete-filter)}
+.area_filter_product .notice_scroll{padding-left:20px;padding-top:18px;font-size:13px;color:#595959;letter-spacing:-0.46px}
+
+.area_tbl_product{position:relative;padding-left:20px;padding-bottom:40px;margin-top:10px}
+.area_tbl_product .tbl_overlay{position:absolute;right:0;top:0;width:20px;height:100%;background:#fff;background:-webkit-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));background:-o-linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1));background:linear-gradient(to right,rgba(255,255,255,0),rgba(255,255,255,1))}
+.area_tbl_product .fixed_tbl{position:absolute;left:20px;top:0;overflow:hidden;width:220px}
+.area_tbl_product .fixed_tbl .tbl_fixed{background:#FAFAFA;border-bottom:1px solid #F0F0F0;box-shadow:10px 0px 15px rgba(0, 0, 0, 0.1);font-size:12px;color:#595959}
+.area_tbl_product .tbl_fixed th,
+.area_tbl_product .tbl_fixed td{padding:12px 8px 9px;border-top:1px solid #F0F0F0}
+.area_tbl_product .tbl_fixed th{font-weight:bold;color:#262626}
+.area_tbl_product .tbl_fixed .align_left{text-align:left}
+.area_tbl_product .scroll_tbl{overflow-x:scroll}
+.area_tbl_product .scroll_tbl .inner_scroll{width:717px;padding-right:20px}
+.area_tbl_product .scroll_tbl .tbl_scroll{width:100%;margin-right:20px;border-bottom:1px solid #F0F0F0;font-size:12px;color:#595959}
+.area_tbl_product .tbl_scroll th,
+.area_tbl_product .tbl_scroll td{padding:12px 8px 9px;border-top:1px solid #F0F0F0;text-align:center}
+.area_tbl_product .tbl_scroll th{font-weight:bold;color:#262626}
+.area_tbl_product .tbl_scroll .align_left{text-align:left}
+.area_tbl_product .area_btn_more{height:45px;line-height:46px;margin-right:20px;border-bottom:1px solid #F0F0F0;text-align:center}
+.area_tbl_product .area_btn_more .link_more{display:inline-block;font-size:15px;color:#0066CC}
+.area_tbl_product .area_btn_more .link_more:after{content:'';display:inline-block;margin-left:5px;@include util-sprite($pc-more)}
+.area_tbl_product th .link_filter:after{content:'';display:inline-block;margin-left:3px;@include util-sprite($pc-arr-filter);vertical-align:middle}
+
+.pc_carsearch_l02 #wrap,
+.pc_carsearch_l03 #wrap{padding-bottom:55px}
+.pc_carsearch_l02 #container,
+.pc_carsearch_l03 #container{background:rgba(245,245,245,1)}
+.pc_carsearch_l02 .section_search,
+.pc_carsearch_l03 .section_search{padding:20px 20px 40px;margin-top:10px;background:rgba(255,255,255,1)}
+.section_search .area_price .inner_option:after{content:'';display:block;clear:both}
+.area_price .inner_option .inner_select{position:relative;float:left;width:45%}
+.area_price .inner_option .inner_input{float:left;width:45%}
+.area_price .inner_option .inner_select:after{content:'';position:absolute;right:0;bottom:12px;@include util-sprite($pc-arr-bottom-g)}
+.area_price .inner_select .date_holder{position:absolute;left:0;top:0;width:70%;font-size:17px;color:rgba(191,191,191,1)}
+.area_price .inner_select .hide{display:none}
+.area_price .inner_option .mdl_select{width:100%;height:30px;line-height:30px;border:0;border-bottom:1px solid rgba(229,229,229,1);border-radius:0;-webkit-appearance:none;background:none;font-size:17px;color:rgba(38,38,38,1)}
+.area_price .inner_option .mdl_select:invalid{color:rgba(191,191,191,1)}
+.area_price .inner_exterior .mdl_select:invalid{color:rgba(191,191,191,1)}
+.area_price .inner_option .input_txt{text-align:left}
+.area_price .inner_option .input_txt::-webkit-input-placeholder{color:rgba(191,191,191,1)}
+.section_search .inner_option .inner_unit{float:left;width:10%;height:30px;line-height:30px;text-align:center}
+.pc_carsearch_l02 #header .btn_init,
+.pc_carsearch_l03 #header .btn_init{position:absolute;right:20px;top:19px;font-size:15px;font-weight:bold;color:rgba(0,102,204,1)}
+
+.pc_purchase_l01 .area_calendar{position:relative;width:203px;height:43px;line-height:43px;margin:20px auto 20px;text-align:center}
+.pc_purchase_l01 .area_calendar .txt_calendar{font-size:35px;font-weight:bold;color:rgba(0,102,204,1)}
+.pc_purchase_l01 .area_calendar .link_calendar{position:absolute;top:50%;margin-top:-8px}
+.pc_purchase_l01 .area_calendar .link_prev{left:0;@include util-unit($pc-arr-left-calendar)}
+.pc_purchase_l01 .area_calendar .link_next{right:0;@include util-unit($pc-arr-right-calendar)}
+
+.pc_purchase_l01 .area_filter_buyer{padding:0 20px}
+.pc_purchase_l01 .area_filter_buyer:after{content:'';display:block;clear:both}
+.pc_purchase_l01 .area_filter_buyer .inner_select{position:relative;float:left;width:100px}
+.pc_purchase_l01 .area_filter_buyer .select_date{width:70px;margin-left:15px}
+.pc_purchase_l01 .area_filter_buyer .inner_select:after{content:'';position:absolute;right:0;bottom:11px;@include util-sprite($pc-arr-bottom-b)}
+.area_filter_buyer .inner_select .select_filter{width:100%;height:25px;line-height:25px;padding-right:10px;border:0;border-bottom:1px solid rgba(229,229,229,1);border-radius:0;-webkit-appearance:none;background:none;box-sizing:border-box;font-size:15px;color:rgba(38,38,38,1)}
+.pc_purchase_l01 .area_filter_buyer .inner_input{position:relative;float:right;width:125px;height:25px;line-height:25px}
+.area_filter_buyer .inner_input .input_buyer{width:100%;height:25px;line-height:25px;padding-right:25px;border:0;border-bottom:1px solid rgba(229,229,229,1);box-sizing:border-box;font-size:15px;color:rgba(38,38,38,1)}
+.area_filter_buyer .inner_input .input_buyer::-webkit-input-placeholder{color:rgba(191,191,191,1)}
+.area_filter_buyer .inner_input .btn_buyer{position:absolute;right:0;bottom:4px;@include util-sprite($pc-zoom-b)}
+
+#price_select[value='default']{color:red}
+
+.pc_purchase_l01 .list_buyer{margin-top:20px;border-bottom:1px solid rgba(240,240,240,1)}
+.pc_purchase_l01 .list_buyer > li{position:relative;padding:15px 20px;border-top:1px solid rgba(240,240,240,1)}
+.list_buyer > li .date_buyer{position:absolute;left:20px;top:16px}
+.list_buyer .date_buyer .txt_date,
+.list_buyer .date_buyer .txt_day{display:block;font-size:13px;color:rgba(89,89,89,1);text-align:center}
+.list_buyer .date_sat .txt_date,
+.list_buyer .date_sat .txt_day{color:rgba(76,157,237,1)}
+.list_buyer .date_sun .txt_date,
+.list_buyer .date_sun .txt_day{color:rgba(255,77,77,1)}
+.list_buyer .date_buyer .txt_date{line-height:27px;padding-botttom:2px;font-size:27px;font-weight:bold}
+.list_buyer > li .list_buyer_sub{width:100%;padding-left:39px;box-sizing:border-box}
+.list_buyer .list_buyer_sub li{width:100%;padding-top:15px;margin-top:15px;border-top:1px solid rgba(240,240,240,1)}
+.list_buyer .list_buyer_sub li:first-child{padding-top:0;margin-top:0;border-top:0}
+.list_buyer .list_buyer_sub .link_buyer{position:relative;display:block;width:100%;padding-right:70px;box-sizing:border-box}
+.list_buyer .list_buyer_sub .txt_car{display:block;padding-bottom:5px;font-size:15px;font-weight:bold;color:rgba(38,38,38,1)}
+.list_buyer .list_buyer_sub .txt_buyer{display:block;padding-bottom:5px;font-size:15px;color:rgba(89,89,89,1)}
+.list_buyer .list_buyer_sub .txt_price{display:block;font-size:17px;font-weight:bold;color:rgba(0,102,204,1)}
+.list_buyer .list_buyer_sub .state_buyer{position:absolute;right:0;top:0;font-size:13px;color:rgba(153,153,153,1)}
+
+.uipage_history .uipage_container{background:rgba(244,244,244,1)}
+.uipage_history .uipage_container .area_history{padding:40px 20px;margin-top:10px;background:rgba(255,255,255,1)}
+.uipage_history .uipage_container .history_num{padding-top:20px;padding-bottom:20px;margin-top:0;text-align:center}
+.uipage_history .history_num .tit_num{display:inline-block;line-height:35px;padding:15px 18px 11px;border:2px solid rgba(89,89,89,1);border-radius:7px;font-size:35px;color:rgba(38,38,38,1)}
+.uipage_history .history_num .txt_num{display:block;padding-top:10px;font-size:13px;color:rgba(153,153,153,1)}
+
+.uipage_history .area_history .h2_history{padding-bottom:20px;font-size:19px;color:rgba(38,38,38,1)}
+.uipage_history .area_history .list_sum{border-bottom:1px solid rgba(240,240,240,1)}
+.uipage_history .list_sum > li{padding:16px 0 15px;border-top:1px solid rgba(240,240,240,1);font-size:15px;color:rgba(89,89,89,1)}
+.uipage_history .list_sum > li:after{content:'';display:block;clear:both}
+.uipage_history .list_sum .tit_sum{float:left;font-weight:normal}
+.uipage_history .list_sum .txt_sum{float:right;color:rgba(38,38,38,1)}
+.uipage_history .list_sum .list_txt_sum{float:right;color:rgba(38,38,38,1);text-align:right}
+.list_sum .list_txt_sum li{padding-top:6px}
+.list_sum .list_txt_sum li:first-child{padding-top:0}
+
+.uipage_history .uipage_container .history_accident{padding:40px 0 0}
+.uipage_history .history_accident .box_tit{padding:0 20px}
+.uipage_history .history_accident .box_tit:after{content:'';display:block;clear:both}
+.history_accident .box_tit .h2_history{float:left}
+.history_accident .box_tit .link_all{float:right;padding-top:4px;font-size:15px;color:rgba(0,102,204,1)}
+.history_accident .list_history > li{border-top:1px solid rgba(240,240,240,1)}
+.history_accident .list_history .link_history{position:relative;display:block;height:60px;line-height:60px;padding:0 20px;font-size:15px;color:rgba(38,38,38,1)}
+.history_accident .list_history .link_history:after{content:'';position:absolute;right:20px;top:50%;margin-top:-($pc-acc-arr-height/2);@include util-sprite($pc-acc-arr)}
+.history_accident .list_history .link_history.active:after{content:'';position:absolute;right:20px;top:50%;margin-top:-($pc-acc-arr-on-height/2);@include util-sprite($pc-acc-arr-on)}
+.history_accident .list_history .content_history{padding:20px;background:rgba(245,245,245,1)}
+.list_history .content_history .list_sub{border-bottom:1px solid rgba(229,229,229,1)}
+.content_history .list_sub > li{padding:16px 0 15px;border-top:1px solid rgba(229,229,229,1);font-size:15px;color:rgba(89,89,89,1)}
+.content_history .list_sub > li:after{content:'';display:block;clear:both}
+.content_history .list_sub .tit_sub{float:left;font-weight:normal}
+.content_history .list_sub .txt_sub{float:right;color:rgba(38,38,38,1)}
+.list_history .content_history .notice_sub{line-height:19px;padding-top:15px;font-size:13px;color:rgba(153,153,153,1)}
+.list_history .content_history .notice_other{line-height:25px;padding-bottom:15px;font-size:15px;color:rgba(89,89,89,1)}
+.list_history .content_history .tit_caution{display:block;line-height:27px;padding-bottom:15px;font-size:17px;color:rgba(89,89,89,1)}
+.content_history .list_caution li{line-height:25px;padding-bottom:25px;font-size:15px;color:rgba(89,89,89,1)}
+.content_history .list_caution li:first-child{padding-top:10px}
+.list_history .content_history .list_my{padding-top:6px}
+.content_history .list_my .tit_my{display:block;padding-top:44px;padding-bottom:15px;font-size:17px;color:rgba(89,89,89,1)}
+.content_history .list_my .inner_my{border-bottom:1px solid rgba(229,229,229,1);text-align:center}
+.content_history .list_my .inner_my .inner_info{display:block;padding:16px 0 15px;border-top:1px solid rgba(229,229,229,1);font-size:15px;color:rgba(38,38,38,1)}
+.list_my .inner_my .inner_info .tit_info,
+.list_my .inner_my .inner_info .txt_info{display:block;font-size:15px;color:rgba(38,38,38,1)}
+.list_my .inner_my .inner_info .tit_info{padding-bottom:5px;font-weight:normal}
+.content_history .list_proc li{position:relative;padding-left:24px;padding-bottom:20px;margin-left:4px;margin-bottom:3px;border-left:2px solid rgba(217,217,217,1)}
+.content_history .list_proc li:last-child{border-color:rgba(245,245,245,1)}
+.content_history .list_proc li:before{content:'';position:absolute;left:-2px;top:0;width:10px;height:18px;background:rgba(245,245,245,1)}
+.content_history .list_proc li:after{content:'';position:absolute;left:-6px;top:3px;@include util-sprite($pc-circle)}
+.content_history .list_proc .date_proc,
+.content_history .list_proc .txt_proc{display:block;font-size:13px;color:rgba(89,89,89,1)}
+.content_history .list_proc .txt_proc{padding-top:5px;font-size:15px}
+
+.uiAccordion .uiAccordionContent{display:none}
+.uiAccordion .active{display:block}
+
+.uipage_history .history_foot .notice_foot{line-height:25px;font-size:15px;color:rgba(89,89,89,1)}
+.uipage_history .history_foot .date_foot{display:block;padding:20px 0;font-size:15px;color:rgba(89,89,89,1);text-align:center}
+.uipage_history .history_foot .sign_foot{display:block;margin:0 auto;@include util-sprite($pc-sign)}
+.uipage_history .history_foot .caution_foot{padding-top:30px;font-size:13px;color:rgba(153,153,153,1);text-align:center}
+
+.uipage_history .page_tickets{position:fixed;left:50%;bottom:20px;width:320px;padding:15px 0;margin-left:-160px;background:rgba(0,0,0,0.8);border-radius:15px;color:rgba(255,255,255,1)}
+.uipage_history .page_tickets .caution_tickets{font-size:15px;text-align:center}
+.uipage_history .page_tickets .list_tickets{padding:8px 35px 0}
+.uipage_history .page_tickets .list_tickets:after{content:'';display:block;clear:both}
+.page_tickets .list_tickets li{float:right;font-size:13px}
+.page_tickets .list_tickets li:first-child{float:left}
+.page_tickets .list_tickets .tit_tickets{float:left;opacity:0.6}
+.page_tickets .list_tickets .txt_tickets{float:left;margin-left:5px}
+
+.pc_index_v01 .uipage_container{padding:0 20px}
+.pc_index_v01 .uipage_tickets .area_count{position:relative;padding:40px 0;border-bottom:1px solid rgba(240,240,240,1)}
+.pc_index_v01 .uipage_tickets .area_count:after{content:'';position:absolute;left:50%;top:47px;width:1px;height:53px;background:rgba(229,229,229,1)}
+.uipage_tickets .area_count .list_count:after{content:'';display:block;clear:both}
+.uipage_tickets .list_count li{color:rgba(38,38,38,1)}
+.uipage_tickets .list_count .li_buy{float:left;padding-left:18px}
+.uipage_tickets .list_count .li_acc{float:right;padding-right:18px}
+.uipage_tickets .list_count .tit_count{display:block;font-size:18px;font-weight:normal}
+.uipage_tickets .list_count .txt_count{position:relative;display:block;line-height:31px;margin-top:7px;font-size:31px}
+.uipage_tickets .list_count .txt_count:before{content:'';display:inline-block;margin-right:5px;margin-top:-4px;vertical-align:middle}
+.uipage_tickets .list_count .li_buy .txt_count:before{@include util-sprite($pc-ico-buy)}
+.uipage_tickets .list_count .li_acc .txt_count:before{@include util-sprite($pc-ico-acc)}
+
+.pc_index_v01 .area_caution .h2_caution{padding:40px 0 0;font-size:21px;font-weight:normal}
+.area_caution .dl_caution dt{padding:30px 0 0;font-size:19px}
+.area_caution .dl_caution dd{position:relative;padding-top:10px;padding-left:7px;font-size:15px;color:rgba(89,89,89,1)}
+.area_caution .dl_caution dd:before{content:'';position:absolute;left:0;top:18px;width:2px;height:2px;background:rgba(191,191,191,1)}
+.area_caution .dl_caution .txt_small{font-size:12px}
+
+.ruleview .agree_desc{padding:30px 20px 0;font-size:17px;}
+.ruleview .agreement{padding:20px;font-size:17px;}
+.ruleview .agreement dt{margin-bottom:10px;font-weight:bold;color:#000;}
+.ruleview .agreement dd{margin-bottom:20px;color:#595959;}
+.ruleview .agreement dd span{display:block;margin-left:10px;padding-left:18px;text-indent:-18px;}
+.ruleview .agreement dd li{margin-bottom:10px;}
+
+.pc_inquiry_v01 #wrap {padding-bottom:55px;}
+.inquiry_cont {padding:29px 20px 0;}
+.inquiry_cont .wanna_join {line-height:27px;font-size:17px;color:#595959;}
+.inquiry_cont .info {margin-top:20px;padding:15px 0;border-top:1px solid #f0f0f0;}
+.inquiry_cont .info li {overflow:hidden;margin-top:5px;line-height:27px;font-size:17px;}
+.inquiry_cont .info li .dt {float:left;width:80px;color:#595959;}
+.inquiry_cont .info li .dd {display:block;overflow:hidden;color:#262626;}
+.inquiry_cont .area_button .call {display:block;position:fixed;left:0;bottom:0;width:100%;height:55px;text-align:center;line-height:55px;font-size:17px;font-weight:700;color:#fff;background:#283796;}
+.inquiry_cont .area_button .call span {display:inline-block;position:relative;padding-left:23px;}
+.inquiry_cont .area_button .call span:before {content:'';position:absolute;left:0;top:18px;@include util-sprite($pc-acc-ticket);@include util-unit($pc-call);}

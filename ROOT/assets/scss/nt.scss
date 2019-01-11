@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+.snb.nt h2		{ font-size: 14px; line-height: 1.25em; }
+
+#container.adview,.notice				{ margin-bottom: 0px !important;}
+
+
+#header div.snb.nt b						{ line-height: 10000px; }
+#header div.snb.nt	 a						{ display: block; background-position: 0px 0px; text-indent: -5000px; }
+#header div.snb.nt span.back			{ float:left; margin-top: 9px; margin-left: 3px; display: none; }
+#header div.snb.nt span.back a		{ width: 54px; height: 25px; background: url('/images/btn/btn_back.gif?130429') no-repeat; }
+
+/* 광고 상세보기 */
+div.adview			{}
+div.adview img	{ width: 100%; }
+
+
+/* 공지사항 리스트 */
+div.notice .view 								{ padding: 15px 10px; overflow-x:scroll;}
+div.notice .view img							{ width: 100%; height:auto; vertical-align:top; border:0;}
+div.notice .view table 							{ width: 100% !important; }
+div.notice .view td 							{ padding:2px; }
+div.notice ul.noticelist li						{ position: relative; clear: both; width: 100%; height: 40px; border-top: 1px solid #d9d9d9;  display: block; }
+div.notice ul.noticelist li a					{ width: 100%; height: 100%; display: block; }
+div.notice ul.noticelist li span.arr			{ position: absolute; width: 11px; height:14px; top: 13px; right: 12px;  background: url('/images/search_arr.gif?130429') no-repeat;}
+div.notice ul.noticelist li span.title			{ width: 85%; padding-top: 14px; padding-left: 23px; font-size: 12px; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden; display: block; }
+div.notice ul.noticelist li span.on			{ font-size: 14px; font-weight: bold ! important; color: #e06d00; }

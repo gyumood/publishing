@@ -1,0 +1,1 @@
+require('scss/pg.scss');

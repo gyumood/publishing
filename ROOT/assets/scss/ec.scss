@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+.snb.ec{display: none;}
+.snb.ec.mail{display: block;}
+.snb.ec h2{font-size: 14px; line-height: 1.25em; margin-left: 10px !important;}
+
+.snbox.ec a{padding-top:11px;}
+.snbox.ec strong{font-size:12px}
+.snbox.ec em{font-size:12px;color:#484848;font-weight: normal;}
+
+.ec_cente_list	{clear: both; width: 100%;}
+.ec_cente_list ul.center_list{width: 100%;}
+.ec_cente_list ul.center_list li{position: relative; clear: both; width: 100%; min-height: 70px; border-bottom: 1px solid #d9d9d9; display: inline-block;}
+.ec_cente_list ul.center_list li a.arr{width: 100%; padding: 7px 0px 5px 0px; display: block;}
+.ec_cente_list ul.center_list li span.arr{position: absolute; width: 11px; height:14px; top: 28px; right: 12px;  background: url("/images/common/btn_arr.gif?130429") no-repeat scroll left -112px transparent; background-size:22px;}
+.ec_cente_list ul.center_list a.arr span.name{margin: 0px 0px 0px 15px; font-size: 15px; font-weight: bold ! important; color: #333333; overflow: hidden; display: block;}
+.ec_cente_list ul.center_list a.arr span.addr{width: 80%; margin: 4px 0px 0px 15px; color: #333333; text-overflow:ellipsis; overflow: hidden; display: block;}
+.ec_cente_list ul.center_list a.arr span.tel{margin: 3px 0px 0px 16px;  font-weight: bold ! important; color: #cf0000; overflow: hidden; display: block;}
+
+div.centerview{padding: 0px 10px;}
+div.centerinfo_title{margin: 12px 0px 10px 0px;}
+div.centerinfo_title h3.name{width: 100%; font-weight: bold; font-size: 17px;}
+div.centerinfo_title h3 span.tel{width: 100%; font-weight: bold; color: #cf0000; font-size: 17px;}
+div.center_info dl{clear: both; border-top: 1px solid #d0d0d0; padding-top: 12px;  margin-bottom: 10px;}
+div.center_info dt{font-weight: bold; height: 23px; color: #000000;}
+div.center_info dd{clear: both; color: #666666; margin-bottom: 5px;}
+div.center_info dl.center{}
+div.center_info dl.center b{float: left; width: 65px; font-weight: normal;}
+div.center_info dl.center u{margin-right: 26px; display: inline;}
+div.center_info dl.center p{padding-left: 65px;}
+div.center_info dl.work{}
+div.center_info dl.map{padding-bottom:20px;border-bottom:2px solid #d0d0d0}
+div.center_info dl.map dd{margin-bottom: 10px;}
+div.center_info dl.map dd p.center_map{width: 100%; height:200px; margin-bottom: 15px; overflow: hidden;background:#fff url('/images/common/gif_loading.gif') no-repeat 50% 50%;}
+div.center_info dl.map dd p.none img {width:100%;}
+div.center_info dl.map strong{display: block; margin-bottom: 4px; color: #333333;}
+
+.centerdetail div.centercar_title{clear: both; position: relative; width: 100%; height: 23px; padding-top: 9px; border-bottom: 1px solid #d0d0d0; border-top: 1px solid #d0d0d0;}
+.centerdetail div.centercar_title h3{float:left; width: 90%; text-overflow: ellipsis; -o-text-overflow: ellipsis; overflow: hidden; color:#000000;  font-weight: bold; padding-left: 10px;}
+.centerdetail div.centercar_title div.more{position: absolute; right: 0; top: 4px;}
+
+/* 센테메일 리스트 */
+.center_mail{width: 100%; display: block;}
+.center_mail li{padding: 10px 0px; display: inline-block; width: 100%; border-bottom: 1px solid #d0d0d0; overflow: hidden;}
+.center_mail li	a{display: block; overflow: hidden;}
+.center_mail li span{line-height: 16px;}
+.center_mail li span.thum{float: left;  display: block;}
+.center_mail li span.thum img{width: 78px; height: 48px; margin: 0px 10px 0px 10px; border: 1px solid #c2bfb6;}
+.center_mail li span.info{float: left; width: 69%; margin-top: 1px; display: block;}
+.center_mail li span.info .inf{clear: both; width: auto; font-weight: bold ! important; font-size: 14px ! important; text-overflow:ellipsis; display: block; overflow:hidden;}
+.center_mail li span.info .addr{clear: both; color: #666666; display: block;}
+.center_mail li span.info .tel{clear: both; font-weight: bold; color: #cf0000; font-size: 15px ! important;}
+.center_mail li span.info .tel a{color: #cf0000;}
+
+
+

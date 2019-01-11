@@ -1,0 +1,20 @@
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote,q{quotes:none}
+input,select,textarea,button{vertical-align:middle}
+img{vertical-align:top}
+button{border:0 none;background-color:transparent;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
+address,caption,cite,code,dfn,em,var,i{font-style:normal;font-weight:normal}
+article,aside,dialog,footer,header,section,footer,nav,figure{display:block}
+body,input,select,textarea,table,button,pre{font-size:14px;line-height:1.5;font-family:'Malgun Gothic','맑은 고딕',sans-serif;color:#333}
+body{background-color:#fff;-webkit-text-size-adjust:none}
+hr{display:none}
+a{color:#333;text-decoration:none}
+a:active,a:hover{text-decoration:none}
+caption,legend{font-size:0;line-height:0;visibility:hidden}
+input:focus,select:focus,textarea:focus{outline-width:thin}
+.skip_navi{position: absolute;width:1px;height:1px;overflow:hidden;font-size: 1px;white-space: nowrap;text-indent: 4px;line-height: 1px}
+.blind{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;clip:rect(0 0 0 0)}

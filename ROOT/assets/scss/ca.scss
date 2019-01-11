@@ -1,0 +1,1635 @@
+@charset 'utf-8';
+
+/* 2017 공통 레이아웃 이미지 (인덱스관련 이미지는 인덱스페이지개편때 삭제 예정) */
+.search_condition .condition .item var.del .spr_del,
+.search_condition .condition .spr_slt {display:inline-block;overflow:hidden;text-indent:-5000em;background-image:url(/images/common/spr_guide_layout.png?170623);background-repeat:repeat;background-size:320px;}
+.spr_del, .spr_slt {background-image:url(/images/common/spr_guide_layout.png?180601);background-repeat:repeat;background-size:320px;} /* 이미지 초기화를 위한 로드 */
+
+/* 인증띠 */
+.ass {overflow:hidden;display:block;position:absolute;left:0;top:0;z-index:10;width:47px;height:47px;text-indent:-5000em;background:url('/images/common/assurance_s.png?180721') no-repeat left top;background-size:47px;}
+.cert {overflow:hidden;display:block;position:absolute;left:0;top:0;z-index:10;width:47px;height:47px;text-indent:-5000em;background:url('/images/common/certification_s.png?180630') no-repeat left top;background-size:47px;}
+
+/* 성능진단 */
+.diag_detail{margin-bottom:35px;}
+.diag_detail h4.btnTitle a{font-size:14px;height:28px;padding:10px 0 0 18px;}
+.diag_detail h4.btnTitle_on a{font-size:14px;height:29px;padding:9px 0 0 18px;}
+.diag_detail .tiptxt{font-size:11px;line-height:16px;color:#7c7c7c;padding:5px 15px 0 15px;}
+.diag_detail .tiptxt p{text-indent:-10px;margin-left:10px;}
+.diag_detail .conWrap ul{padding-left:10px;}
+.diag_detail .conWrap p{padding-left:10px;}
+.diag_detail .conWrap li{line-height:21px;letter-spacing:-1px;}
+.diag_detail .conWrap th{font-weight:normal;width:50%;text-align:left;letter-spacing:-1px;}
+.diag_detail .conWrap td{text-align:left;letter-spacing:-1px;}
+.diag_detail .conWrap td strong{color:#333;}
+.diag_detail .conWrap td strong em{font-weight:normal;color:#929292;padding-left:5px;}
+.diag_detail .conWrap td strong.ckcase{color:#b10d00;}
+.diag_detail .conWrap th.group{background:#f1f1f1 !important;width:15% !important;text-align:center;padding-left:0 !important;}
+.diag_detail #conWrap6 th{background:none;width:40%;}
+.diag_detail #conWrap6 td{width:45%;}
+.diag_detail #conWrap7 td{width:85%;letter-spacing:0;line-height:20px;}
+.diag_detail #conWrap7 .tip{font-size:11px;text-align:right;color:#7c7c7c;padding-top:5px;}
+.diag_detail #conWrapetc strong em{padding-left:0;display:block;}
+.diag_detail #conWrapitem strong{font-weight:normal !important;padding-right:8px;}
+
+/* 진단한계 및 기준 */
+.standard{border-top:1px solid #848484;}
+.standard .tiptxt{font-size:11px;padding-top:20px;}
+.standard .contWrap{padding:20px 10px;border-bottom:1px solid #d0d0d0;}
+.standard .btn_limit{display:block;width:100%;overflow:hidden;margin-top:10px;}
+.standard .btn_limit a{width:120px;height:24px;float:right;}
+.standard .btn_limit b{margin-top:5px;}
+.standard .btn_reduc{display:block;width:100%;overflow:hidden;margin-top:-20px;}
+.standard .btn_reduc a{width:95px;height:24px;float:right;background:#f7f7f7;}
+.standard .btn_reduc b{margin-top:5px;}
+.standard .moreTxt{border-top:1px solid #ddd;margin-top:10px;}
+.standard h3{background:#f3f3f3;border-bottom:1px solid #d0d0d0;}
+.standard h3 a{display:block;height:18px;padding:7px 0 7px 10px;font-size:12px;color:#454545;}
+.standard h3 a span{display:block;width:100%;background:url('/images/common/bullet.gif?130429') no-repeat right -82px; background-size:30px;}
+.standard h3 a.upon span{background:url('/images/common/bullet.gif?130429') no-repeat right -98px; background-size:30px;}
+.standard h4{color:#f77c1c;font-size:14px;}
+.standard .cont{padding-top:20px;color:#454545;}
+.standard .tb_wrap{margin-top:20px;}
+.standard dl{margin-top:10px;line-height:17px;}
+.standard dt{color:#b60000;}
+.standard dd{margin-left:8px;}
+.standard td p{padding-bottom:5px !important;}
+
+.carmail .warr_car{border-bottom:1px solid #d0d0d0;margin-bottom:25px;}
+/*동급매물과 푸터 라인 맞추기*/
+body.ca_cardetail_v01 #footer{margin-top:-1px;}
+
+/*모바일 차량개편*/
+body.ca_cardetail_v02 .umnImg{width:100%;margin-top:10px;}
+body.ca_cardetail_v02 .umnImg span{display:block;}
+body.ca_cardetail_v02 .umnImg img{width:100%;height:auto;border:none;margin-right:0;margin-bottom:10px;}
+body.ca_cardetail_v02 h3{padding-left:20px;color:#000000;height:23px;overflow:hidden;font-size:100%;}
+body.ca_cardetail_v02 .numresult dt{padding-left:20px;}
+body.ca_cardetail_v02 p.msg{padding-bottom:30px;border:none;font-size:1.11em !important;font-size:100%;line-height:1.5em;color:#484848;}
+body.ca_carresult_l04 h2,
+body.ca_carresult_l05 h2{color:#484848;}
+body.ca_carresult_l04 .caution,
+body.ca_carresult_l05 .caution{margin-top:10px;}
+
+body.ca_cardetail_v02 dd.color{width:50%;}
+body.ca_cardetail_v02 span.sample{float:left;height:9px;margin:0px 2px 2px 0px;border:solid 1px silver;}
+body.ca_cardetail_v02 span.sample img.color{float:left;width:9px;height:9px;vertical-align:bottom;}
+body.ca_cardetail_v02 .umnTitcode{display:block;width:65%;}
+body.ca_cardetail_v02 .umnTitcode .umnMaf, body.ca_cardetail_v02 .umnTitcode .umnMel{white-space:normal;}
+
+/*2015모바일개선 : 차량검색*/
+body.ca_carsearch_l01 #footer {display:none;} /*차량검색 footer 미노출*/
+body.ca_carsearch_l01 #encar_ad {display:none !important;} /*차량검색 광고 미노출*/
+.carsearch .sub_tab {overflow:hidden;position:relative;border:1px solid #d6d6d6;border-radius:5px 5px 0 0;margin-bottom:-7px;box-shadow: 0 -3px 4px #e9e9e9}
+.carsearch .sub_tab ul {width:100%;overflow:hidden;border-radius:5px 5px 0 0;}
+.carsearch .sub_tab ul li {float:left;width:50%;background:#f2f2f2;}
+.carsearch .sub_tab ul li a {display:block;text-align:center;height:33px;padding-top:16px;color:#a5a5a5;font-weight:bold;font-size:16px;background:#fff;}
+.carsearch .sub_tab ul li.active a {color:#ce0d0d;}
+.carsearch .sub_tab .tab_bar{position:absolute;bottom:0px;display:block;width:50%;height:1px;background:#cf0d0d;}
+#container.carsearch {padding:10px 7px 85px 7px;background:#f3f3f3;}
+.search_condition {display:none;}
+.search_condition.active {display:block;}
+.search_condition .condition {margin-top:6px;border-radius:5px;background:#fff;border:1px solid #d6d6d6;box-shadow: 0 0px 4px #e0e0e0}
+.search_condition .condition.first {border-top:0;border-radius:0 0 5px 5px;box-shadow: 0 2px 4px #e0e0e0}
+.search_condition .condition ul li {position:relative;min-height:45px;border-top:1px solid #e9e9e9;}
+.search_condition .condition ul li:first-child {border-top:0;}
+.search_condition .condition ul li.caution_msg {min-height:auto;text-align:center;border:0;border:1px solid #ce0d0d;border-top:0;}
+.search_condition .condition ul li.caution_msg p {padding:14px 0 5px 0;margin:0 15px;color:#ce0d0d;font-size:15px;font-weight:normal !important;border-top:1px solid #e0e0e0;}
+.search_condition .condition ul li.caution_msg p .spr_ico_alert {width:20px;height:20px;background-position:-68px -89px;vertical-align:middle;margin:-2px 5px 0 0;}
+.search_condition .condition ul li.info_msg {min-height:auto;text-align:center;border:0;border:1px solid #c1c1c3;border-top:0;border-bottom:0;}
+.search_condition .condition ul li.info_msg p {padding:14px 0 5px 0;margin:0 15px;color:#5c5c5c;font-size:15px;font-weight:normal !important;border-top:1px solid #e0e0e0;}
+.search_condition .condition .cond_inner {display:block;width:100%;min-height:45px;-webkit-user-select:none;-webkit-user-drag:none;text-align:left;}
+.search_condition .condition .cond_tit {display:inline-block;position:absolute;left:15px;top:50%;margin-top:-9px;color:#403e4b;font-size:15px;font-weight:normal !important;}
+.search_condition .condition .cond_seller .cond_tit{display:block;position:static;margin-top:0;padding:15px 0 6px 15px}
+.search_condition .condition .item {display:block;margin:0 40px 0 85px;font-size:14px;}
+.search_condition .condition .cond_seller .cond_inner.form_con .item{margin-left:15px;padding:7px 0}
+.search_condition .condition .focusing {border:1px solid #ce0d0d !important;border-bottom:0 !important;}
+.search_condition .condition .focusing .item {color:#ce0d0d;display:block;}
+.search_condition .condition .focusing .cond_tit{color:#ce0d0d;}
+.search_condition .condition .focusing .spr_slt{background-position:-150px -34px;}
+.search_condition .condition .item var {position:relative;display:inline-block;color:#403e4b;font-size:15px;}
+.search_condition .condition .item var em {color:#9d9ca5;}
+.search_condition .condition .item var.del {display:block;padding:5px 0px 5px 0;-webkit-user-select:none;-webkit-user-drag:none;}
+.search_condition .condition .item var.del:first-child {padding-top:10px;}
+.search_condition .condition .item var.del:last-child {padding-bottom:8px;}
+.search_condition .condition .item var.del .spr_del {vertical-align:middle;margin:-3px 0 0 3px;width:21px;height:21px;background-position:-50px -60px;}
+.dvc_a .search_condition .cond_grade .depth_group {margin-bottom:10px;overflow:hidden;}
+.search_condition .cond_grade .item var.del {display:block;padding:5px 32px 5px 12px;background:#dfdddd;color:#403e4b;border-radius:25px;-webkit-user-select:none;-webkit-user-drag:none;}
+.search_condition .cond_grade .item var.del:active {background:#394955;color:#fff;}
+.search_condition .cond_grade .item var.depth0.del:active{background:none;color:#403e4b;}
+.search_condition .cond_grade .item var.del:after {display:none;}
+.search_condition .cond_grade .item var.depth0 {display:inline-block;background:none;padding-left:0;}
+.search_condition .cond_grade .item var.depth0 .spr_del {background-position:-50px -60px;}
+.search_condition .cond_grade .item var.depth1 .spr_del {position:absolute;right:4px;top:50%;margin-top:-11px;background-position:-75px -60px;}
+.search_condition .cond_grade .item var.depth1 {margin-bottom:5px;margin-top:0;}
+.search_condition .cond_grade .item var.depth1:last-child {padding-bottom:5px;margin-bottom:10px;}
+.search_condition .cond_grade .item var.depth2 {position:relative;margin-left:23px;margin-bottom:5px;}
+.search_condition .cond_grade .item var.depth2:before {content:"";width:7px;height:15px;position:absolute;left:-11px;top:0;display:inline-block;background:url(/images/common/bul_depth.png) no-repeat;background-size:7px;}
+.search_condition .cond_grade .item var.depth2 .spr_del {position:absolute;right:4px;top:50%;margin-top:-12px;background-position:-75px -60px;}
+.search_condition .cond_grade .item var.depth2:last-child {padding-bottom:5px;margin-bottom:10px;}
+.dvc_a .search_condition .cond_grade_tr .depth_group {display:block;margin-bottom:10px;overflow:hidden;}
+.search_condition .cond_grade_tr .item var.del {display:block;margin-top:5px;padding:5px 32px 5px 12px;background:#dfdddd;color:#403e4b;border-radius:25px;-webkit-user-select:none;-webkit-user-drag:none;}
+.search_condition .cond_grade_tr .item var.del:active {background:#394955;color:#fff;}
+.search_condition .cond_grade_tr .item var.del:first-child {padding-top:5px;margin-top:5px;}
+.search_condition .cond_grade_tr .item var.del:last-child {padding-bottom:5px;margin-bottom:5px;}
+.search_condition .cond_grade_tr .item var.depth0.del:active{background:none;color:#403e4b;}
+.search_condition .cond_grade_tr .item var.del:after {display:none;}
+.search_condition .cond_grade_tr .item var.del .spr_del {position:absolute;right:4px;top:50%;margin-top:-12px;width:21px;height:21px;background-position:-75px -60px;}
+.search_condition .cond_grade_tr .item var.depth0 {display:inline-block;background:none;padding-left:0;}
+.search_condition .cond_grade_tr .item var.depth0 .spr_del {background-position:-50px -60px;}
+.search_condition .cond_grade_tr .item var.depth2 {position:relative;margin-left:23px;}
+.search_condition .cond_grade_tr .item var.depth2:before {content:"";width:7px;height:15px;position:absolute;left:-11px;top:0;display:inline-block;background:url(/images/common/bul_depth.png) no-repeat;background-size:7px;}
+.search_condition .cond_price .item var:after,
+.search_condition .cond_distance .item var:after {display:none;}
+.search_condition .condition .cond_manufact {border-top:1px solid #e9e9e9 !important}
+.search_condition .condition .spr_slt {position:absolute;right:10px;top:50%;width:8px;height:15px;margin-top:-7px;background-position:0 -60px;}
+.search_condition .condition .selected .spr_slt {background-position:0 -60px;opacity:0.4;}
+.search_condition .condition .selected .cond_tit {color:#acacac;}
+.search_condition .condition .disabled .spr_slt {display:none;}
+.search_condition .condition .disabled .cond_tit {color:#acacac;}
+.search_condition .condition :disabled .spr_slt {display:none;}
+.search_condition .condition :disabled .cond_tit {color:#acacac;}
+.search_condition .condition .cond_inner.form_con {padding-right:0;}
+.search_condition .condition .cond_inner.form_con .item {padding:10px 0 10px 0;margin-right:0;}
+.search_condition .condition .cond_inner.form_con .item .check {margin:2px 5px 0px 0;}
+.search_condition .condition input[type=radio]:checked+label,
+.search_condition .condition input[type=checkbox]:checked+label{color:#cc0000}
+.search_condition .condition .cond_smanufact_tr .cond_tit {margin-top:-18px;}
+.search_btn {padding:15px;position:fixed;left:0;right:0;bottom:0;background:#f7f7f8;text-align:Center;border-top:1px solid #c0c1c2;box-shadow:0 -2px 4px #e9e9e9;}
+.search_btn button {border-radius:3px;width:49%;height:45px;font-weight:bold;font-size:18px;}
+.search_btn button.search_btn_reset {border:1px solid #dadada;background:#fff;color:#5c5c5c;}
+.search_btn button.search_btn_regist {border:1px solid #e92828;background:#e92828;color:#fff;}
+.stab_search {overflow:hidden;background:#fff;padding:20px 10px 0px 10px;margin-bottom:-6px;border-left:1px solid #d6d6d6;border-right:1px solid #d6d6d6;box-shadow: 0 -3px 4px #e0e0e0}
+.stab_search ul {width:100%;overflow:hidden;background:#f2f3f5;border:1px solid #d6d6d6;border-radius:3px;}
+.stab_search ul li {position:relative;width:50%;float:left;}
+.stab_search ul li a {display:block;text-align:center;padding-top:13px;height:28px;font-size:15px;font-weight:bold;color:#a5a5a5;}
+.stab_search ul li.on a {color:#ce0d0d;}
+.stab_search ul li:after {content:"";position:absolute;right:0;top:50%;margin-top:-8px;display:inline-block;width:1px;height:15px;background:#c4c5c6;}
+.stab_search ul li:last-child {text-decoration:underline;}
+.stab_search ul li:last-child:after {display:none;}
+
+/* SK엔카 진단결과 */
+.inspect_footer {height:39px;line-height:39px;text-align:center;font-family:myriad,Arial,sans-serif;font-size:13px;color:#acacac;border-top:1px solid #d0d0d0;background:#f9f9f9;}
+.inspect_type .inspect_subtitle {position:relative;height:40px;}
+.inspect_type .inspect_subtitle h2 {display:block;overflow:hidden;margin-left:10px;line-height:40px;font-size:16px;color:#cf0000;}
+.inspect_type .inspect_subtitle p {position:absolute;right:10px;top:0;line-height:50px;font-size:12px;}
+.inspect_type .inspect_img {position:relative;}
+.inspect_type .inspect_img span.img img {width:100%;vertical-align:top;}
+.inspect_type .inspect_style .ttl {padding:10px;margin:30px 0 20px;font-size:14px;color:#5c5c5c;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background:#f7f7f8;}
+.inspect_type .inspect_style .con {margin:0 10px;}
+.inspect_type .inspect_style .text {margin:0 5px;line-height:17px;font-size:12px;color:#5c5c5c;}
+.inspect_type ul.base_dot_list {margin-top:-20px;}
+.inspect_type ul.base_dot_list li {position:relative;padding:20px 0 0 6px;line-height:17px;background:url(/images/common/dot_4px_5e5e5e.gif) no-repeat 0 27px;background-size:2px;}
+.inspect_type .inspect_detail h3 {padding:8px 10px;font-size:14px;color:#333;border-bottom:1px solid #e2e2e2;}
+.inspect_type .inspect_detail .con {position:relative;padding:27px 0 27px 105px;margin:0 10px;}
+.inspect_type .inspect_detail .con ul li {position:relative;padding-left:62px;line-height:21px;font-size:13px;}
+.inspect_type .inspect_detail .con ul li .t {position:absolute;left:0;top:0;color:#acacac;}
+.inspect_type .inspect_detail .con ul li .r {color:#333;}
+.inspect_type .inspect_detail .con .real {display:block;overflow:hidden;position:absolute;left:5px;top:20px;width:80px;height:80px;background:url(/images/ca/inspect_mark.png?180630) no-repeat 0 0;background-size:80px;}
+.inspect_type .inspect_detail .con .real em {display:none;position:absolute;left:0;top:45px;width:86px;text-align:center;color:#fff;font-family:Arial,sans-serif;font-size:9px;}
+.inspect_type .inspect_trust {overflow:hidden;height:36px;border-top:1px solid #e2e2e2;}
+.inspect_type .inspect_trust .text {margin:0 auto;text-align:center;}
+.inspect_type .inspect_trust .text ul {display:inline;}
+.inspect_type .inspect_trust .text li {display:inline-block;padding:0 9px;margin-left:-4px;line-height:36px;font-size:11.5px;font-weight:bold;letter-spacing:-1px;}
+.inspect_type .inspect_trust .text li span {display:block;float:left;overflow:hidden;width:21px;height:17px;margin:7px -4px 0 0;text-indent:-5000em;color:#333;background:url(/images/ca/inspect_ir.png) no-repeat -90px -40px;background-size:320px;}
+.inspect_type .inspect_total .ttl {margin-top:0;}
+.inspect_type .inspect_total .con {position:relative;padding:0 0 85px;}
+.inspect_type .inspect_total .con .img {overflow:hidden;position:absolute;left:0;top:0;width:80px;height:80px;-webkit-border-radius:40px;border-radius:40px;}
+.inspect_type .inspect_total .con .img img {width:80px;vertical-align:top;}
+.inspect_type .inspect_total .con .text {padding-left:90px;margin:0;}
+.inspect_type .inspect_total .con .who {position:absolute;right:0;bottom:0;text-align:right;}
+.inspect_type .inspect_total .con .who .sign {display:block;}
+.inspect_type .inspectWrap .inspect_frame .view {height:130px;}
+.inspect_type .inspectWrap .inspect_frame .view .frame {display:block;width:214px;height:130px;margin:0 auto;background:url(/images/ca/inspect_img1.jpg) no-repeat 14px 0;background-size:200px;}
+.inspect_type .inspectWrap .inspect_frame .view.truck .frame {display:block;width:250px;height:130px;margin:0 auto;background:url(/images/tr/inspect_img1.jpg?20160824) no-repeat 0 0;background-size:250px;}
+.inspect_type .inspectWrap .inspect_frame .view.truck2 .frame {display:block;width:237px;height:130px;margin:0 auto;background:url(/images/tr2/inspect_img1.jpg?20170104) no-repeat 0 0;background-size:237px;}
+.inspect_type .inspect_info {margin-top:30px;border-top:0 none;}
+.inspect_type .inspect_info .ttl {margin:-1px 0 0;}
+.inspect_type .inspect_info .ttl a {display:block;position:relative;height:35px;padding:0 10px;line-height:35px;color:#5c5c5c;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background:#f7f7f8;}
+.inspect_type .inspect_info .ttl h3 {line-height:35px;font-size:14px;border:0 none;}
+.inspect_type .inspect_info .ttl span {display:block;overflow:hidden;position:absolute;right:8px;top:16px;width:10px;height:6px;background:url(/images/ca/inspect_ir.png) no-repeat -130px -20px;background-size:320px;}
+.inspect_type .inspect_info .ttl a.active span {background-position:-150px -20px;}
+.inspect_type .inspect_info .con {display:none;margin:10px 10px 30px;line-height:17px;}
+.inspect_type .inspect_info .con.active {display:block;}
+.inspect_type .inspect_info .cont {padding-top:20px;color:#5c5c5c;}
+.inspect_type .inspect_info .cont:first-child {padding-top:0;}
+.inspect_type .inspect_info .cont strong {color:#000;}
+.inspect_type .inspect_info ul.base_dot_list {margin-top:0;}
+.inspect_type .inspect_info .btn_more {margin-top:15px;text-align:right;}
+.inspect_type .inspect_info .btn_more a {display:inline-block;position:relative;padding:3px 20px 3px 5px;font-size:13px;color:#454545;border:1px solid #c0c1c2;border-radius:3px;}
+.inspect_type .inspect_info .btn_more a span {display:block;}
+.inspect_type .inspect_info .btn_more a em {display:block;overflow:hidden;position:absolute;right:7px;top:10px;width:7px;height:4px;text-indent:-5000em;background:url(/images/ca/inspect_ir.png) no-repeat -130px -40px;background-size:320px;}
+.inspect_type .inspect_info .btn_more a.active em {background-position:-150px -40px;}
+.inspect_type .inspect_info #info1_tb1 {display:none;margin-top:10px;}
+.inspect_type .inspect_info #info1_tb1 td strong {font-weight:normal !important;padding-right:8px;}
+.inspect_type .inspect_info #info1_tb1.active {display:block;}
+.inspect_type .inspect_info #info3_tb1 {display:none;margin-top:10px;}
+.inspect_type .inspect_info #info3_tb1.active {display:block;}
+.inspect_type .inspect_info .desc_append{color:#858585}
+.inspect_type .inspect_more .ttl {margin-bottom:0;}
+.inspect_type .inspect_more #inspect_more_swipe .flipsnap {position:relative;overflow:hidden;width:100%;}
+.inspect_type .inspect_more #inspect_more_swipe .flipsnap .item {float:left;width:100%;}
+.inspect_type .inspect_more #inspect_more_swipe .flipsnap .pointer {text-align:center;}
+.inspect_type .inspect_more #inspect_more_swipe .pointer {text-align:center;}
+.inspect_type .inspect_more #inspect_more_swipe .pointer span {display:inline-block;overflow:hidden;width:9px;height:9px;margin:10px 5px 0;text-indent:-5000em;background:#bdbdbd;border-radius:9px;*zoom:1;}
+.inspect_type .inspect_more #inspect_more_swipe .pointer span.current {background:#cf0000;}
+/* 진단결과 */
+.inspectWrap .inspectArea {position:relative;padding:0 10px;}
+.inspectWrap .list {position:relative;margin:0 10px;border:1px solid #e2e2e2;background:#fff;max-width:360px;margin:0 auto;}
+.inspectWrap .list ul {display:inline-block;width:100%;padding:8px 0 7px;margin-left:-12px;*zoom:1;}
+.inspectWrap .list li {position:relative;padding-left:20px;line-height:20px;letter-spacing:-1px;color:#5c5c5c;}
+.inspectWrap .list li span {padding:0 2px;font-size:11px;color:#b8b7b7;}
+.inspectWrap .list li span.ok,
+.inspectWrap .list li span.ck {position:absolute;right:0;top:0;padding:0;font-weight:bold;font-size:12px;}
+.inspectWrap .list li span.ok {color:#018907;}
+.inspectWrap .list li span.ck {color:#2466c9;}
+.inspectWrap .list:after,
+.inspectWrap .list:before {bottom:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;}
+.inspectWrap .list:after {border-color:transparent;border-bottom-color:#fff;border-width:0px 7px 7px;margin-left:-13px;}
+.inspectWrap .list:before {border-color:transparent;border-bottom-color:#e2e2e2;border-width:0px 8px 8px;margin-left:-14px;}
+.inspectWrap .inspect_panel .list li {float:left;width:33%;padding:0;margin:0 7% 0 10%;}
+.inspectWrap .view {position:relative;overflow:hidden;width:300px;height:160px;margin:30px auto 10px;}
+.inspectWrap .view .loading {position:absolute;left:0;top:0;z-index:100;width:300px;height:160px;color:#333;background:url(/images/common/gif_loading.gif) no-repeat center #fff;opacity:0.9;filter:alpha(opacity=90);}
+.inspectWrap .view .i,
+.inspectWrap .view .i em {display:block;position:absolute;left:0;top:0;width:300px;height:160px;
+			transition: all 0.5s 0.5s ease-out;
+		-ms-transition: all 0.5s 0.5s ease-out;
+	-webkit-transition: all 0.5s 0.5s ease-out;
+}
+.inspectWrap .view .i img {width:300px;}
+.inspectWrap .view .t img {width:12px;}
+.inspectWrap .view .goodText img {width:63.5px;}
+.inspectWrap .view div {display:block;text-indent:-5000em;}
+.inspectWrap .view span.t {display:block;position:absolute;left:0;top:0;z-index:30;width:20px;height:20px;opacity:0;}
+.inspectWrap .view.good .panel{display:none}
+.inspectWrap .view .animateGo div .i.active span.t,
+.inspectWrap .view .animateGo div .i.active em.on{z-index:1;opacity:1;}
+.inspectWrap .view .animateGo div .i.active em.off{opacity:0;}
+
+.inspectWrap .view_explan {display:inline-block;float:right;position:relative;left:-50%;top:-40px;z-index:101;padding:0 7px;margin-right:-150px;line-height:22px;font-size:12px;border:1px solid #e8e8e8;background:#fafbfb;}
+.inspectWrap .view_explan span.c1 {overflow:hidden;display:inline-block;width:12px;height:12px;margin-right:2px;vertical-align:middle;color:#333;}
+.inspectWrap .view_explan img {width:12px;vertical-align:top;}
+
+.inspectWrap .sedan .frame div.f_001 .i {z-index:5;}
+.inspectWrap .sedan .frame div.f_002 .i {z-index:10;}
+.inspectWrap .sedan .frame div.f_003 .i {z-index:10;}
+.inspectWrap .sedan .frame div.f_004 .i {z-index:10;}
+.inspectWrap .sedan .frame div.f_005 .i {z-index:5;}
+
+.inspectWrap .truck .frame div.f_001 .i {z-index:5;}
+.inspectWrap .truck2 .frame div.f_001 .i {z-index:5;}
+
+.inspectWrap .view .goodText img,
+.inspectWrap .view .t img,
+.inspectWrap .view .i em img {position:absolute;left:0;top:0;}
+/* sedan - panel */
+.inspectWrap .sedan div.p_006026 span.t {left:55px;top:110px;}
+.inspectWrap .sedan div.p_006033 span.t {left:155px;top:125px;}
+.inspectWrap .sedan div.p_006027 span.t {left:55px;top:60px;}
+.inspectWrap .sedan div.p_006003 span.t {left:195px;top:105px;}
+.inspectWrap .sedan div.p_006023 span.t {left:100px;top:45px;}
+.inspectWrap .sedan div.p_006006 span.t {left:230px;top:90px;}
+.inspectWrap .sedan div.p_006018 span.t {left:135px;top:30px;}
+.inspectWrap .sedan div.p_006009 span.t {left:250px;top:20px;}
+.inspectWrap .sedan div.p_006026 .i {z-index:15;
+			transform:translate(44px, -23px);
+		-ms-transform:translate(44px, -23px);
+	-webkit-transform:translate(44px, -23px);
+}
+.inspectWrap .sedan div.p_006033 .i {z-index:25;
+			transform:translate(-20px, -22px);
+		-ms-transform:translate(-20px, -22px);
+	-webkit-transform:translate(-20px, -22px);
+}
+.inspectWrap .sedan div.p_006027 .i {z-index:2;
+			transform:translate(32px, 10px);
+		-ms-transform:translate(32px, 10px);
+	-webkit-transform:translate(32px, 10px);
+}
+.inspectWrap .sedan div.p_006003 .i {z-index:20;
+			transform:translate(-24px, -21px);
+		-ms-transform:translate(-24px, -21px);
+	-webkit-transform:translate(-24px, -21px);
+}
+.inspectWrap .sedan div.p_006023 .i {z-index:2;
+			transform:translate(23px, 19px);
+		-ms-transform:translate(23px, 19px);
+	-webkit-transform:translate(23px, 19px);
+}
+.inspectWrap .sedan div.p_006006 .i {z-index:15;
+			transform:translate(-27px, -20px);
+		-ms-transform:translate(-27px, -20px);
+	-webkit-transform:translate(-27px, -20px);
+}
+.inspectWrap .sedan div.p_006018 .i {z-index:1;
+			transform:translate(22px, 19px);
+		-ms-transform:translate(22px, 19px);
+	-webkit-transform:translate(22px, 19px);
+}
+.inspectWrap .sedan div.p_006009 .i {z-index:5;
+			transform:translate(-21px, 13px);
+		-ms-transform:translate(-21px, 13px);
+	-webkit-transform:translate(-21px, 13px);
+}
+
+/* 화물특장 */
+.inspectWrap .truck div.p_006026 span.t,
+.inspectWrap .truck2 div.p_006026 span.t {left:53px;top:131px;}
+.inspectWrap .truck div.p_006033 span.t,
+.inspectWrap .truck2 div.p_006033 span.t {left:140px;top:135px;}
+.inspectWrap .truck div.p_006027 span.t,
+.inspectWrap .truck2 div.p_006027 span.t {left:45px;top:70px;}
+.inspectWrap .truck div.p_006003 span.t,
+.inspectWrap .truck2 div.p_006003 span.t {left:170px;top:105px;}
+.inspectWrap .truck div.p_006023 span.t,
+.inspectWrap .truck2 div.p_006023 span.t {left:79px;top:44px;}
+.inspectWrap .truck div.p_006006 span.t {left:208px;top:91px;}
+.inspectWrap .truck div.p_006018 span.t {left:115px;top:32px;}
+.inspectWrap .truck div.p_006026 .i,
+.inspectWrap .truck2 div.p_006026 .i {z-index:15;
+			transform:translate(34px, -35px);
+		-ms-transform:translate(34px, -35px);
+	-webkit-transform:translate(34px, -35px);
+}
+.inspectWrap .truck div.p_006033 .i,
+.inspectWrap .truck2 div.p_006033 .i {z-index:25;
+			transform:translate(-24px, -31px);
+		-ms-transform:translate(-24px, -31px);
+	-webkit-transform:translate(-24px, -31px);
+}
+.inspectWrap .truck div.p_006027 .i,
+.inspectWrap .truck2 div.p_006027 .i {z-index:2;
+			transform:translate(29px, 11px);
+		-ms-transform:translate(29px, 11px);
+	-webkit-transform:translate(29px, 11px);
+}
+.inspectWrap .truck div.p_006003 .i,
+.inspectWrap .truck2 div.p_006003 .i {z-index:20;
+			transform:translate(-27px, -26px);
+		-ms-transform:translate(-27px, -26px);
+	-webkit-transform:translate(-27px, -26px);
+}
+.inspectWrap .truck div.p_006023 .i,
+.inspectWrap .truck2 div.p_006023 .i {z-index:2;
+			transform:translate(21px, 20px);
+		-ms-transform:translate(21px, 20px);
+	-webkit-transform:translate(21px, 20px);
+}
+.inspectWrap .truck div.p_006006 .i {z-index:15;
+			transform:translate(-30px, -23px);
+		-ms-transform:translate(-30px, -23px);
+	-webkit-transform:translate(-30px, -23px);
+}
+.inspectWrap .truck div.p_006018 .i {z-index:1;
+			transform:translate(19px, 22px);
+		-ms-transform:translate(19px, 22px);
+	-webkit-transform:translate(19px, 22px);
+}
+
+.inspectWrap .view .animateGo div .i.active {
+			transform:translate(0, 0) !important;
+		-ms-transform:translate(0, 0) !important;
+	-webkit-transform:translate(0, 0) !important;
+}
+
+/* 헛걸음보상 서비스안내 */
+html.compensationPage {font-size:82%;}
+html.compensationPage body {line-height:1.5;}
+html.compensationPage #container {padding:0;background:#b4b4b4;}
+
+html.compensationPage a.close {display:block;position:absolute;right:.4rem;top:50%;z-index:10;width:3.3rem;height:2.0rem;font-size:1.2rem;margin-top:-21.9rem;line-height:2.0rem;text-align:center;color:#545454;border-radius:.4rem;border:1px solid #787878;}
+
+html.compensationPage .flipsnapWrap {position:relative;width:87%;padding:0;max-width:400px;margin:0 auto;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+html.compensationPage .flipsnapWrap .pointer {position:absolute;left:50%;top:50%;width:15.0rem;margin:19.5rem 0 0 -7.5rem;text-align:center;}
+html.compensationPage .flipsnapWrap .pointer span {display:inline-block;overflow:hidden;width:.9rem;height:.9rem;margin:0 .3rem;text-indent:-5000em;border-radius:.8rem;background:#fff;opacity:0.4;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+}
+html.compensationPage .flipsnapWrap .pointer span.current {opacity:1;}
+html.compensationPage .flipsnap:after {content:'';display:block;clear:both;height:0;}
+html.compensationPage .flipsnap .item {float:left;position:relative;width:100%;height:100%;font-size:1.2rem;text-align:center;color:#263238;}
+html.compensationPage .flipsnap .item .box {display:block;position:absolute;left:50%;top:50%;width:98%;height:41.8rem;margin:-23.8rem 0 0 -49%;background:#fff;}
+
+html.compensationPage .box .subject {position:relative;height:16.6rem;background:url('/images/ca/compensation_top_bg.gif') no-repeat 0 0;background-size:100% 100%;}
+html.compensationPage .box .subject:after {display:block;content:'';position:absolute;left:50%;bottom:-.5rem;width:0;height:0;margin-left:-.2rem;border-style:solid;border-width:.5rem .5rem 0 .5rem;border-color:#434343 transparent transparent transparent;}
+html.compensationPage .box .subject h2 {display:block;position:absolute;left:50%;top:2.1rem;z-index:1;width:6.6rem;height:7.4rem;margin-left:-3.3rem;background:url('/images/ca/compensation_v01_ir.png') no-repeat 0 0;background-size:22.0rem;}
+html.compensationPage .box .subject h2 span {display:block;overflow:hidden;text-indent:-5000em;}
+html.compensationPage .box .subject h2:after {display:block;content:'';position:absolute;left:0;top:1.4rem;width:16.6rem;height:13.1rem;background:url('/images/ca/compensation_top_bg2.png') no-repeat 0 0;background-size:16.6rem;}
+html.compensationPage .box .subject p {position:absolute;left:0;bottom:1.2rem;width:100%;text-align:center;line-height:1.7rem;letter-spacing:-.1rem;font-size:1.4rem;color:#fdeff1;}
+html.compensationPage .box .subject p .sm {font-size:1.3rem;color:#a19c9d;}
+html.compensationPage .box .subject p a {position:relative;z-index:1;color:#fdeff1;}
+html.compensationPage .box .con {position:relative;height:21.9rem;}
+html.compensationPage .box .btn {position:absolute;left:0;bottom:-1.5rem;width:100%;padding:0 1.5rem;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+html.compensationPage .box .btn a.tel {display:block;width:100%;height:3.8rem;line-height:3.8rem;text-align:center;font-size:1.6rem;color:#fff;border-radius:.2rem;border:1px solid #9e0017;background:#cc001e;}
+html.compensationPage .box.sec1 .subject {background-image:url('/images/ca/compensation_v01_bg.jpg?20160901');}
+html.compensationPage .box.sec1 .subject h2 {background-position:0 0;}
+html.compensationPage .box.sec1 .subject:after,
+html.compensationPage .box.sec1 .subject h2:after {display:none;}
+html.compensationPage .box.sec1 .subject p {bottom:1.8rem;}
+html.compensationPage .box.sec1 .con h3 {display:inline-block;margin:1.6rem 0 1.7rem;letter-spacing:-.1rem;font-size:1.6rem;font-weight:normal;color:#3c3c3c;border-bottom:1px solid #434343;}
+html.compensationPage .box.sec1 .list{position:relative;text-align:left}
+html.compensationPage .box.sec1 .list:before{display:inline-block;content:'';width:3.8rem;height:14.8rem;margin-left:1.2rem;background:url('/images/ca/compensation_v01_ir.png?20160901') no-repeat -1.7rem -10.0rem;background-size:22.0rem;}
+html.compensationPage .box.sec1 .list ul{display:inline-block;width:22.5rem;position:absolute;left:4.8rem;top:0.5rem;}
+html.compensationPage .box.sec1 .list ul li{height:4.07rem;padding-left:1.5rem;font-size:1.2rem;line-height:1.4rem;}
+html.compensationPage .box.sec1 .list ul li span{display:inline-block;margin-left:-1rem;}
+html.compensationPage .box.sec1 .btn a.tel span {position:relative;}
+html.compensationPage .box.sec1 .btn a.tel span:after {display:block;content:'';position:absolute;left:-1.4rem;top:.2rem;width:1.1rem;height:1.3rem;background:url('/images/ca/compensation_v01_ir.png?20160901') no-repeat 0 -10.0rem;background-size:22.0rem;}
+html.compensationPage .box.sec2 .subject h2 {background-position:-7.5rem 0;}
+html.compensationPage .box.sec2 .list {position:absolute;left:6.0rem;top:3.5rem;}
+html.compensationPage .box.sec2 .list:before {display:block;content:'';position:absolute;left:-2.4rem;top:.9rem;width:1.7rem;height:16.3rem;margin:0 auto .5rem;background:url('/images/ca/compensation_v01_ir.png?20160901') no-repeat -7.5rem -10.0rem;background-size:22.0rem;}
+html.compensationPage .box.sec2 .list ul {}
+html.compensationPage .box.sec2 .list ul li {text-align:left;line-height:3.0rem;letter-spacing:-.1rem;font-weight:bold;font-size:1.3rem;color:#4d5357;}
+html.compensationPage .box.sec2 .list ul li em {padding-left:.3rem;font-weight:normal;font-size:1.25rem;}
+html.compensationPage .box.sec3 .subject h2 {background-position:-15.0rem 0;}
+html.compensationPage .box.sec3 .list {position:absolute;left:7.5rem;top:2.2rem;}
+html.compensationPage .box.sec3 .list:before {display:block;content:'';position:absolute;left:-3.0rem;top:.3rem;width:2.4rem;height:10.2rem;margin:0 auto .5rem;background:url('/images/ca/compensation_v01_ir.png?20160901') no-repeat -15.0rem -10.0rem;background-size:22.0rem;}
+html.compensationPage .box.sec3 .list ul {}
+html.compensationPage .box.sec3 .list ul li {padding-bottom:1.5rem;text-align:left;line-height:1.4rem;letter-spacing:-.1rem;font-weight:bold;font-size:1.3rem;color:#4d5357;}
+html.compensationPage .box.sec3 .list ul li em {display:block;font-weight:normal;font-size:1.25rem;}
+html.compensationPage .box.sec3 .text {position:absolute;left:0;bottom:0;width:100%;}
+html.compensationPage .box.sec3 .text p {padding:1.5rem 0 2.0rem;margin:0 1.0rem;line-height:1.6rem;color:#4d5357;border-top:1px solid #ddd;}
+html.compensationPage .box.sec4 .con {height:100%;background:url('/images/ca/compensation_v01_img.jpg?20160901') no-repeat center top;background-size:21.6rem;}
+html.compensationPage .box.sec4 .text {position:absolute;left:0;bottom:6.8rem;width:100%;}
+html.compensationPage .box.sec4 .text p {text-align:center;letter-spacing:-.1rem;font-size:1.5rem;color:#3d3d3d;}
+html.compensationPage .box.sec4 .btn{bottom:1.5rem;}
+
+/* 사진보기 */
+.detail_view .dv li {max-width:640px;margin:0 auto;text-align:center;background:#eee;}
+.detail_view .dv img {width:100%;vertical-align:top;}
+
+/* 2018 상세 개선 */
+.ic_qm,
+.area_infoText dl.faq dt a.q:after,
+.area_infoText .service_estimate a:after,
+.cardetailCostadd .area_costAddResult .list>li a.more:after,
+.cardetailOption .ico_option{display:block;overflow:hidden;text-indent:-5000em;background-image:url('/images/ca/cardetail_ir.png?171011');background-repeat:no-repeat;background-size:320px;}
+.btn_like:before,
+.btn_share:before,
+.btn_bottom_action:after,
+.btn_bottom_action.case_comp:before,
+.btn_bottom_action.case_mocha:before,
+.cardetailWrap .area_connect a.tel:before,
+.cardetailWrap .area_connect a.chat:before,
+.cardetailWrap .area_carInfo .first .btn_price:before,
+.cardetailWrap .area_carInfo .addition .add li.a0 em:before,
+.cardetailWrap .area_carInfo .addition .add li.a1 em:before,
+.cardetailWrap .area_carInfo .addition .add li.a2 em:before,
+.cardetailWrap .area_carInfo .addition .add li.a4 em:before,
+.cardetailWrap .card_carinfo .option li:before,
+.cardetailWrap .card_carinfo .comment .btnMore a:after,
+.cardetailWrap .card_carinfo .info_compensate .list_confirm .ic_check,
+.cardetailWrap .card_carinfo .ttl a.report:before,
+.cardetailWrap .service_carchecked .con:after,
+.cardetailWrap .area_shortcut ul.list li a:before,
+.cardetailWrap .area_mochafaq ul.list li a:before,
+.service_loanconsult .con1 span.num em,
+.area_carInfo .bar_ew .link_ew:before,
+.area_carInfo .bar_ew .link_ew:after,
+.service_ew h3:before,
+.uilayer_visitres .tel .uibtn:before{display:block;overflow:hidden;text-indent:-5000em;background-image:url('/images/ca/cardetail_sprite.png?181211');background-repeat:no-repeat;background-size:320px;}
+
+.btnLine {display:inline-block;width:100%;border:1px solid #dfdfdf;-webkit-border-radius:2px;border-radius:2px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.btnLine b {display:block;height:40px;line-height:40px;text-align:center;font-size:14px;color:#5c5c5c;font-weight:normal;}
+.btnClose {display:inline-block;}
+.btnClose b {display:block;overflow:hidden;width:12px;height:12px;text-indent:-5000em;background:url('/images/common/spr_mobile_new.png') -130px -135px;background-size:200px;}
+.btn_share:before {display:inline-block;content:'';width:17px;height:17px;margin-top:-2px;vertical-align:middle;background-position:-140px 0;}
+.btn_like:before {display:inline-block;content:'';width:20px;height:17px;margin-top:-2px;vertical-align:middle;background-position:-160px 0;}
+.backType_header .btn_share {display:block;position:absolute;right:38px;top:0;width:38px;height:44px;line-height:44px;text-align:center;}
+.backType_header .btn_like {display:block;position:absolute;right:0;top:0;width:38px;height:44px;line-height:44px;text-align:center;}
+.backType_header .btn_like.on:before {background-position:-180px 0;}
+
+body.ca_cardetail_v01,
+body.ca_truckdetail_v01 {background:#fafafa;}
+body.ca_cardetail_v01 #container,
+body.ca_truckdetail_v01 #container {padding:0;background:#f5f5f5;}
+body.ca_cardetail_v01 .backType_header,
+body.ca_truckdetail_v01 .backType_header {background:#fff !important;}
+body.ca_cardetail_v01 #container {margin-top: 45px;}
+
+.btn_bottom_action {display:block;height:58px;line-height:58px;text-align:center;font-size:15px;color:#333;border-top:1px solid #f5f5f5;}
+.btn_bottom_action b {font-weight:normal;}
+.btn_bottom_action:after {display:inline-block;content:'';width:16px;height:11px;margin-left:6px;background-position:-45px 0;}
+.btn_bottom_action.case_comp:after {display:none;}
+.btn_bottom_action.case_comp:before {display:inline-block;content:'';width:16px;height:14px;margin:-2px 6px 0 0;vertical-align:middle;background-position:-105px 0;}
+.btn_bottom_action.case_mocha {margin:0 15px;}
+.btn_bottom_action.case_mocha:after {display:none;}
+.btn_bottom_action.case_mocha:before {display:inline-block;content:'';width:19px;height:15px;margin:-2px 6px 0 0;vertical-align:middle;background-position:-200px 0;}
+.btn_box {display:block;width:100%;height:32px;line-height:33px;text-align:center;font-size:13px;color:#666;font-weight:normal;background:#fff;border:1px solid #e0e0e0;border-radius:4px;-webkit-border-radius:4px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.uiico_question2 {margin-top:2px;vertical-align:top;}
+
+.cardetailWrap {position:relative;padding-bottom:80px;margin-top:-1px;border-top:1px solid #f5f5f5;}
+.cardetailWrap .area_carInfo {background:#fff;}
+.cardetailWrap .area_carInfo .bar_compensate {height:30px;line-height:30px;text-align:center;font-size:13px;color:#7c7c7c;font-weight:bold;background:#f5f5f5;}
+.cardetailWrap .area_carInfo .bar_compensate a {color:#ff2626;}
+.cardetailWrap .area_carInfo .bar_brand {height:30px;line-height:30px;text-align:center;font-size:13px;color:#947661;font-weight:bold;background:#f5f5f5;}
+.cardetailWrap .area_carInfo .bar_brand em {padding-right:3px;color:#333;font-weight:bold;}
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand {overflow:hidden;height:30px;margin-right:-5px;vertical-align:top;}
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand:before {margin:-10px;
+-webkit-transform:scale(0.8);
+		transform:scale(0.8);
+}
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_011 {} /* 아우디 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_013 {margin-right:-10px;} /* 벤츠 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_012 {margin-right:-10px;} /* bmw */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_022 {margin-right:-10px;} /* 시트로엥 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_024 {margin-right:-6px;} /* 포드 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_058 {margin-right:-8px;} /* 인피니티 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_019 {margin-right:-12px;} /* 재규어 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_020 {margin-right:-8px;} /* 랜드로버 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_035 {margin-right:-10px;} /* 렉서스 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_044 {margin-right:-14px;} /* 링컨 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_054 {margin-right:-6px;} /* 미니 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_021 {margin-right:-10px;} /* 푸조 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_015 {margin-right:-12px;} /* 포르쉐 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_014 {margin-right:-12px;} /* 폭스바겐 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_017 {margin-right:-10px;} /* 볼보 */
+.cardetailWrap .area_carInfo .bar_brand .uiico_brand.icon_047 {margin-right:-12px;} /* 롤스로이스 */
+.cardetailWrap .area_carInfo .carPic {position:relative;}
+.cardetailWrap .area_carInfo .carPic.ew {margin-top: 30px;}
+.cardetailWrap .area_carInfo .carPic .loadingComplete .carimg {background:none;}
+.cardetailWrap .area_carInfo .carPic .carDetailImage > .showNumber {overflow:hidden;position:absolute;left:15px;bottom:15px;z-index:100;width:40px;height:20px;margin-top:-8px;line-height:21px;text-align:center;font-size:11px;color:#fff;-webkit-border-radius:10px;border-radius:10px;}
+.cardetailWrap .area_carInfo .carPic .carDetailImage > .showNumber strong,
+.cardetailWrap .area_carInfo .carPic .carDetailImage > .showNumber span {position:relative;font-weight:normal !important;}
+.cardetailWrap .area_carInfo .carPic .carDetailImage > .showNumber span:before {display:inline-block;content:'/';}
+.cardetailWrap .area_carInfo .carPic .carDetailImage > .showNumber:before {display:block;content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:.8;-webkit-border-radius:8px;border-radius:8px;}
+.cardetailWrap .area_carInfo .carPic span.carimg {position:relative;display:block;min-height:120px;background:url('/images/common/gif_loading.gif') no-repeat 50% 50%;}
+.cardetailWrap .area_carInfo .carPic span.carimg img {display:block;width:100%;}
+.cardetailWrap .area_carInfo .carPic span.carimg p.msg_compensation {position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;}
+.cardetailWrap .area_carInfo .carPic span.carimg p.msg_compensation span {display:block;position:absolute;left:0;top:50%;z-index:1;width:100%;margin-top:-16px;line-height:16px;text-align:center;font-size:13px;color:#fff;opacity:0.8;}
+.cardetailWrap .area_carInfo .carPic span.carimg p.msg_compensation:before {display:block;content:'';position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;background:#000;opacity:0.8;}
+.cardetailWrap .area_carInfo .carPic p.cartext {display:block;min-height:16px;padding:6px 5px 6px;text-align:center;background:#333;}
+.cardetailWrap .area_carInfo .carPic p.cartext strong {display:block;overflow:hidden;font-size:12px;color:#d9d9d9;font-weight:normal !important;}
+.cardetailWrap .area_carInfo .first {position:relative;padding:20px 7px 8px;}
+.cardetailWrap .area_carInfo .first .name {line-height:20px;text-align:center;font-size:18px;color:#252525;font-weight:bold;word-break:keep-all;}
+.cardetailWrap .area_carInfo .first .name span {display:inline-block;padding:0 1px;}
+.cardetailWrap .area_carInfo .first .base {margin-top:5px;line-height:20px;text-align:center;font-size:14px;color:#666;}
+.cardetailWrap .area_carInfo .first .base li {display:inline-block;}
+.cardetailWrap .area_carInfo .first .base li:before {display:inline-block;content:'';position:relative;top:-4px;left:-2px;width:2px;height:2px;margin:0 2px;background:#b4b4b4;-webkit-border-radius:2px;border-radius:2px;}
+.cardetailWrap .area_carInfo .first .base li:first-child:before {display:none;}
+.cardetailWrap .area_carInfo .first .price {padding-top:11px;text-align:center;font-size:17px;color:#ff0000;font-weight:bold;}
+.cardetailWrap .area_carInfo .first .price span {position:relative;top:1px;font-size:19px;}
+.cardetailWrap .area_carInfo .first .price_lease {overflow:hidden;padding-top:10px;}
+.cardetailWrap .area_carInfo .first .price_lease li {position:relative;text-align:center;font-size:14px;color:#ff0000;font-weight:bold;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.cardetailWrap .area_carInfo .first .price_lease li:before {display:block;content:'';position:absolute;left:0;top:50%;width:1px;height:20px;margin-top:-10px;background:#e5e5e5;}
+.cardetailWrap .area_carInfo .first .price_lease li:first-child:before {display:none;}
+.cardetailWrap .area_carInfo .first .price_lease li em {display:block;padding-bottom:3px;font-size:14px;color:#999;font-weight:normal;}
+.cardetailWrap .area_carInfo .first .tip_help {vertical-align:middle;}
+.cardetailWrap .area_carInfo .first .tip_help.view:after {top:22px;left:50%;margin-left:-4px;}
+.cardetailWrap .area_carInfo .first .explan_layer {position:relative;max-width:360px;margin:0 auto;}
+.cardetailWrap .area_carInfo .first .explan_layer .layer_lpg_tip {left:0;top:5px;width:100%;}
+.cardetailWrap .area_carInfo .first .explan_layer .layer_lpg_tip .inner_pop_con {padding:10px 6px 10px 10px;line-height:17px;text-align:left;font-size:12px;}
+.cardetailWrap .area_carInfo .first .btn_price{position:absolute;right:0;bottom:8px;height:25px;line-height:25px;padding:0 10px 0 9px;font-size:12px;color:#666;border:1px solid #e0e0e0;border-right:0;-webkit-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;}
+.cardetailWrap .area_carInfo .first .btn_price:before{display:inline-block;content:'';overflow:hidden;width:12px;height:12px;margin:7px 5px 0 0;vertical-align:top;background-position:-30px 0;}
+.cardetailWrap .area_carInfo .addition {}
+.cardetailWrap .area_carInfo .addition .add {overflow:hidden;}
+.cardetailWrap .area_carInfo .addition .add ul {padding:10px 5px 12px;}
+.cardetailWrap .area_carInfo .addition .add li {position:relative;text-align:center;}
+.cardetailWrap .area_carInfo .addition .add li div.in {position:relative;z-index:10;padding-top:68px;}
+.cardetailWrap .area_carInfo .addition .add li div.in:before {display:block;content:'';position:absolute;left:50%;top:0;z-index:-1;width:68px;height:68px;margin-left:-34px;-webkit-border-radius:34px;border-radius:34px;background:#fff;
+	box-shadow: 0 1px 10px 0 rgba(0,0,0,0.10);
+}
+.cardetailWrap .area_carInfo .addition .add li em {display:block;padding-top:10px;font-size:12px;color:#bfbfbf;letter-spacing:-1px;}
+.cardetailWrap .area_carInfo .addition .add li em:before {display:block;content:'';position:absolute;left:50%;}
+.cardetailWrap .area_carInfo .addition .add li.a0 em:before {width:23px;height:23px;top:19px;margin-left:-11px;background-position:-70px -55px;}
+.cardetailWrap .area_carInfo .addition .add li.a1 em:before {width:30px;height:27px;top:21px;margin-left:-15px;background-position:0 -25px;}
+.cardetailWrap .area_carInfo .addition .add li.a2 em:before {width:26px;height:30px;top:19px;margin-left:-13px;background-position:-40px -25px;}
+.cardetailWrap .area_carInfo .addition .add li.a4 em:before {width:26px;height:26px;top:21px;margin-left:-13px;background-position:-70px -25px;}
+.cardetailWrap .area_carInfo .addition .add li.a0 i {display:block;content:'';position:absolute;left:50%;top:36px;z-index:1;padding:2px 4px;margin-right:-20px;line-height:12px;font-size:11px;-webkit-border-radius:4px;border-radius:4px;}
+.cardetailWrap .area_carInfo .addition .add li.a1 a em:before {background-position:0 -55px;}
+.cardetailWrap .area_carInfo .addition .add li.a2 a em:before {background-position:-40px -55px;}
+.cardetailWrap .area_carInfo .addition .add li.a0 i.i1 {background:#f58423;color:#fff;}/* 개인 */
+.cardetailWrap .area_carInfo .addition .add li.a0 i.i2 {background:#f54f23;color:#fff;}/* 반복 */
+.cardetailWrap .area_carInfo .addition .add li .on em {color:#666;}
+.cardetailWrap .area_carInfo .addition .add li .on span {color:#ff2626;}
+.cardetailWrap .area_carInfo .addition .add li em:after {color:#acacac;border-color:#b5b5b5;background:#fff;}
+.cardetailWrap .area_carInfo .addition .add li a {display:block;position:relative;padding-top:68px;margin-top:-68px;}
+.cardetailWrap .area_carInfo .addition .add li span {display:block;position:absolute;top:28px;left:0;width:100%;text-align:center;font-size:11px;color:#bfbfbf;}
+.cardetailWrap .area_carInfo .addition .add li a em {margin:0 -5px;color:#666;}
+.cardetailWrap .area_carInfo .addition .add li a em:after {color:#fff;border-color:#4e8ed8;background:#64a3ec;}
+.cardetailWrap .area_carInfo .addition .add li a em:before {-webkit-opacity:1;opacity:1;}
+.cardetailWrap .area_carInfo .addition .add li a span {color:#999;}
+.cardetailWrap .area_carInfo .addition .cp {position:relative;padding-top:10px;margin:0 -20px;text-align:center;}
+.cardetailWrap .area_carInfo .addition .cp .prc {display:inline-block;margin-right:5px;font-size:12px;color:#5c5c5c;letter-spacing:-0.5px;}
+.cardetailWrap .area_carInfo .addition .cp .prc span {font-size:12px;color:#000;font-weight:bold;}
+.cardetailWrap .area_carInfo .addition .cp .graph {display:inline-block;position:relative;width:100px;height:6px;border:1px solid #979797;-webkit-border-radius:3px;border-radius:3px;}
+.cardetailWrap .area_carInfo .addition .cp .graph:before,
+.cardetailWrap .area_carInfo .addition .cp .graph:after {display:block;content:'';position:absolute;top:0;z-index:2;width:1px;height:6px;background:#979797;}
+.cardetailWrap .area_carInfo .addition .cp .graph:before {left:33%;}
+.cardetailWrap .area_carInfo .addition .cp .graph:after {left:66%;}
+.cardetailWrap .area_carInfo .addition .cp .graph .arr {position:absolute;left:0;top:0;height:6px;background:#acacac;}
+.cardetailWrap .area_carInfo .addition .cp .graph .arr:before {content:'';display:block;position:absolute;top:-7px;right:-4px;z-index:1;width:0;height:0;border-style:solid;border-width:4px 4px 0 4px;border-color:#acacac transparent transparent transparent;}
+.cardetailWrap .area_carInfo .addition .cp .graph .arr.same:before {display:none;}
+
+.cardetailWrap .service_da {padding:14px 0;margin:0 15px;border-top:1px dashed #e5e5e5;}
+.cardetailWrap .service_da .btn {position:relative;margin:2px 0 0 -4px;text-align:center;}
+.cardetailWrap .service_da .btn:after {display:block;content:'';clear:both;}
+.cardetailWrap .service_da .btn span {float:left;width:33.3%;padding-left:5px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.cardetailWrap .service_da .btn span:first-child {padding-left:0;}
+.cardetailWrap .service_da .btn iframe {vertical-align:top;}
+.cardetailWrap .service_carchecked .con {min-height:62px;padding:0 0 17px 74px;}
+.cardetailWrap .service_carchecked .con:after {display:block;content:'';position:absolute;left:0;top:0;z-index:10;width:47px;height:47px;text-indent:-5000em;background:url('/images/common/assurance_s.png?180721') no-repeat left top;background-size:47px;}
+.cardetailWrap .card_carinfo.service_carchecked .ttl {margin-left:25px;}
+.cardetailWrap .service_carchecked .con .img {position:absolute;left:15px;top:62px;width:60px;}
+.cardetailWrap .service_carchecked .con .img span {overflow:hidden;display:block;width:60px;height:60px;-webkit-border-radius:30px;border-radius:30px;border:1px solid #d9d9d9;}
+.cardetailWrap .service_carchecked .con .img img {width:60px;}
+.cardetailWrap .service_carchecked .con .text {display:block;padding-top:4px;font-size:14px;color:#666;line-height:18px;
+overflow:hidden;max-height:60px;
+	text-overflow:ellipsis;display:-webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.cardetailWrap .service_carchecked .con .text p strong {font-weight:normal !important;}
+.cardetailWrap .service_carchecked .info {position:relative;height:45px;line-height:45px;border-top:1px dashed #e5e5e5;}
+.cardetailWrap .service_carchecked .info .date {display:inline-block;font-size:12px;color:#666;}
+.cardetailWrap .service_carchecked .info .sign {position:absolute;right:0;top:0;height:45px;font-size:12px;color:#666;letter-spacing:-1px;}
+.cardetailWrap .service_carchecked .info .sign img {height:35px;margin-top:5px;}
+.service_loanconsult {position:relative;margin-top:-10px;}
+.service_loanconsult .btn {position:absolute;right:0;top:50%;margin-top:-18px;}
+.service_loanconsult .btn a b {height:35px;padding:0 7px;line-height:35px;font-size:12px;}
+.service_loanconsult .con1 {line-height:20px;font-size:13px;letter-spacing:-1px;color:#000;}
+.service_loanconsult .con1 span.p {display:block;}
+.service_loanconsult .con1 strong {display:block;}
+.service_loanconsult .con1 span.num {margin:0 1px 0 3px;}
+.service_loanconsult .con1 span.num em {display:inline-block;width:8px;height:16px;margin:3px -1px 0 0;vertical-align:top;}
+.service_loanconsult .con1 span.num em.n0 {background-position:0 -200px;}
+.service_loanconsult .con1 span.num em.n1 {background-position:-10px -200px;width:6px;}
+.service_loanconsult .con1 span.num em.n2 {background-position:-20px -200px;}
+.service_loanconsult .con1 span.num em.n3 {background-position:-30px -200px;}
+.service_loanconsult .con1 span.num em.n4 {background-position:-40px -200px;}
+.service_loanconsult .con1 span.num em.n5 {background-position:-50px -200px;}
+.service_loanconsult .con1 span.num em.n6 {background-position:-60px -200px;}
+.service_loanconsult .con1 span.num em.n7 {background-position:-70px -200px;}
+.service_loanconsult .con1 span.num em.n8 {background-position:-80px -200px;}
+.service_loanconsult .con1 span.num em.n9 {background-position:-90px -200px;}
+.service_loanconsult .con1 span.num em.nc {background-position:-100px -200px;width:3px;}
+
+.cardetailWrap .area_card {margin-top:15px;background:#fff;}
+.cardetailWrap .card_carinfo {position:relative;padding:25px 15px;}
+.cardetailWrap .card_carinfo .option {}
+.cardetailWrap .card_carinfo .option ul {overflow:hidden;padding-bottom:10px;margin:0 -10px;}
+.cardetailWrap .card_carinfo .option li {display:inline-block;width:25%;padding-bottom:15px;margin-right:-4px;vertical-align:top;text-align:center;opacity:0.3;-webkit-opacity:0.3;}
+.cardetailWrap .card_carinfo .option li span {display:block;padding-top:3px;font-size:12px;color:#000;}
+.cardetailWrap .card_carinfo .option li:before {display:block;content:'';width:46px;height:45px;margin:0 auto;}
+.cardetailWrap .card_carinfo .option li.opt1:before {background-position:0 -100px;} /* 내비게이션 */
+.cardetailWrap .card_carinfo .option li.opt2:before {background-position:-50px -100px;} /* 스마트키 */
+.cardetailWrap .card_carinfo .option li.opt3:before {background-position:-100px -100px;} /* 선루프 */
+.cardetailWrap .card_carinfo .option li.opt4:before {background-position:-150px -100px;} /* HID헤드램프 */
+.cardetailWrap .card_carinfo .option li.opt5:before {background-position:-250px -100px;} /* 주차감지센서 */
+.cardetailWrap .card_carinfo .option li.opt6:before {background-position:0 -150px;} /* 후방카메라 */
+.cardetailWrap .card_carinfo .option li.opt7:before {background-position:-100px -150px;} /* 열선시트 */
+.cardetailWrap .card_carinfo .option li.opt8:before {background-position:-150px -150px;} /* 통풍시트 */
+.cardetailWrap .card_carinfo .option li.opt9:before {background-position:-200px -100px;} /* 리프트 */
+.cardetailWrap .card_carinfo .option li.opt10:before {background-position:-50px -150px;} /* 가죽시트 */
+.cardetailWrap .card_carinfo .option li.on {opacity:1;-webkit-opacity:1;}
+.cardetailWrap .card_carinfo .option_select {padding:20px 15px;margin-top:-10px;margin-bottom:20px;border:1px solid #e5e5e5;background:#fafafa;border-radius:2px;-webkit-border-radius:2px;}
+.cardetailWrap .card_carinfo .option_select h4 {font-size:14px;color:#333;}
+.cardetailWrap .card_carinfo .option_select ul {margin-top:4px;}
+.cardetailWrap .card_carinfo .option_select li {position:relative;padding:7px 60px 0 0;line-height:17px;font-size:14px;color:#666;}
+.cardetailWrap .card_carinfo .option_select li .prc {position:absolute;right:0;top:7px;color:#999;}
+.cardetailWrap .card_carinfo .option_select li .explan {display:none;}
+.cardetailWrap .card_carinfo .ttl {position:relative;margin-top:-25px;}
+.cardetailWrap .card_carinfo .ttl h3 {display:block;height:57px;line-height:59px;font-size:15px;color:#000;font-weight:bold;}
+.cardetailWrap .card_carinfo .ttl a {position:absolute;right:10px;top:15px;height:30px;line-height:30px;font-size:13px;color:#999;}
+.cardetailWrap .card_carinfo .ttl a.report:before {display:inline-block;content:'';width:14px;height:13px;margin:8px 3px 0 0;vertical-align:top;font-size:13px;color:#999;background-position:-125px 0;}
+.cardetailWrap .card_carinfo .info {letter-spacing:-1px;}
+.cardetailWrap .card_carinfo .info ul.list {margin-top:-5px;}
+.cardetailWrap .card_carinfo .info ul.list:after {display:block;content:'';clear:both;}
+.cardetailWrap .card_carinfo .info ul.list li {position:relative;float:left;width:50%;padding-top:5px;padding-left:76px;line-height:18px;font-size:14px;color:#666;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.cardetailWrap .card_carinfo .info ul.list li em {display:inline-block;position:absolute;left:0;top:5px;width:76px;vertical-align:top;color:#999;}
+.cardetailWrap .card_carinfo .info ul.list li.long {width:100%;}
+.cardetailWrap .card_carinfo .info ul.list.lease li:nth-child(odd) {padding-left:60px;} /* 리스 */
+.cardetailWrap .card_carinfo .info ul.list.lease li:nth-child(odd) em {width:60px;}
+.cardetailWrap .card_carinfo .info ul.list.tr li {padding-left:83px;} /* 화물 */
+.cardetailWrap .card_carinfo .info ul.list.tr li em {width:83px;}
+.cardetailWrap .card_carinfo .info ul.list li:nth-child(odd) .layer_startday_tip {right:-73px;}
+.cardetailWrap .card_carinfo .info ul.list li:nth-child(odd) .layer_startday_tip:after {right:74px;}
+.cardetailWrap .card_carinfo .infoComment {overflow:hidden;}
+.cardetailWrap .card_carinfo .comment {line-height:25px;font-size:15px;color:#666;border-top:1px solid #dedede;}
+.cardetailWrap .card_carinfo .comment .commentWrap {position:relative;overflow:hidden;height:317px;padding:20px 0;margin-bottom:20px;border-bottom:1px solid #f5f5f5;}
+.cardetailWrap .card_carinfo .comment .commentText {position:absolute;left:0;top:0;overflow:hidden;}
+.cardetailWrap .card_carinfo .comment.js .commentWrap {height:auto;}
+.cardetailWrap .card_carinfo .comment.js .commentText {position:static;max-height:350px;
+	text-overflow:ellipsis;display:-webkit-box;
+	-webkit-line-clamp: 14;
+	-webkit-box-orient: vertical;
+}
+.cardetailWrap .card_carinfo .comment.js .commentText.view {max-height:none;
+	-webkit-line-clamp:initial;
+}
+.cardetailWrap .card_carinfo .comment .btnMore {position:relative;margin-top:-20px;}
+.cardetailWrap .card_carinfo .comment .btnMore:after {display:block;content:'';position:absolute;left:0;bottom:54px;width:100%;height:78px;
+	background-image: -webkit-linear-gradient(-90deg, rgba(255,255,255,0.00) 2%, #FFFFFF 86%);
+	background-image: -o-linear-gradient(-90deg, rgba(255,255,255,0.00) 2%, #FFFFFF 86%);
+	background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 2%, #FFFFFF 86%);
+}
+.cardetailWrap .card_carinfo .comment .btnMore a {display:block;padding:21px 0;text-align:center;}
+.cardetailWrap .card_carinfo .comment .btnMore a b {display:block;overflow:hidden;position:absolute;text-indent:-5000em;font-size:13px;color:#939393;font-weight:normal;}
+.cardetailWrap .card_carinfo .comment .btnMore a b:after {content:' 더보기';}
+.cardetailWrap .card_carinfo .comment .btnMore a:after {display:block;content:'';width:14px;height:6px;margin:5px auto 0;background-position:-65px 0;
+	transition:all 0.2s 0.2s;
+	-webkit-transition:all 0.2s 0.2s;
+}
+.cardetailWrap .card_carinfo .comment .btnMore.view:after {display:none;}
+.cardetailWrap .card_carinfo .comment .btnMore.view a:after {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.cardetailWrap .card_carinfo .comment .btnMore.view a b:after {content:' 접기';}
+.cardetailWrap .card_carinfo .service_da {padding:0;margin:0;border-top:0 none;}
+.cardetailWrap .card_carinfo .btn_bottom_action {margin-bottom:-25px;}
+
+.cardetailWrap .area_shortcut {position:relative;margin-top:15px;background:#fff;}
+.cardetailWrap .area_shortcut:after {display:block;content:'';position:absolute;left:50%;top:-9px;width:12px;height:17px;margin-left:-6px;background-position:0 -60px;}
+.cardetailWrap .area_shortcut ul.list li:first-child {margin-top:0;}
+.cardetailWrap .area_shortcut ul.list li {border-top:1px solid #f5f5f5;}
+.cardetailWrap .area_shortcut ul.list li a {display:block;position:relative;padding:20px 30px 20px 14px;font-size:15px;color:#333;}
+.cardetailWrap .area_shortcut ul.list li a:before {display:block;content:'';position:absolute;right:13px;top:50%;width:8px;height:12px;margin-top:-6px;background-position:-80px 0;
+}
+
+.cardetailWrap .area_mochafaq {position:relative;margin-top:15px;background:#fff;}
+.cardetailWrap .area_mochafaq ul.list li:first-child {margin-top:0;}
+.cardetailWrap .area_mochafaq ul.list li {border-top:1px solid #f5f5f5;}
+.cardetailWrap .area_mochafaq ul.list li a {display:block;overflow:hidden;position:relative;padding:20px 30px 20px 14px;font-size:15px;color:#333;text-overflow:ellipsis;white-space:nowrap;}
+.cardetailWrap .area_mochafaq ul.list li a:before {display:block;content:'';position:absolute;right:15px;top:50%;width:8px;height:12px;margin-top:-6px;background-position:-80px 0;
+-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+}
+.cardetailWrap .area_mochafaq ul.list li a.view:before {
+-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+}
+.cardetailWrap .area_mochafaq .ttl {position:relative;padding:23px 0 18px 46px;margin-left:15px;font-size:15px;color:#000;}
+.cardetailWrap .area_mochafaq .ttl span {display:inline-block;line-height:21px;}
+.cardetailWrap .area_mochafaq .ttl .i {position:absolute;left:0;top:23px;width:40px;height:21px;line-height:21px;text-align:center;font-size:12px;color:#fff;background:#ff2626;border-radius:11px;-webkit-border-radius:11px;}
+.cardetailWrap .area_mochafaq .list .con {display:none;padding:24px 15px;line-height:21px;color:#666;background:#f5f5f5;}
+.cardetailWrap .area_mochafaq .list .con.view {display:block;}
+.cardetailWrap .area_mochafaq.none .ttl {font-weight:normal;color:#666;}
+.cardetailWrap .area_mochafaq.none .ttl .i {color:#fff;background:#d2d2d2;}
+.cardetailWrap .area_mochafaq.none .text {padding:5px 0 24px;line-height:18px;text-align:center;color:#666;font-size:14px;}
+.cardetailWrap .area_mochafaq.none .text .t {display:inline-block;padding-bottom:5px;}
+
+.cardetailWrap .area_connect {position:fixed;left:0;bottom:0;z-index:1000;width:100%;visibility:hidden;
+-webkit-transition:transform .3s, visibility .3s;
+		transition:transform .3s, visibility .3s;
+-webkit-transform:translate3d(0, 100px, 0);
+		transform:translate3d(0, 100px, 0);
+}
+.cardetailWrap .area_connect.active {visibility:visible;
+-webkit-transform:translate3d(0, 0, 0);
+		transform:translate3d(0, 0, 0);
+}
+.cardetailWrap .area_connect a:before {display:inline-block !important;width:14px;height:14px;margin:18px 4px 0 0;vertical-align:top;content:'';}
+.cardetailWrap .area_connect a.tel:before {background-position:-15px 0;}
+.cardetailWrap .area_connect a.chat:before {background-position:0 0}
+.cardetailWrap .area_user {position:relative;padding:115px 15px 0;background:#fff;}
+.cardetailWrap .area_user .name {line-height:20px;text-align:center;}
+.cardetailWrap .area_user .name .comp {font-size:15px;color:#333;}
+.cardetailWrap .area_user .name .n {display:inline-block;font-size:15px;color:#333;font-weight:bold;}
+.cardetailWrap .area_user .name .type {display:inline-block;height:15px;padding:0 3px;line-height:17px;vertical-align:top;font-size:11px;color:#5c5c5c;font-weight:normal;border:1px solid #d9d9d9;background:#f5f5f5;-webkit-border-radius:2px;border-radius:2px;}
+.cardetailWrap .area_user .name .i_compensate {display:inline-block;height:15px;padding:0 3px;line-height:17px;vertical-align:top;font-size:11px;color:#ff2626;font-weight:normal;letter-spacing:-1px;border:1px solid #ff2626;border-radius:2px;-webkit-border-radius:2px;}
+.cardetailWrap .area_user .img {position:absolute;left:50%;top:18px;width:80px;height:80px;margin-left:-40px;}
+.cardetailWrap .area_user .img a {overflow:hidden;display:block;width:80px;height:80px;padding:2px;background:#fff;-webkit-border-radius:44px;border-radius:44px;}
+.cardetailWrap .area_user .img span {overflow:hidden;display:block;width:80px;height:80px;background:#fafafa;-webkit-border-radius:44px;border-radius:44px;}
+.cardetailWrap .area_user .img img {width:80px;height:80px;}
+.cardetailWrap .area_user .info {position:relative;padding:7px 0 20px;margin:0 auto;}
+.cardetailWrap .area_user .info ul {text-align:center;}
+.cardetailWrap .area_user .info li {display:inline-block;position:relative;line-height:20px;font-size:14px;color:#666;}
+.cardetailWrap .area_user .info li:before {display:inline-block;content:'';position:relative;top:-5px;width:1px;height:1px;margin:0 4px 0 1px;background:#666;}
+.cardetailWrap .area_user .info em {color:#5c5c5c;font-weight:normal;}
+.cardetailWrap .area_user .info .tel {width:100%;margin-top:10px;text-align:center;}
+.cardetailWrap .area_user .info .tel em {font-weight:bold;padding-right:8px;}
+.cardetailWrap .area_user .info .tel a.cell {font-size:18px;color:#333;font-weight:bold;letter-spacing:1px}
+.cardetailWrap .area_user .info .tel:before,
+.cardetailWrap .area_user .info li:first-child:before {display:none;}
+.cardetailWrap .area_user .info .state {position:relative;padding:0 20px;}
+.cardetailWrap .area_user .info .state ul {margin:0 -15px;}
+.cardetailWrap .area_user .info .state span {font-weight:bold;text-decoration:underline;}
+.cardetailWrap .area_user .info .time {text-align:center;font-size:14px;color:#666;}
+.cardetailWrap .area_foot {margin:20px 15px 0;border-top:1px solid #e5e5e5;}
+.cardetailWrap .area_foot ul {text-align:center;}
+.cardetailWrap .area_foot ul li {}
+.cardetailWrap .area_foot ul li a {display:block;}
+.cardetailWrap .area_foot ul li a span {display:block;position:relative;padding:15px 0;font-size:13px;color:#999;}
+.cardetailWrap .area_foot ul li a span:before {display:block;content:'';position:absolute;left:0;top:50%;width:1px;height:10px;margin-top:-5px;background:#bfbfbf;}
+.cardetailWrap .area_foot ul li:first-child a span:before {display:none;}
+.cardetailWrap .area_textbox {padding:20px 20px 0;}
+.cardetailWrap .area_textbox p.txt {font-size:13px;color:#999;}
+/* 레이어, 버튼 */
+.ic_qm {display:inline-block;position:relative;top:2px;width:15px;height:15px;background-position:-100px -60px;}
+.cardetailWrap .tip_help {vertical-align:top;font-size:13px;}
+
+/* 레이어, 미니 */
+.cardetailWrap .inner_pop_dark {position:absolute;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.cardetailWrap .inner_pop_dark .inner_pop_con {color:#fff;background:#535353;border-radius:4px;}
+.cardetailNoneArea {position:fixed;left:0;top:40px;z-index:-1;width:100%;height:100%;}
+.cardetailNone {position:absolute;left:0;top:0;width:100%;height:100%;background:#fff;}
+.cardetailNone .text {position:absolute;left:0;top:50%;width:100%;height:110px;margin-top:-100px;text-align:center;}
+.cardetailNone .text:before {display:block;content:'';width:92px;height:69px;margin:0 auto 18px;background:url(/images/ca/carNone.png?180630) no-repeat 0 0;background-size:92px;}
+.cardetailNone .text .c1 {font-size:16px;color:#bfbfbf;}
+.cardetailNone .text .c1 span {font-weight:bold;}
+.cardetailNone .text .c2 {margin-top:10px;font-size:14px;color:#7c7c7c;}
+.cardetailNone .btn {position:fixed;left:0;bottom:0;width:100%;padding:18px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.cardetailNone .btn a {background:#fff;}
+
+/* 레이어 상세 공통 */
+.base_detail_common{}
+.base_detail_common .desc_noti{margin-top:20px;text-align:center;font-size:16px;line-height:23px;font-weight:bold;color:#333}
+.base_detail_common .desc_noti em{color:#ff2626;font-weight:bold;}
+.base_detail_common .desc_tip{margin:13px -10px 0;text-align:center;font-size:14px;color:#666;letter-spacing:-1px;}
+.base_detail_common .desc_tip em{color:#ff2626}
+.base_detail_common .btn_set{margin-top:20px;}
+.base_detail_common ul.list {padding:10px 0;border-top:1px dashed #bfbfbf;border-bottom:1px dashed #bfbfbf;}
+.base_detail_common ul.list li {padding:4px 0;font-size:14px;color:#333;}
+.base_detail_common ul.list li em {padding-right:13px;color:#333;}
+.base_detail_common ul.list li span {color:#ff2626;}
+/* 레이어 : 공유하기 */
+.sns_share {overflow:hidden;}
+.sns_share li {margin:5px 0 9px;}
+.sns_share li a {display:block;}
+.sns_share li a span {display:block;padding-top:8px;margin:0 -7px;text-align:center;font-size:12px;color:#5c5c5c;}
+.sns_share li a:before {display:block;content:'';display:block;width:50px;height:50px;margin:0 auto;background:url('/images/common/ico_sns3.png') no-repeat 0 0;background-size:230px;}
+.sns_share li a.kakatalk:before {background-position:0 0;}
+.sns_share li a.kakastory:before {background-position:-60px 0;}
+.sns_share li a.line:before {background-position:-120px 0;}
+.sns_share li a.band:before {background-position:-180px 0;}
+.sns_share li a.facebook:before {background-position:0px -50px;}
+.sns_share li a.twitter:before {background-position:-60px -50px;}
+.sns_share li a.mail:before {background-position:-120px -50px;}
+.sns_share li a.sms:before {background-position:-180px -50px;}
+/* 레이어 : 전화걸기 */
+.uilayer_visitres .uilayer_box {width:230px;}
+.uilayer_visitres .dealer {padding-top:20px;text-align:center;}
+.uilayer_visitres .dealer img {width:80px;border-radius:50%;}
+.uilayer_visitres .base_detail_common .desc_noti {margin-top:15px;line-height:26px;}
+.uilayer_visitres .base_detail_common .desc_noti .icon {display:inline-block;padding:0 3px;vertical-align:middle;line-height:15px;font-size:10px;font-weight:bold;color:#fff;border-radius:2px;letter-spacing:-0.5px;background:#8c8c8c;}
+.uilayer_visitres .base_detail_common .desc_tip {margin-top:10px;}
+.uilayer_visitres .tel .uibtn:before {content:'';display:inline-block;width:14px;height:14px;margin:18px 4px 0 0;vertical-align:top;background-position:-15px 0;}
+/* 레이어 : 전화걸기후 */
+.uilayer_callafter {ppadding:0 25px;}
+.uilayer_callafter .otherservice {padding:0 25px 15px;text-align:center;}
+.uilayer_callafter .otherservice .worry {margin:0 -25px;line-height:26px;font-size:20px;font-weight:bold;color:#333;letter-spacing:-1px;}
+.uilayer_callafter .otherservice .worry:before {content:'';display:block;width:230px;height:172px;margin:0 auto;background:url(/images/ca/ir_aftercall.png) no-repeat 0 0;background-size:230px;}
+.uilayer_callafter .otherservice .dont {margin:7px -25px 20px;font-size:16px;color:#666;letter-spacing:-1px;}
+.uilayer_callafter .service1 .worry:before {background-position:0 0;}
+.uilayer_callafter .service2 .worry:before {background-position:0 -172px;}
+.uilayer_callafter .service3 .worry:before {background-position:0 -344px;}
+.uilayer_callafter .service4 .worry:before {background-position:0 -516px;}
+.uilayer_callafter .service5 .worry:before {background-position:0 -688px;}
+.uilayer_callafter .showNavi {text-align:center;line-height:0;font-size:0;}
+.uilayer_callafter .showNavi a {display:inline-block;margin:0 2px;padding:5px;}
+.uilayer_callafter .showNavi a span {display:block;overflow:hidden;width:8px;height:8px;text-indent:-1000px;border-radius:50%;background:#ccc;}
+.uilayer_callafter .showNavi a.on span {background:#ff2626;}
+.uilayer_callafter .uilayer_btn {margin-top:4px;}
+
+/* 레이어 : 헛걸음보상 */
+.service_carcompensated {position:relative;padding:10px 0;margin:10px 0 0;text-align:center;border:1px solid #e5e5e5;background:#fafafa;}
+.service_carcompensated:after {display:block;content:'';clear:both;}
+.service_carcompensated h3 {display:inline-block;padding:0 5px;line-height:20px;font-size:12px;}
+.service_carcompensated ul:nth-child(2)  {display:inline-block;}
+.service_carcompensated li em {padding-right:10px;}
+.service_carcompensated li span {font-weight:bold;}
+/* 레이어 : 리스승계 */
+.lease_info li {padding-top:10px;line-height:21px;font-size:14px;color:#666;}
+.lease_info li:first-child {padding-top:0;}
+.lease_info li em {display:block;color:#333;font-weight:bold;}
+/* 레이어 : DA광고 */
+.uitooltip_da_ins_top .uitooltip_box,
+.uitooltip_da_ins_bottom .uitooltip_box {padding:10px;}
+.uitooltip_da_ins_top em:first-child,
+.uitooltip_da_ins_bottom em:first-child {border-top:0 none;}
+.uitooltip_da_ins_top em,
+.uitooltip_da_ins_bottom em {display:block;border-top:1px dashed #bfbfbf;}
+.uitooltip_da_ins_top em iframe,
+.uitooltip_da_ins_top em img,
+.uitooltip_da_ins_bottom em iframe,
+.uitooltip_da_ins_bottom em img {width:189px;vertical-align:top;}
+.uitooltip_da_ins_top .uitooltip_box .btn_box,
+.uitooltip_da_ins_bottom .uitooltip_box .btn_box {margin-top:5px;}
+/* 레이어 : 선택옵션 */
+.uitooltip_option_explan .option_ttl {display:block;font-size:13px;color:#333;font-weight:bold;}
+.uitooltip_option_explan .option_desc {display:block;padding-top:6px;font-size:13px;color:#666;line-height:20px;}
+
+/* 옵션정보 */
+.area_infoText  {padding:10px;}
+.area_infoText .ttl {position:relative;margin:20px 0 0;font-size:12px;color:#9a9a9a;font-weight:normal;}
+.area_infoText .ttl:nth-child(1) {margin-top:10px;}
+.area_infoText .list {margin-top:10px;background:#fff;}
+.area_infoText .list ul {padding:0 15px;}
+.area_infoText .list li {overflow:hidden;position:relative;padding-bottom:11px;font-size:13px;color:#5c5c5c;border-top:1px solid #f2f2f2;}
+.area_infoText .list li:first-child {border-top:0 none;}
+.area_infoText .list li em {display:inline-block;float:left;padding:11px 0 0;margin-bottom:-8px;letter-spacing:-1px;}
+.area_infoText .list li span {display:inline-block;float:right;padding:11px 0 0;letter-spacing:-0.2px;color:#000;word-break:keep-all;}
+.area_infoText .list li span i {display:inline-block;}
+.area_infoText .list li.l1 em {position:absolute;left:0;top:0;}
+.area_infoText .list li.l1 span {margin-left:55px;}
+.area_infoText .list li.l4 em {position:absolute;left:0;top:0;}
+.area_infoText .list li.l4 span {margin-left:78px;}
+.uicarToggle {position:relative;}
+.uicarToggle a.btnAll {display:block;position:absolute;right:0;top:-20px;z-index:1;padding:5px;font-size:11px;color:#9a9a9a;}
+.uicarToggle a.btnAll:after {display:inline-block;content:'펼쳐보기';margin-left:4px;}
+.uicarToggle a.btnAll.view:after {content:'닫기';}
+.uicarToggle dl.faq {padding-top:10px;}
+.uicarToggle dl.faq dt a {display:block;position:relative;padding:12px 14px;font-size:14px;color:#000;background:#fff;}
+.uicarToggle dl.faq dt a.q:after {display:block;content:'';position:absolute;right:17px;top:50%;;width:14px;height:7px;margin-top:-3px;background-position:0 -80px;
+	-webkit-transition:all 0.2s;
+			transition:all 0.2s;
+}
+.uicarToggle dl.faq dt span {font-size:14px;color:#acacac;letter-spacing:-1px}
+.uicarToggle dl.faq dd {display:none;}
+.uicarToggle dl.faq dd ul.a {padding:0 15px;background:#eaeaea;}
+.uicarToggle dl.faq dd ul.a li {position:relative;padding:11px 0;font-size:13px;color:#5c5c5c;text-indent:3px;border-top:1px solid #d5d5d5;}
+.uicarToggle dl.faq dd ul.a li:first-child {border-top:0 none;}
+.uicarToggle dl.faq dd ul.a li span {position:absolute;right:0;top:0;padding:11px 0;color:#000;}
+.uicarToggle dl.faq.view {margin-bottom:-10px;}
+.uicarToggle dl.faq.view dt a.q:after {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.uicarToggle dl.faq.view dd {display:block;}
+.uicarToggle dl.faq .recode_con {padding:15px;background:#eaeaea;}
+.uicarToggle div.faq {padding:12px 14px;margin-top:10px;font-size:13px;color:#424242;background:#fff;}
+
+/* 상세_옵션 더보기 */
+.ca_option_v01 header .btn_checked{position:absolute;top:0;right:0;height:44px;padding:0 15px;color:#999}
+.ca_option_v01 .ico_option{display:inline-block;overflow:hidden;width:16px;height:16px;margin:2px 5px 0 0;background:url(/images/ca/ir_optioninfo.png) no-repeat;background-size:16px 36px;vertical-align:top}
+.ca_option_v01 .tit_category{display:block;height:40px;padding:0 15px;font-weight:normal;font-size:13px;line-height:42px;color:#999;background-color:#F5F5F5}
+.ca_option_v01 .tit_category .uitooltip_btn{margin:13px 0 0 5px;vertical-align:top}
+.ca_option_v01 .list_option .link_item{display:block;padding:19px 15px 18px 36px;border-top:1px solid #F5F5F5;font-size:15px;color:#BFBFBF;text-indent:-21px}
+.ca_option_v01 .list_option li:first-child .link_item{border-top:0 none}
+.ca_option_v01 .list_option .on .link_item{color:#333}
+.ca_option_v01 .list_option .link_item .off{color:#BFBFBF}
+.ca_option_v01 .list_option .on .ico_option{background-position:0 -20px}
+.ca_option_v01 .list_addoption .link_item{position:relative;padding-right:70px}
+.ca_option_v01 .list_addoption .txt_price{position:absolute;right:15px;top:50%;color:#666;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.ca_option_v01 .list_addoption .uitooltip_btn{margin:2px 0 0 5px;vertical-align:top}
+.ca_option_v01 .list_addoption .explan{display:none}
+
+/* 옵션설명 */
+.ca_option_v02 #container{padding:15px 15px 30px}
+.ca_option_v02 .img_option{display:block;width:100%}
+.ca_option_v02 h3{padding-top:20px;font-size:15px}
+.ca_option_v02 .tit_sub{display:block;font-size:13px}
+.ca_option_v02 .list_desc dt{padding-top:20px;font-weight:bold}
+.ca_option_v02 .list_desc dd{padding-top:6px;color:#666}
+
+.ca_history_v02 .uicarToggle dl.faq.view {margin-bottom:0;}
+
+/* 성능점검 기록부 */
+body.ca_inspect_v01 #container,
+body.ca_inspect_v02 #container {background:#f3f3f3;}
+body.ca_inspect_v02 #container {padding-bottom:0;}
+.simpleTab {position:relative;padding:0 10px 10px;margin-top:-1px;border-bottom:1px solid #dedede;background:#f6f6f6;}
+.simpleTab ul {overflow:hidden;border:1px solid #323232;border-radius:4px;}
+.simpleTab li {float:left;width:50%;}
+.simpleTab li a {display:block;height:24px;line-height:24px;text-align:center;font-size:13px;color:#323232;}
+.simpleTab li a span {}
+.simpleTab li.on a {color:#fff;background:#323232;}
+.cardetailInspect .area_explan {padding:10px;text-align:center;color:#5c5c5c;}
+.cardetailInspect .area_explan .s {font-size:11px;letter-spacing:-1px;word-break:keep-all;}
+.cardetailInspect .area_explan .d {display:block;margin:10px 0 15px;font-size:14px;color:#000;}
+.cardetailInspect .area_explan .w {font-size:12px;}
+.cardetailInspect .area_explan .w span {color:#e44f57;}
+.cardetailInspect .area_infoCar {padding-bottom:25px;background:#fff;}
+.cardetailInspect .area_infoCar .noti {padding-top:10px;}
+.cardetailInspect .area_infoCar .noti p {padding:10px;margin:0 10px;line-height:13px;text-align:center;font-size:11px;color:#5c5c5c;background:#f3f3f3;}
+.cardetailInspect .area_infoCar .info {margin:0 20px;padding:25px 0 20px;text-align:center;border-bottom:1px solid #eaeaea;}
+.cardetailInspect .area_infoCar .info li.i1 {font-size:16px;color:#000;font-weight:bold;}
+.cardetailInspect .area_infoCar .info li.i2 {margin-top:6px;font-size:13px;color:#5c5c5c;}
+.cardetailInspect .area_infoCar .explan {padding:10px 0;margin:0 20px;text-align:center;font-size:13px;color:#5c5c5c;}
+.cardetailInspect .area_image {padding:16px 14px;background:#f3f3f3;}
+.cardetailInspect .area_image .img img {width:100%;}
+.insresulteImgWrap {overflow:hidden;max-width:550px;margin:0 auto;}
+.insresulteImg {overflow:hidden;position:relative;margin:-20% 10px;}
+.insresulteImg .bg img {width:100%;vertical-align:top;}
+.insresulteImg .checkList {position:absolute;left:0;top:0;width:100%;height:100%;}
+.insresulteImg .checkList li {position:absolute;width:6%;height:6%;}
+.insresulteImg .checkList li span {display:block;overflow:hidden;position:absolute;left:0;top:0;text-indent:-5000rem;}
+.insresulteImg .checkList li em.ic {display:block;width:100%;text-align:center;}
+.insresulteImg .checkList li em.ic img {width:50%;vertical-align:top;}
+.insresulteImg .checkList li.d002 {left:20.5%;top:32%;} /* 후드 */
+.insresulteImg .checkList li.d003 {left:4%;top:35%;} /* 운전석 프론트휀더 */
+.insresulteImg .checkList li.d004 {left:36%;top:35%;} /* 조수석 프론트휀더 */
+.insresulteImg .checkList li.d005 {left:3%;top:44%;} /* 운전석 프론트도어 */
+.insresulteImg .checkList li.d006 {left:3%;top:53%;} /* 운전석 리어도어 */
+.insresulteImg .checkList li.d007 {left:37%;top:44%;} /* 조수석 프론트도어 */
+.insresulteImg .checkList li.d008 {left:37%;top:53%;} /* 조수석 리어도어 */
+.insresulteImg .checkList li.d009 {left:20.5%;top:67%;} /* 트렁크리드 */
+.insresulteImg .checkList li.d011 {left:73%;top:30.5%;} /* 프론트패널 */
+.insresulteImg .checkList li.d012 {left:65.5%;top:34.5%;} /* 운전석 인사이드패널 */
+.insresulteImg .checkList li.d013 {left:80.5%;top:34.5%;} /* 조수석 인사이드패널 */
+.insresulteImg .checkList li.d014 {left:65.5%;top:38.5%;} /* 운전석 프론트 휠하우스 */
+.insresulteImg .checkList li.d015 {left:80.5%;top:38.5%;} /* 조수석 프론트 휠하우스 */
+.insresulteImg .checkList li.d016 {left:73%;top:40.5%;} /* 프론트 그로스멤버 */
+.insresulteImg .checkList li.d017 {left:73%;top:43.5%;} /* 프론트 대쉬패널 */
+.insresulteImg .checkList li.d018 {left:20.5%;top:55%;} /* 루프패널(지붕) */
+.insresulteImg .checkList li.d019 {left:73%;top:51%;} /* 플러어패널(바닥) */
+.insresulteImg .checkList.old li.d019 {left:73%;top:52%;} /* 플러어패널(바닥) */
+.insresulteImg .checkList li.d020 {left:73%;top:58%;} /* 리어 대쉬패널 */
+.insresulteImg .checkList.old li.d020 {left:73%;top:60.5%;} /* 리어 대쉬패널 */
+.insresulteImg .checkList li.d021 {left:65%;top:64%;} /* 운전석 리어 휠하우스 */
+.insresulteImg .checkList li.d022 {left:81%;top:64%;} /* 조수석 리어 휠하우스 */
+.insresulteImg .checkList li.d023 {left:73%;top:64.5%;} /* 트렁크플로어 */
+.insresulteImg .checkList li.d024 {left:73%;top:68%;} /* 리어앤드패널 */
+.insresulteImg .checkList li.d025 {left:4%;top:63%;} /* 운전석 쿼터패널 */
+.insresulteImg .checkList li.d026 {left:36%;top:63%;} /* 조수석 쿼터패널 */
+.insresulteImg .checkList li.d027 {left:0%;top:49%;} /* 운전석 사이드실패널 */
+.insresulteImg .checkList li.d028 {left:41%;top:49%;} /* 조수석 사이드실패널 */
+.insresulteImg .checkList li.d029 {left:61%;top:43%;} /* 운전석 A 필러패널 */
+.insresulteImg .checkList li.d030 {left:61%;top:50.5%;} /* 운전석 B 필러패널 */
+.insresulteImg .checkList li.d031 {left:62%;top:57%;} /* 운전석 C 필러패널 */
+.insresulteImg .checkList li.d032 {left:85%;top:43%;} /* 조수석 A 필러패널 */
+.insresulteImg .checkList li.d033 {left:85%;top:50.5%;} /* 조수석 B 필러패널 */
+.insresulteImg .checkList li.d034 {left:84%;top:57%;} /* 조수석 C 필러패널 */
+.insresulteImg .checkList li.d035 {left:70.5%;top:63%;} /* 리어 사이드멤버(좌) */
+.insresulteImg .checkList li.d036 {left:71.5%;top:34.5%;} /* 프론트 사이드멤버(좌) */
+.insresulteImg .checkList li.d037 {left:20.5%;top:26%;} /* 라디에이터 서포트(볼트체결부품) */
+.insresulteImg .checkList li.d038 {left:77.5%;top:34.5%;} /* 프론트 사이드멤버(우) */
+.insresulteImg .checkList li.d039 {left:78.5%;top:63%;} /* 리어 사이드멤버(우) */
+.insresulteImg .checkList li.d040 {left:73%;top:61%;} /* 패키지 트레이 */
+.insresulteImg .checkList li.l em.ic {text-align:left;}
+.insresulteImg .checkList li.r em.ic {text-align:right;}
+.insresulteImg .checkList li.v {display:table;}
+.insresulteImg .checkList li.v em.ic {display:table-cell;vertical-align:middle;}
+.insresulteImg .checkList li.v em.ic img {display:block;}
+.insresulteExplan {position:relative;z-index:1;text-align:center;}
+.insresulteExplan .ex {font-size:14px;color:#000;}
+.insresulteExplan .ex span {display:inline-block;padding:0 5px;}
+.insresulteExplan .ex span:before {display:inline-block;content:'';position:relative;top:2px;width:15px;height:15px;margin-right:4px;background-repeat:no-repeat;background-size:15px;}
+.insresulteExplan .ex span.e1:before {background-image:url(/images/ca/inspect_check_cha.png);}
+.insresulteExplan .ex span.e2:before {background-image:url(/images/ca/inspect_check_pain.png);}
+.insresulteExplan .ex span.e3:before {background-image:url(/images/ca/inspect_check_cor.png);}
+.insresulteExplan .txt {margin-top:10px;font-size:11px;color:#9a9a9a;}
+
+/* 보험개발원 사고이력정보 */
+body.ca_history_v02 #container,
+body.ca_history_v03 #container {background:#f3f3f3;}
+.cardetailRecode .area_infoCar {background:#fff;}
+.cardetailRecode .area_infoCar ul {padding:25px 0 20px;text-align:center;}
+.cardetailRecode .area_infoCar li.i1 {font-size:20px;color:#000;font-weight:bold;}
+.cardetailRecode .area_infoCar li.i2 {margin-top:6px;font-size:12px;color:#5c5c5c;}
+.cardetailRecode .uicarToggle dl.faq .history {border-top:1px solid #f2f2f2;background:#fff;}
+.cardetailRecode .area_end {padding:10px 8px;margin-top:10px;background:#fff;}
+.cardetailRecode .area_add {padding:10px 8px 18px;margin-top:10px;background:#fff;}
+.cardetailRecode .area_add p {padding:0 10px;line-height:18px;font-size:13px;color:#5c5c5c;}
+.cardetailRecode .area_add .btn {margin-top:10px;}
+.cardetailRecode .isNone {padding:30px 0;margin-bottom:5px;text-align:center;font-size:16px;color:#000;background:#fff;}
+.cardetailRecode .area_explan {padding:10px 15px;}
+.cardetailRecode .area_explan .s {}
+.cardetailRecode .area_explan .ttl {font-size:11px;color:#5c5c5c;}
+.cardetailRecode .area_explan p {margin-top:10px;font-size:11px;color:#a9a9a9;letter-spacing:-1px;word-break:keep-all;}
+.cardetailRecode .area_explan ul {margin:8px -1px 0 0;}
+.cardetailRecode .area_explan li {position:relative;padding-left:11px;margin-top:3px;line-height:15px;font-size:11px;color:#a9a9a9;word-break:keep-all;}
+.cardetailRecode .area_explan li span.dash {position:absolute;left:0;top:0;}
+.cardetailRecode .area_infoText .area_explan {padding:10px 0 0;}
+.cardetailRecode .area_infoText .area_explan p {margin-top:0;}
+.cardetailRecode .sample {display:block;overflow:hidden;height:2924px;margin-bottom:-30px;text-indent:-5000em;background:url(/images/ca/history_sample.gif) no-repeat 50% 0 #616161;background-size:320px;}
+
+/* 총 구매 비용계산 */
+body.ca_costadd_v01 #container {background:#f3f3f3;}
+.cardetailCostadd .area_costAddResult {padding:20px 18px 0;background:#fff;}
+.cardetailCostadd .area_costAddResult .list {padding-bottom:15px}
+.cardetailCostadd .area_costAddResult .list li {position:relative;color:#5c5c5c;}
+.cardetailCostadd .area_costAddResult .list li:after {display:block;content:'';clear:both;}
+.cardetailCostadd .area_costAddResult .list li span.v {float:right;text-align:right;}
+.cardetailCostadd .area_costAddResult .list .sel {display:inline-block;}
+.cardetailCostadd .area_costAddResult .list .sel select {font-size:13px;}
+.cardetailCostadd .area_costAddResult .list .tip_help {position:relative;top:2px;margin:0 0 0 8px;}
+.cardetailCostadd .area_costAddResult .list>li {padding:5px 0;font-size:14px;}
+.cardetailCostadd .area_costAddResult .list>li span.v {color:#000;}
+.cardetailCostadd .area_costAddResult .list>li span.v.btn{display:block;width:70px;height:20px;}
+.cardetailCostadd .area_costAddResult .list>li span.v em.ex {display:block;color:#5c5c5c;}
+.cardetailCostadd .area_costAddResult .list>li a.more {position:relative;padding-right:20px;color:#5c5c5c;}
+.cardetailCostadd .area_costAddResult .list>li a.more:after {display:inline-block;content:'';position:absolute;right:0;top:0;width:15px;height:15px;background-position:-60px -60px;
+	-webkit-transition:all 0.2s;
+			transition:all 0.2s;
+}
+.cardetailCostadd .area_costAddResult .list>li a.more.view:after {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.cardetailCostadd .area_costAddResult .detail {display:none;margin-top:10px;}
+.cardetailCostadd .area_costAddResult .detail>li {padding:10px 0;font-size:13px;border-top:1px solid #ececec;}
+.cardetailCostadd .area_costAddResult .detail>li span.v {color:#797979;}
+.cardetailCostadd .area_costAddResult .detail>li.minus,
+.cardetailCostadd .area_costAddResult .detail>li.minus span.v {color:#e2323d;}
+.cardetailCostadd .area_costAddResult .detail>li:first-child {border-top:0 none;}
+.cardetailCostadd .area_costAddResult .list>li span.v .check {display:inline-block;margin-left:10px;}
+.cardetailCostadd .area_costAddResult .detail.view {display:block;}
+.cardetailCostadd .area_costAddResult .result {padding:23px 0;border-top:1px dashed #dcdcdc;}
+.cardetailCostadd .area_costAddResult .result dl {position:relative;line-height:1;color:#e2323d;}
+.cardetailCostadd .area_costAddResult .result dl dt {padding:3px 0;font-size:16px;font-weight:bold;}
+.cardetailCostadd .area_costAddResult .result dl dt span {display:block;padding-top:5px;font-size:13px;font-weight:normal;}
+.cardetailCostadd .area_costAddResult .result dl dd {position:absolute;right:0;top:0;font-size:34px;}
+.cardetailCostadd .area_infoText .box {padding-right:8px;padding-left:8px;margin-top:10px;background:#fff;}
+.cardetailCostadd .area_infoText .box .service_loanconsult {padding:15px 0;margin-bottom:0;}
+.cardetailCostadd .area_infoText .box .service_loanconsult .p2 {color:#5c5c5c;}
+
+.cardetailCostadd .area_explan {padding:10px 15px;}
+.cardetailCostadd .area_explan .ttl {font-size:11px;color:#5c5c5c;}
+.cardetailCostadd .area_explan ul {margin:6px -1px 0 0;}
+.cardetailCostadd .area_explan li {position:relative;padding:0 0 0 8px;margin-top:5px;line-height:14px;font-size:11px;color:#a9a9a9;word-break:keep-all;}
+.cardetailCostadd .area_explan li span.dash {position:absolute;left:0;top:0;}
+.cardetailCostadd .area_explan li a {color:#a9a9a9;text-decoration:underline;}
+.cmm_layer_is {position:relative;width:270px;padding:20px 15px;margin:0 auto;border-radius:4px;-webkit-border-radius:4px;background:#fff;}
+.cmm_layer_is h3 {padding-bottom:8px;margin-bottom:10px;font-size:13px;color:#000;border-bottom:1px solid #e5e5e5;}
+.cmm_layer_is p {line-height:18px;color:#000;}
+.cmm_layer_is ul {margin:5px 0 0 16px;}
+.cmm_layer_is li {margin-top:5px;line-height:18px;text-indent:-8px;color:#8f8f8f;}
+.cmm_layer_is li em {display:inline-block;width:8px;}
+.cmm_layer_is .r {color:#e2323d;}
+.cmm_layer_is .btnClose {position:absolute;right:5px;top:10px;padding:10px;}
+
+/* 구매문의 */
+.enquiry_inquiry {padding:13px 0 70px;margin:0 13px;}
+.enquiry_inquiry .inq_data {padding:13px 0 0;}
+.enquiry_inquiry .inq_input li {padding-bottom:5px;}
+.enquiry_inquiry .inq_input li.phone .cmm_in_type1 input {font-size:12px;}
+.enquiry_inquiry .inq_input li.content textarea {color:#666;border-radius:0;-webkit-appearance:none;width:100%;height:130px;padding:10px;border:1px solid #bcbcbc;
+-webkit-border-radius:2px;
+		border-radius:2px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+		box-sizing:border-box;
+}
+.enquiry_inquiry .swap_yn .swap_q {display:block;font-size:15px;color:#403e4b;margin:10px 0 10px;}
+.enquiry_inquiry .swap_yn .check {margin-right:10px;}
+.enquiry_inquiry .swap_yn .check label {margin-left:3px;color:#333;font-size:15px;}
+.enquiry_inquiry .swap_input {position:relative;padding-left:0;padding-right:0;margin:10px -13px -30px;padding:15px 10px;background-color:#F8F8F9;border-top:1px solid #c0c1c2;border-bottom:1px solid #c0c1c2;}
+.enquiry_inquiry .swap_input:before {content:'';display:block;position:absolute;top:-7px;left:36px;z-index:1;width:0;height:0;border-style:solid;border-width:0 9px 7px 9px;
+border-color:transparent transparent #c0c1c2 transparent;}
+.enquiry_inquiry .swap_input:after {content:'';display:block;position:absolute;top:-6px;left:38px;z-index:1;width:0;height:0;border-style:solid;border-width:0 7px 6px 7px;border-color:transparent transparent #F8F8F9 transparent;}
+.enquiry_inquiry .swap_input strong img{width:20px;}
+.enquiry_inquiry .swap_input dt {height:auto;font-weight:normal;}
+.enquiry_inquiry .swap_input dd {padding:0;line-height:auto;}
+.enquiry_inquiry .swap_input li {overflow:hidden;padding-bottom:5px;}
+.enquiry_inquiry .swap_input li .cmm_sel_type1,
+.enquiry_inquiry .swap_input li .cmm_in_type1  {background:#fff;}
+.enquiry_inquiry .swap_input li.data_yr .cmm_in_type1  {padding-right:30px;}
+.enquiry_inquiry .swap_input .check {margin-right:10px;}
+.enquiry_inquiry .swap_input .check label {margin-left:3px;color:#333;}
+.enquiry_inquiry .data_cate {padding:0;margin-bottom:10px !important;border-bottom:0;}
+.enquiry_inquiry .data_tr .cmm_sel_type1 {width:49%;float:left;}
+.enquiry_inquiry .data_tr .cmm_sel_type1:last-child {float:right;}
+.enquiry_inquiry .data_yr .cmm_sel_type1 {width:45%;float:left;}
+.enquiry_inquiry .data_yr .km {width:53%;float:right;}
+.enquiry_inquiry .data_yr .km:after {display:block;content:'km';position:absolute;right:10px;top:0;line-height:37px;font-size:14px;}
+
+/* 휴대전화번호 인증 */
+.phone_certify {padding:13px 0 40px;margin:0 13px;}
+.ca_cardetailauth_i02 .phone_certify {padding-top:15px;margin:0 11px}
+.phone_certify .explan {padding-left:10px;line-height:22px;font-size:15px;color:#403e4b;word-break:keep-all}
+.phone_certify .text_confirm {margin-top:15px;border:1px solid #bcbcbc;border-radius:2px}
+.phone_certify .text {position:relative;font-size:12px;color:#858585;}
+.phone_certify .text ul {padding:13px 10px;}
+.phone_certify .text li {padding-top:8px;line-height:18px;font-size:13px;color:#9f9ea5;}
+.phone_certify .text li:first-child {padding-top:0;}
+.phone_certify .text li span {display:block;color:#403e4b;}
+.phone_certify .text li .important {text-decoration:underline;font-size:15px;font-weight:normal !important;}
+.phone_certify .text_chk {padding:13px 10px;border-bottom:1px solid #e8e8e8;background:#f5f5f5;}
+.phone_certify .text_chk label {display:inline-block;font-size:14px;color:#999;}
+.phone_certify .input_wrap {position:relative;padding-right:100px;margin-top:5px}
+.phone_certify .input_wrap .area_input{border:1px solid #c0c1c2;border-radius:4px}
+.phone_certify .input_wrap input {height:38px;border:0 none;border-radius:4px;font-size:14px;color:#000}
+.phone_certify .input_wrap input::-webkit-input-placeholder {text-align:left;font-size:12px;color:#adadad;}
+.phone_certify .input_wrap input:-moz-placeholder {/* Firefox 18- */ text-align:left;font-size:12px;color:#adadad;}
+.phone_certify .input_wrap input::-moz-placeholder {/* Firefox 19+ */text-align:left;font-size:12px;color:#adadad;}
+.phone_certify .input_wrap input:-ms-input-placeholder {text-align:left;font-size:12px;color:#adadad;}
+.phone_certify .input_wrap .btn_call {position:absolute;right:0;top:0;width:93px;height:38px;border:1px solid #c0c1c2;border-radius:4px;font-size:13px;line-height:38px;color:#979797;background-color:#eee;text-align:center}
+.phone_certify .input_on .btn_call {border-color:#e2323d;color:#fff;background-color:#e2323d}
+.phone_certify .time {padding-top:7px;color:#979797;font-size:12px}
+.phone_certify .time .emph_g{color:#e2323d}
+.phone_certify .alert {color:#e2323d;font-size:12px}
+.phone_certify .complete {position:relative;padding-top:100px;text-align:center;line-height:22px;letter-spacing:-1px;font-size:17px;color:#e33a3a;}
+.phone_certify .notice_append{padding:12px 0 0 10px;font-size:12px;color:#b0b0b0;word-break:keep-all}
+.phone_certify .webComplete {}
+.phone_certify .webComplete .complete {padding-top:39px;font-size:16px;font-weight:bold;color:#ed4458;}
+.phone_certify .webComplete .induce {margin-top:40px;padding:175px 0 45px;text-align:center;line-height:1.6;font-size:14px;color:#444;background:url(/images/ca/bg_phone_certify_complete.gif) no-repeat center top / auto 100%;}
+.phone_certify .webComplete .induce a {display:inline-block;padding:0 12px 0 5px;line-height:19px;font-size:12px;border:1px solid #666666;background:url(/images/ca/bg_phone_certify_down.gif) no-repeat center right 3px / 7px;}
+
+/* 헛걸음 예약 */
+.carresvisit{padding-bottom:80px;font-size:13px;line-height:18px;}
+.carresvisit .reserve_title{margin-top:30px;text-align:center;line-height:24px;font-size:20px;color:#333;}
+.carresvisit .reserve_desc{margin-top:15px;text-align:center;line-height:18px;font-size:14px;color:#666;letter-spacing:-0.5px;}
+.carresvisit .reserve_desc em{color:#ff2626;}
+.carresvisit .reserve_inbox{padding:20px;margin-top:20px;background:#f5f5f5;}
+.carresvisit .reserve_inbox .reserve_date li{margin-bottom:20px;}
+.carresvisit .reserve_inbox .reserve_date li .tit{line-height:16px;font-size:13px;color:#666;letter-spacing:-0.5px;}
+.carresvisit .reserve_inbox .reserve_date li .rinfo {margin-top:10px;}
+.carresvisit .reserve_inbox .reserve_date li .rinfo:after {content:'';display:block;clear:both;}
+.carresvisit .reserve_inbox .reserve_date li .rinfo .cell {float:left;position:relative;width:33.3%;padding-right:10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.carresvisit .reserve_inbox .reserve_date li .rinfo .cell:nth-of-type(2) {padding:0 0 0 10px;}
+.carresvisit .reserve_inbox .reserve_date li .rinfo .cell .uiselectbox_drop {width:100%;}
+.carresvisit .reserve_inbox .reserve_date li .rinfo .cell .min{position:absolute;left:-2px;top:0;line-height:40px;font-size:14px;color:#999;}
+.carresvisit .reserve_inbox .reserve_date input.txt_type {width:100%;height:40px;text-indent:15px;border:1px solid #d9d9d9;border-radius:4px;background:#fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.carresvisit .reserve_inbox .reserve_date li.date1 .rinfo {padding-bottom:6px;line-height:19px;color:#333;border-bottom:1px solid #e6e6e6;}
+.carresvisit .agree_chk a.btn_agreedetail {margin-left:5px;line-height:19px;font-size:15px;color:#333;}
+.carresvisit .agree_chk a.btn_agreedetail .uiico {margin:-2px 0 0 2px;
+	transition: all .2s;
+	-webkit-transition: all .2s;
+}
+.carresvisit .agree_chk a.btn_agreedetail.active .uiico {
+	transform:rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+.carresvisit .agree_chk .box_area{visibility:hidden;overflow:hidden;overflow-y:auto;position:absolute;height:130px;padding:15px;margin-top:10px;line-height:24px;font-size:13px;color:#666;border:1px solid #d9d9d9;border-radius:4px;background:#fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.carresvisit .agree_chk .box_area.active {visibility:visible;position:relative;}
+.carresvisit .reserve_tip{margin:10px 20px 0 30px;}
+.carresvisit .reserve_tip span{display:inline-block;margin-left:-10px;line-height:24px;font-size:13px;color:#666;}
+
+.carresvisit .reserve_info{margin:20px 20px 0;padding-top:20px;border-top:1px solid #f0f0f0;}
+.carresvisit .reserve_info li{padding-left:10px;line-height:25px;font-size:15px;color:#666;letter-spacing:-0.5px;}
+.carresvisit .reserve_info li span{display:inline-block;margin-left:-10px;}
+.carresvisit .reserve_info li em{color:#ff2626;}
+
+.carresvisit .reserve_tel{margin-top:20px;padding:20px;background:#f5f5f5;}
+.carresvisit .reserve_tel p{line-height:19px;font-size:13px;color:#999;}
+.carresvisit .reserve_tel a{display:inline-block;height:28px;margin-top:10px;padding:0 15px;border:1px solid #e6e6e6;border-radius:15px;background:#fff;}
+.carresvisit .reserve_tel a span{display:inline-block;line-height:28px;font-size:13px;color:#333;}
+.carresvisit .reserve_tel a:before{display:inline-block;content:'';width:12px;height:14px;margin-right:3px;margin-top:5px;vertical-align:top;background:url('/images/ca/cardetail_ir.png?171011') -58px 2px;background-size:320px;}
+
+@media only screen and (max-width:400px){
+	/* 헛걸음 설명 페이지 */
+	html.compensationPage {font-size:62.5%;}
+	html.compensationPage a.close {margin-top:-22.2rem;}
+}
+
+/* 320 이하 screen style (항상 최하단에 위치해야 됨) */
+@media only screen and (max-width : 320px) {
+	.search_condition .condition .cond_tit {font-size:14px;}
+	.search_condition .condition .item {margin: 0 40px 0 75px;}
+	.search_condition .condition .item var.del {font-size:14px;}
+}
+/* 높이 320이하 */
+@media only screen and (max-height : 320px) {
+	.cardetailNone .text {height:50px;margin-top:-65px;}
+	.cardetailNone .text:before {display:none;}
+}
+
+/* 헛걸음 상세 */
+.cardetailWrap .card_carinfo .info_compensate .desc_info {font-size:14px;color:#666;}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm{overflow:hidden;padding:8px 0;margin:20px 0 20px;border:1px solid #e5e5e5;background:#fafafa;border-radius:2px;-webkit-border-radius:2px;}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm li{overflow:hidden;float:left;width:50%;padding:6px 0;font-size:13px;color:#666;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm .ic_check{display:inline-block;width:11px;height:8px;margin:0 5px 0 10px;background-position:-90px 0;}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm li.none {display:none;}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm li.off {color:#bfbfbf;}
+.cardetailWrap .card_carinfo .info_compensate .list_confirm li.off .ic_check {background-position:-90px -10px;}
+.cardetailWrap .card_carinfo .info_compensate .btnLine{margin-top:16px}
+
+/* 보증차량 안내 */
+.ca_resuintro .slide_resuintro{height:361px}
+.ca_resuintro .slide_resuintro .itemScene{height:361px;background:no-repeat 50% 160px;background-size:284px 148px}
+.ca_resuintro .slide_resuintro .itemScene1{background:url(/images/ca/tag_resuintro.png) no-repeat 0 0;background-size:68px 67px}
+.ca_resuintro .slide_resuintro .itemScene2{background-image:url(/images/ca/img_resuintro02.jpg)}
+.ca_resuintro .slide_resuintro .itemScene3{background-image:url(/images/ca/img_resuintro03.jpg)}
+.ca_resuintro .slide_resuintro .itemScene4{background-image:url(/images/ca/img_resuintro04.jpg)}
+.ca_resuintro .slide_resuintro .itemScene5{background-image:url(/images/ca/img_resuintro05.jpg)}
+.ca_resuintro .slide_resuintro .tit_subject{padding-top:40px;font-size:20px;color:#000;text-align:center}
+.ca_resuintro .slide_resuintro .itemScene1 .tit_subject{padding-top:30px}
+.ca_resuintro .slide_resuintro .desc_subject{padding-top:10px;font-size:16px;line-height:20px;color:#5c5c5c;text-align:center}
+.ca_resuintro .slide_resuintro .itemScene1 .desc_subject{overflow:hidden;height:228px;margin:15px auto 0;line-height:0;text-indent:-9999px;background:url(/images/ca/img_resuintro01.jpg) no-repeat 50% 0;background-size:232px 228px}
+.ca_resuintro .slide_resuintro .txt_append{display:block;padding-top:3px;font-size:12px;color:#979797;text-align:center}
+.ca_resuintro .slide_resuintro .showNavi{position:absolute;left:50%;bottom:0;margin-left:-37px}
+.ca_resuintro .slide_resuintro .showNavi a{overflow:hidden;float:left;width:9px;height:10px;margin:0 3px;line-height:0;text-indent:-9999px;background:url(/images/ca/paging_resuintro.png) no-repeat;background-size:20px 10px}
+.ca_resuintro .slide_resuintro .showNavi .on{background-position:-10px 0}
+.ca_resuintro .link_resuintro{display:block;width:100%;height:50px;margin-top:25px;font-size:16px;line-height:50px;color:#fff;background-color:#e2323d;text-align:center}
+.ca_resuintro #header h2.category_title span {display:inline-block;font-size:14px;font-weight:bold;color:#000 !important;}
+
+/* 찜리스트 */
+.caWishcar {}
+.caWishcar .carresultList {margin-top:0}
+.caWishcar .ttl {position:absolute;left:50%;top:0;width:200px;line-height:45px;text-align:center;margin-left:-100px;}
+.caWishcar .ttl {}
+.caWishcar .ttl .t {display:inline-block;}
+.caWishcar .ttl .cont {display:inline-block;width:50px;margin-left:105px;text-align:left;font-size:14px;color:#ff3333;}
+.caWishcar .alramText {display:none;position:relative;height:30px;line-height:30px;border-bottom:1px solid #dedede;background:#f5f5f5;}
+.caWishcar .alramText.view {display:block;}
+.caWishcar .alramText .txt {font-size:11px;color:#999;}
+.caWishcar .alramText .txt:before {display:inline-block;content:'';width:30px;height:27px;margin:-1px -3px 0 0;vertical-align:middle;background-position:-40px -25px;
+	-webkit-transform: scale(.4);
+			transform: scale(.4);
+}
+.caWishcar .alramText .close {position:absolute;right:0;top:0;width:30px;height:30px;}
+.caWishcar .alramText .close:before {display:block;content:'';position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;background-position:-100px 0;}
+.caWishcar .textWrap {display:flex;display:-webkit-flex;overflow:hidden;position:absolute;left:0;top:45px;bottom:0;width:100%;
+	align-items: center;
+	justify-content: center;
+}
+.caWishcar .textWrap .txt {line-height:25px;text-align:center;font-size:15px;}
+.caWishcar .textWrap .txt .t1 {display:block;color:#ff3333}
+.caWishcar .textWrap .txt .t2 {display:block;color:#666}
+.caWishcar .textWrap .txt .t2:before {display:inline-block;content:'';width:30px;height:27px;margin:-1px -3px 0 0;vertical-align:middle;background-position:-80px -25px;
+	-webkit-transform: scale(.52);
+			transform: scale(.52);
+}
+.caWishcar .textWrap .guide_btn_red {width:165px;margin:10px auto 0;}
+.caWishcar .loading {height:40px;padding:10px 0;}
+.caWishcar .loading:before {display:block;content:'';width:40px;height:40px;margin:0 auto;background:url(/images/common/gif_loading.gif) no-repeat 0 0;background-size:40px;}
+
+/* 광고 */
+.mencar_ad{height:50px;text-align:center;background:#FFF;overflow:hidden;}
+.mencar_ad iframe{height:50px;}
+.mencar_ad img{height:100%;}
+body.ca_cardetail_v01 .mencar_ad,
+body.ca_truckdetail_v01 .mencar_ad{height:100px;margin-top:15px;}
+body.ca_cardetail_v01 .mencar_ad,
+body.ca_truckdetail_v01 .mencar_ad iframe {height:100px !important;}
+
+/* 신성능 */
+.ca_inspect_v01_new .contents .list_tab:after{content:'';display:block;clear:both}
+.ca_inspect_v01_new .list_tab li{float:left;width:50%;font-size:14px;color:#999;text-align:center}
+.ca_inspect_v01_new .list_tab .link_tab{display:block;width:100%;height:44px;line-height:44px;border-bottom:1px solid #D9D9D9;box-sizing:border-box}
+.ca_inspect_v01_new .list_tab .active{border-bottom:2px solid #FF2626;font-weight:bold;color:#FF2626}
+.ca_inspect_v01_new .contents .tab_content{display:none}
+.ca_inspect_v01_new .contents > .active{display:block}
+.ca_inspect_v01_new .section_inspect .info_carnum{ine-height:20px;padding:19px 0 8px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+.section_inspect .info_carnum .tit_carnum{display:block;lfont-size:16px}
+.section_inspect .info_carnum .txt_carnum{display:block;font-size:12px}
+
+.section_inspect .uislide_inspect .img_inspect{width:100%}
+.section_inspect .uislide_inspect .caution_inspect{line-height:20px;padding-top:22px;font-size:11px;color:#999;letter-spacing:-0.5px;text-align:center}
+.section_inspect .uislide_inspect .showNavi{padding:14px 0 40px;text-align:center}
+.section_inspect .uislide_inspect .showNavi a{display:inline-block;overflow:hidden;width:12px;height:12px;margin:0 8px;background:#D9D9D9;border-radius:6px;text-indent:-10000em}
+.section_inspect .uislide_inspect .showNavi .on{background:#666}
+.section_inspect .uislide_inspect .area_inspectico{position:absolute;left:0;top:0;width:100%;height:100%}
+.uislide_inspect .area_inspectico .i{position:absolute;overflow:hidden;width:16px;height:16px;background:url('/images/ca/ico_inspect_checked.png') no-repeat 0 0;background-size:16px;text-indent:-10000em}
+.uitooltip_performance_explan {max-width:275px;}
+.uitooltip_performance_explan .option_ttl {display:block;font-size:14px;color:#333;font-weight:bold;text-align:center}
+.uitooltip_performance_explan .option_desc {display:block;padding-top:6px;font-size:13px;color:#666;line-height:20px;}
+.uitooltip_performance_explan .option_desc .performance_explan span:first-child {margin-left:0;}
+.uitooltip_performance_explan .option_desc .performance_explan span {width:65px;margin:0;}
+
+.uitooltip_performance_explan .performance_explan {*zoom:1;}
+.uitooltip_performance_explan .performance_explan:after {display:block;content:'';clear:both;}
+.uitooltip_performance_explan .performance_explan span {float:left;position:relative;padding-left:16px;margin-left:9px;font-size:12px;color:#666;line-height:20px;letter-spacing:-0.5px}
+.uitooltip_performance_explan .performance_explan span em {display:block;position:absolute;left:0;top:4px;width:12px;height:12px;text-indent:-5000em;font-weight:bold;background:url(/images/ca/performance_sprite.png) no-repeat 0 0;background-size:12px}
+.uitooltip_performance_explan .performance_explan span.i1 em{background-position:0 0;}
+.uitooltip_performance_explan .performance_explan span.i2 em{background-position:0 -17px;}
+.uitooltip_performance_explan .performance_explan span.i3 em{background-position:0 -51px;}
+.uitooltip_performance_explan .performance_explan span.i4 em{background-position:0 -68px;}
+.uitooltip_performance_explan .performance_explan span.i5 em{background-position:0 -34px; }
+.uitooltip_performance_explan .performance_explan span.i6 em{background-position:0 -85px; }
+
+.ca_inspect_v01_new .section_inspect .h2_inspect{line-height:20px;padding:20px 20px 10px;background:#F5F5F5;font-size:11px;font-weight:normal;color:#999;letter-spacing:-0.5px}
+
+.ca_inspect_v01_new .section_inspect .list_inspect{background:#fff}
+.ca_inspect_v01_new .list_inspect > li{padding:21px 22px 19px 19px;line-height:20px;border-top:1px solid #F5F5F5;font-size:14px;color:#3D3D3D;letter-spacing:-0.58px}
+.ca_inspect_v01_new .list_inspect > li:first-child{border-top:0}
+.ca_inspect_v01_new .list_inspect > li:after{content:'';display:block;clear:both}
+.list_inspect > li .tit_inspect{float:left;font-weight:normal}
+.list_inspect > li .txt_inspect{float:right}
+.list_inspect > li .box_inspect:after{content:'';display:block;clear:both}
+.list_inspect > li .slist_inspect{margin-top:10px;padding-top:10px;border-top:1px dotted #BFBFBF}
+.list_inspect .slist_inspect li{line-height:20px;font-size:12px;color:#666;letter-spacing:-0.5px}
+.list_inspect .slist_inspect li:after{content:'';display:block;clear:both}
+.list_inspect .slist_inspect .stit_inspect{float:left;font-weight:normal}
+.list_inspect .slist_inspect .stxt_inspect{float:right}
+
+.ca_inspect_v01_new .area_accordion .box_h2{position:relative}
+.area_accordion .box_h2 .link_open_all{position:absolute;right:18px;top:20px;line-height:20px;font-size:11px;color:#999;letter-spacing:-0.5px}
+.ca_inspect_v01.new .area_accordion .list_accordion{background:#fff}
+.area_accordion .list_accordion > li{border-top:1px solid #F5F5F5}
+.area_accordion .list_accordion > li:first-child{border-top:0}
+.area_accordion .list_accordion .link_content{position:relative;display:block;padding:21px 55px 19px 19px;}
+.area_accordion .list_accordion .link_content:after{content:'';display:block;clear:both;position:absolute;right:20px;top:50%;width:7px;height:15px;margin-top:-7.5px;background:url('/images/module/ico_arrow.png') no-repeat 0 0;background-size:7px auto;transform:rotate(90deg);-webkit-transform:rotate(90deg)}
+.area_accordion .list_accordion .link_content.active:after{transform:rotate(-90deg);-webkit-transform:rotate(-90deg)}
+.area_accordion .link_content .txt_price{float:right;margin-top:1px;font-size:12px;letter-spacing:-0.5px;color:#666}
+.ca_inspect_v01_new .list_accordion .list_inspect{display:none;background:#F5F5F5}
+.ca_inspect_v01_new .list_accordion .active{display:block}
+.list_accordion .list_inspect > li{border-top:1px solid #E5E5E5}
+
+.ca_inspect_v01_new .section_inspect .result_inspect{padding:30px 19px 25px;border-top:1px solid #F5F5F5;text-align:center}
+.ca_inspect_v01_new .result_inspect .tit_result{display:block;line-height:20px;padding-bottom:10px;font-size:14px;color:#3D3D3D;letter-spacing:-0.58px}
+.ca_inspect_v01_new .result_inspect .txt_result{line-height:19px;font-size:12px;color:#999;letter-spacing:-0.5px}
+
+.ca_inspect_v01_new .section_inspect .list_photo{width:100%;padding:0 20px 30px;box-sizing:border-box;text-align:center}
+.ca_inspect_v01_new .list_photo li{width:100%;margin-top:20px}
+.ca_inspect_v01_new .list_photo .img_photo{width:100%}
+.ca_inspect_v01_new .list_photo .tit_photo{display:block;padding-top:10px;font-size:11px;font-weight:normal;color:#333}
+
+.ca_inspect_v01_new .section_inspect .notice_inspect{line-height:19px;font-size:11px;color:#999;text-align:center;letter-spacing:-0.46px}
+.ca_inspect_v01_new .section_inspect .notice_date{padding:13px 0 20px;line-height:20px;font-size:14px;color:#3D3D3D;text-align:center;letter-spacing:-0.58px}
+.ca_inspect_v01_new .section_inspect .list_sign{line-height:19px;font-size:12px;color:#999;text-align:center;letter-spacing:-0.5px}
+
+.ca_inspect_v01_new .section_photo .info_accident{line-height:20px;padding-top:30px;font-size:16px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+.section_photo .info_accident .tit_accident{margin-left:20px;font-weight:normal}
+.section_photo .info_accident .tit_accident:first-child{margin-left:0}
+.ca_inspect_v01_new .section_photo .info_carnum{line-height:20px;padding-bottom:11px;margin:0 20px;border-bottom:1px solid #F0F0F0;font-size:12px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+
+.ca_inspect_v01_new .section_photo .notice_seller{line-height:20px;padding:20px 0 30px;font-size:12px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+
+.ca_inspect_v01_new .section_photo .list_paper{padding:0 7%}
+.my_infochange_i06_new .area_reg_photo .list_paper{content:'';display:block;clear:both}
+.ca_inspect_v01_new .list_paper li{position:relative;width:100%;padding-bottom:45px;margin-bottom:6.6%}
+.ca_inspect_v01_new .list_paper .img_paper{width:100%}
+.ca_inspect_v01_new .list_paper .txt_paper{position:absolute;left:0;bottom:0;width:100%;height:40px;font-size:12px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+.ca_inspect_v01_new .list_paper .input_reg_photo{display:none}
+
+/* 신차가격표 */
+.ca_newprice_l01.uipagestartopen .uipage.active {
+	-webkit-animation-name:uipageOpen_newprice;
+	animation-name:uipageOpen_newprice;
+}
+.ca_newprice_l01 .uipage{padding-top:45px}
+.ca_newprice_l01 .uipage_header{position:fixed;left:0;top:0;z-index:10;width:100%}
+.ca_newprice_l01 .uipage_grade .selectcar_depth1 > li > .link_item{padding-right:120px}
+.ca_newprice_l01 .uipage_grade .year_select{position:absolute;right:15px;top:50%;height:30px;margin-top:-15px;font-size:13px;line-height:31px}
+.ca_newprice_l01 .uipage_grade .year_select label{padding-right:9px}
+.ca_newprice_l01 .uipage_grade .selectcar_depth2 .link_item{padding-right:80px}
+.ca_newprice_l01 .uipage_grade .selectcar_depth2 .txt_price{position:absolute;right:15px;top:50%;margin-top:-8px;font-size:13px;line-height:17px;color:#FF2626}
+.ca_newprice_l01 .uipage_result .wrap_subject{position:relative;padding:20px 110px 20px 20px}
+.ca_newprice_l01 .uipage_result h2{font-size:15px;line-height:19px}
+.ca_newprice_l01 .uipage_result .wrap_subject .txt_price{position:absolute;right:20px;bottom:16px;font-weight:bold;font-size:15px;color:#FF0000}
+.ca_newprice_l01 .uipage_result .tit_category{height:45px;padding-left:20px;font-weight:normal;font-size:13px;line-height:46px;color:#999;background-color:#F4F4F4}
+.ca_newprice_l01 .uipage_result .cont_result{margin:20px;color:#666;background-color:#fff}
+.ca_newprice_l01 .uipage_result .wrap_details .cont_result{overflow:hidden;max-height:145px}
+.ca_newprice_l01 .uipage_result .wrap_details.open .cont_result{height:auto;max-height:inherit}
+.ca_newprice_l01 .uipage_result .btn_toggle{height:55px;width:100%;border-top:1px solid #F5F5F5;font-size:15px}
+.ca_newprice_l01 .uipage_result .btn_toggle .uiico_arrow{margin-left:10px}
+.ca_newprice_l01 .uipage_result .btn_fold{display:none}
+.ca_newprice_l01 .uipage_result .wrap_details.open .btn_fold{display:block}
+.ca_newprice_l01 .uipage_result .wrap_details.open .btn_open{display:none}
+.ca_newprice_l01 .uipage_result .info_notice{padding:20px 15px 30px;font-size:12px;color:#999;background-color:#F4F4F4}
+.ca_newprice_l01 .result_none{position:fixed;left:0;top:50%;width:100%;padding-top:86px;font-size:16px;color:#BFBFBF;background:url(/images/ca/bg_nosearch.png) no-repeat 50% 0;background-size:92px 69px;text-align:center;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+
+@-webkit-keyframes uipageOpen_newprice {
+	0% {
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+	100% {
+		-webkit-transform:translateY(0);
+		transform:translateY(0);
+	}
+}
+
+/* 엔카보증 안내 */
+.ca_ewinfo_v01 #container,
+.ca_ewinfo_v02 #container,
+.ca_ewinfo_v03 #container,
+.ca_ewinfo_v04 #container{background:#FAFAFA}
+.area_partInfo{padding:20px 0;background:#fff}
+.area_partInfo .notice_partInfo{line-height:22px;font-size:16px;color:#3D3D3D;letter-spacing:-0.5px;text-align:center}
+.area_partInfo .list_partInfo{position:relative;width:260px;height:126px;margin:0 auto}
+.area_partInfo .type1{background:url('/images/ca/bg_ew_type1.png') no-repeat 0 0;background-size:260px}
+.area_partInfo .type2{background:url('/images/ca/bg_ew_type2.png') no-repeat 0 0;background-size:260px}
+.area_partInfo .type3{background:url('/images/ca/bg_ew_type3.png') no-repeat 0 0;background-size:260px}
+.area_partInfo .type4{background:url('/images/ca/bg_ew_type4.png') no-repeat 0 0;background-size:260px}
+.area_partInfo .list_partInfo li{position:absolute}
+.area_partInfo .list_partInfo .li_engine{left:0;top:16px}
+.area_partInfo .list_partInfo .li_etc{right:0;top:20px}
+.area_partInfo .list_partInfo .li_mission{left:0;bottom:0}
+.area_partInfo .list_partInfo .li_break{right:0;bottom:0}
+.area_partInfo .list_partInfo li:before{content:'';position:absolute;width:8px;height:8px;border:2px solid #FF2626;border-radius:10px}
+.area_partInfo .list_partInfo .li_engine:before{left:89px;top:36px}
+.area_partInfo .list_partInfo .li_etc:before{left:-73px;top:13px}
+.area_partInfo .list_partInfo .li_mission:before{left:90px;top:5px}
+.area_partInfo .list_partInfo .li_break:before{left:-69px;top:-1px}
+
+.area_partInfo .type2 .li_engine:before{left:75px;top:33px}
+.area_partInfo .type2 .li_etc:before{left:-73px;top:13px}
+.area_partInfo .type2 .li_mission:before{left:65px;top:-2px}
+.area_partInfo .type2 .li_break:before{left:-74px;top:-14px}
+
+.area_partInfo .type3 .li_engine:before{left:75px;top:30px}
+.area_partInfo .type3 .li_etc:before{left:-82px;top:7px}
+.area_partInfo .type3 .li_mission:before{left:65px;top:-2px}
+.area_partInfo .type3 .li_break:before{left:-62px;top:-14px}
+
+.area_partInfo .type4 .li_engine:before{left:89px;top:20px}
+.area_partInfo .type4 .li_etc:before{left:-80px;top:7px}
+.area_partInfo .type4 .li_mission:before{left:75px;top:-3px}
+.area_partInfo .type4 .li_break:before{left:-57px;top:-13px}
+
+.area_partInfo .list_partInfo li:after{content:'';position:absolute;top:14px;height:1px;background:#FF2626;transform-origin:left}
+.area_partInfo .list_partInfo .li_engine:after{left:55px;width:43px;transform:rotate(34deg)}
+.area_partInfo .list_partInfo .li_etc:after{left:0;width:63px;transform:rotate(176deg)}
+.area_partInfo .list_partInfo .li_mission:after{left:55px;width:36px;transform:rotate(-5deg)}
+.area_partInfo .list_partInfo .li_break:after{left:0;width:60px;transform:rotate(188deg)}
+
+.area_partInfo .type2 .li_engine:after{left:55px;width:31px;transform:rotate(44deg)}
+.area_partInfo .type2 .li_etc:after{left:0;width:63px;transform:rotate(176deg)}
+.area_partInfo .type2 .li_mission:after{left:55px;width:14px;transform:rotate(-36deg)}
+.area_partInfo .type2 .li_break:after{left:0;width:65px;transform:rotate(198deg)}
+
+.area_partInfo .type3 .li_engine:after{left:55px;width:29px;transform:rotate(40deg)}
+.area_partInfo .type3 .li_etc:after{left:0;width:70px;transform:rotate(181deg)}
+.area_partInfo .type3 .li_mission:after{left:55px;width:14px;transform:rotate(-36deg)}
+.area_partInfo .type3 .li_break:after{left:0;width:55px;transform:rotate(202deg)}
+
+.area_partInfo .type4 .li_engine:after{left:55px;width:36px;transform:rotate(16deg)}
+.area_partInfo .type4 .li_etc:after{left:0;width:70px;transform:rotate(181deg)}
+.area_partInfo .type4 .li_mission:after{left:55px;width:22px;transform:rotate(-24deg)}
+.area_partInfo .type4 .li_break:after{left:0;width:51px;transform:rotate(203deg)}
+
+.area_partInfo .list_partInfo .link_partInfo{display:inline-block;width:55px;height:30px;line-height:30px;background:#fff;border:1px solid #FF2626;border-radius:20px;box-sizing:border-box;font-size:14px;color:#FF2626;letter-spacing:-0.5px;text-align:center}
+.area_partInfo .list_partInfo .link_partInfo:after{content:'';display:inline-block;width:8px;height:8px;margin-left:2px;border-top:1px solid #FF2626;border-right:1px solid #FF2626;transform:rotate(45deg);transform-origin:center}
+
+.area_priceInfo{padding:20px 15px 0}
+.area_priceInfo .notice_priceInfo{line-height:22px;padding-bottom:15px;font-size:16px;color:#333;letter-spacing:-0.5px;text-align:center}
+.area_priceInfo .notice_priceInfo .font_red{color:#FF2626}
+
+.area_priceInfo .tbl_priceInfo{width:100%;text-align:center}
+.area_priceInfo .tbl_priceInfo th,
+.area_priceInfo .tbl_priceInfo td{height:40px;border:1px solid #E5E5E5;font-size:15px;color:#333;letter-spacing:-0.5px}
+.area_priceInfo .area_button{padding:20px 0}
+
+.uipage_price .uipage_header{border:0}
+.uipage_price .uipage_header h1{letter-spacing:-1px}
+.uipage_price .list_part_tab:after{content:'';display:block;clear:both}
+.uipage_price .list_part_tab li{float:left;width:25%;height:45px;line-height:45px;padding:0 10px;border-bottom:1px solid #E5E5E5;box-sizing:border-box;text-align:center}
+.uipage_price .list_part_tab .link_part_tab{position:relative;display:block;width:100%;height:45px}
+.uipage_price .list_part_tab .active{color:#ff2626}
+.uipage_price .list_part_tab .active:after{content:'';position:absolute;left:0;bottom:0;width:100%;height:2px;background:#ff2626}
+
+.uipage_price .area_part_content{padding:30px 15px}
+.area_part_content .list_part_content li{margin-bottom:20px;font-size:15px;letter-spacing:-0.5px}
+.area_part_content .list_part_content li:after{content:'';display:block;clear:both}
+.area_part_content .list_part_content .tit_part{float:left;font-weight:normal;color:#666}
+.area_part_content .list_part_content .txt_part{float:right}
+
+/* TabUI module css */
+.uiTab .uiTabContainer .uiTabContent{display:none}
+.uiTab .uiTabContainer .active{display:block}
+
+/* 차량 상세 엔카보증 */
+.cardetailWrap .area_carInfo .bar_ew{position: fixed;width: 100%;z-index: 1000;top: 45px;left: 0;height:30px;line-height:30px;font-size:13px;font-weight:bold;color:#666;font-weight:bold;background:#f5f5f5;letter-spacing:-0.5px;}
+.cardetailWrap .area_carInfo .bar_ew .link_ew{padding:0 15px 0 10px;font-weight:normal;color: #FF2626;font-size: 13px;font-weight: bold}
+.area_carInfo .bar_ew .font_red{font-weight:bold;color:#ff2626}
+.area_carInfo .bar_ew .link_ew{display:block;}
+.area_carInfo .bar_ew .link_ew:before{content:'';display:inline-block;width:17px;height:21px;margin-right:7px;background-position:-55px -237px;vertical-align:middle;}
+.area_carInfo .bar_ew .link_ew:after{content:'';width:4px;height:8px;margin-top:11px;background-position:-16px -237px;vertical-align:middle;position: absolute;top: 0;right: 15px;}
+.service_ew .notice_ew{line-height:20px;padding: 0 0 19px 45px;font-size:14px;color:#666;letter-spacing:-0.5px;}
+
+.service_ew .tbl_ew{width:100%;margin-bottom:20px}
+.service_ew .tbl_ew th,
+.service_ew .tbl_ew td{border-top:1px solid #F0F0F0;border-bottom:1px solid #F0F0F0;font-size:14px;font-weight:normal;color:#666;letter-spacing:-0.5px}
+.service_ew .tbl_ew th{background:#FAFAFA;vertical-align: top;padding-top: 15px;}
+.service_ew .tbl_ew td{padding: 15px 0 15px 9px;}
+.service_ew .con {position: relative;}
+.service_ew .band_ew {display:block;overflow:hidden;text-indent:-5000em;background-image:url('/images/ca/cardetail_sprite.png?180903');background-repeat:no-repeat;background-size:320px;width:28px;height:33px;margin-right:10px;background-position:-25px -226px;vertical-align:middle;position: absolute;top: 4px;left: 0;}
+.service_ew .btn_joinPop {display: block;margin-top: 8px;width: 100px;height: 30px;line-height: 30px;font-size: 13px;color: #666;border: 1px solid #E6E6E6;border-radius: 15px;text-align: center;}
+.service_ew .tbl_ew tr:last-child th {text-align: left;padding-left: 13px;}
+
+/* 검색 리스트 엔카보증 */
+.carresult .carresult_list_wrap .band_ew{position:relative;display:block;height:35px;line-height:35px;padding-left:14px;margin-top:9px;margin-right:5%;background:#F5F5F5;box-sizing:border-box;font-size:13px;color:#666;letter-spacing:-0.5px}
+.carresult .carresult_list_wrap .band_ew:before{content:'';display:inline-block;width:12px;height:15px;margin-right:3px;background:url('/images/ca/spr_carresult.png?180903') no-repeat -141px 0;background-size:320px;vertical-align:middle}
+.carresult .carresult_list_wrap .band_ew:after{content:'';position:absolute;left:12px;top:-6px;width:9px;height:6px;background:url('/images/ca/spr_carresult.png?180903') no-repeat -316px 0}
+.carresult_list_wrap .normal .band_ew{margin-right:0}
+.carresult_list_wrap .normal .viewList .band_ew .txt_mobile{display:none}
+.carresult_list_wrap .normal .viewImage .band_ew .txt_web{display:none}
+.carresultList .viewList .btnLikeList{bottom:35px}
+.carresultList .viewList .type_ew .btnLikeList{bottom:70px}
+.carresultList .price em{color:#333}
+.carresultList .compensate{height:19px;line-height:19px;padding:0 6px;background:#8C8C8C;border:0;border-radius:3px;font-size:12px;font-weight:normal;color:#fff;letter-spacing:-0.2px}
+.carresultList.premium .info .option2 .compensate{top:-23px;background:#8C8C8C;border:0;border-radius:3px;font-size:12px;font-weight:normal;color:#fff}
+.area_carInfo .first .area_service_band{padding-bottom:12px;text-align:center}
+.area_carInfo .area_service_band .band_service{display:inline-block;height:20px;line-height:20px;padding:0 4px;margin:0 3px;border-radius:3px;font-size:12px;font-weight:bold;color:#fff;letter-spacing:-0.4px}
+.area_carInfo .area_service_band .service_ew{background:#ff2626}
+.area_carInfo .area_service_band .service_compensate{background:#8C8C8C}

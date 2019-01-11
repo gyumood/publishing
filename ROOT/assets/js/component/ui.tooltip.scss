@@ -1,0 +1,38 @@
+/* guide - uitooltip - base */
+.uitooltip {visibility:hidden;position:absolute;left:-2000px;top:25px;z-index:999;}
+.uitooltip.view {visibility:visible;}
+/* guide - uitooltip - box */
+.uitooltip_box {display:block;max-width:375px;font-size:13px;padding:15px;margin:4px 0;line-height:1.4;background:#fff;
+	border-radius: 4px;
+	-webkit-box-shadow:0 0 6px 3px rgba(169,169,169,0.30);
+	box-shadow:0 0 6px 3px rgba(169,169,169,0.30);
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.uitooltip_box>.arr {display:block;content:'';position:absolute;top:-5px;width:10px;height:10px;background:#fff;
+	-webkit-box-shadow:3px 3px 3px rgba(169,169,169,0.30);
+	box-shadow:3px 3px 3px rgba(169,169,169,0.30);
+	-webkit-transform:rotate(-135deg);
+	transform:rotate(-135deg);
+}
+.uitooltip .uitooltip_box {opacity:0;
+	-webkit-transform:translate(0,2px);
+	-moz-transform:translate(0,2px);
+	transform:translate(0,2px);
+	-webkit-transition:transform .3s ease,opacity .3s ease,visibility .3s ease;
+	transition:transform .3s ease,opacity .3s ease,visibility .3s ease;
+}
+.uitooltip.view .uitooltip_box {opacity:1;
+	-webkit-transform:translate(0,0);
+	-moz-transform:translate(0,0);
+	transform:translate(0,0);
+}
+.uitooltip.reverse .uitooltip_box>.arr {top:auto;bottom:-5px;
+	-webkit-transform:rotate(-315deg);
+	transform:rotate(-315deg);
+}
+/* guide - uitooltip - 기본 요소 */
+.uitooltip .base_ttl {padding-bottom:15px;font-size:16px;color:#333;font-weight:bold;}
+.uitooltip .base_desc {line-height:1.4;font-size:14px;color:#666;}
+.uitooltip .base_btn {margin-top:27px;}
