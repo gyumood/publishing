@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>법인용 시세 서비스 - SK엔카</title>
+	<meta name="description" content="엔카홈서비스 신청, SK가 만든 신뢰의 중고차 플랫폼 SK엔카 - 직영몰 / 거래1위 / 방문자수1위">
+	<link type="text/css" rel="stylesheet" href="../css/common.css" />
+	<link type="text/css" rel="stylesheet" href="../css/pr_new.css" />
+	<script type="text/javascript" language="javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/ui/ui.js"></script>
+</head>
+<body class="pr prpc_search_i01 uibody_header_simple">
+<div class="container" id="containerDIV">
+<!-- layout begin -->
+<div class="header" id="headerDIV">
+	<div class="header_wrap">
+		<h1><a href="pr_home_v01.jsp">SK엔카</a></h1>
+		<h2 class="tit_sub logo_prcorp"><a href="pr_home_v01.jsp">법인시세</a></h2>
+		<ul class="gnb">
+			<li class="current"><a href="/html/pr/pc/prpc_search_i01.jsp">매입시세</a></li>
+			<li><a href="/html/pr/sl/prsl_search_i01.jsp">판매시세</a></li>
+		</ul>
+		<div class="header_right">
+			<button type="button" class="btn_logout">로그아웃</button>
+		</div>
+	</div>
+</div>
+<div class="body" id="bodydiv">
+<!-- contents begin -->
+<div id="depth_main" class="contents">
+	<div class="prsch_input_wrap">
+		<div class="num_input_box">
+			<h3 class="tit_noti">매입시세를 확인할 차량번호를 입력해주세요.</h3>
+			<div class="sch_latest_wrap">
+				<div class="uiinput_text uiinput_size50 uiinput_opt uiinput_opt_btn">
+					<div class="uiinput_textbox">
+						<input type="text" id="uiinput-text7" class="inputtxt invalid" placeholder="ex. 12가1234 or 123너1425" value="" /><!-- [error alert] 클래스invalid -->
+						<ul class="latest_box"><!-- 최대 10개 노출 -->
+							<li><a href="#">10가1325</a></li>
+							<li><a href="#">11가1325</a></li>
+							<li><a href="#">12가1325</a></li>
+							<li><a href="#">13가1325</a></li>
+							<li><a href="#">14가1325</a></li>
+							<li><a href="#">15가1325</a></li>
+							<li><a href="#">16가1325</a></li>
+							<li><a href="#">17가1325</a></li>
+							<li><a href="#">18가1325</a></li>
+							<li><a href="#">19가1325</a></li>
+						</ul>
+						<a href="#" class="btn_action btn_active">검색</a>
+						<div class="uiinput_expl desc_error first_desc">입력하신 차량번호가 정확하지 않습니다. 다시 확인해 주세요.</div>
+						<!--<div class="uiinput_expl desc_error first_desc">차량번호를 입력해주세요.</div>-->
+					</div>
+				</div>
+			</div>
+			<a href="#" class="link_sc_num">차량번호를 모르세요?</a>
+		</div>
+	</div>
+	<script type="text/javascript">uiPlaceholeder.init()</script>
+</div>
+<!-- contents end -->
+</div>
+<!-- layout end -->
+<script>
+	var numInputEvnt = {
+		init : function () {
+			this.cacheElement();
+			this.fnEvent();
+			this.fnValue();
+		},
+		cacheElement : function() {
+			var e$ = this;
+			e$.body = jQuery('body');
+			e$.schInp = jQuery('.sch_latest_wrap .inputtxt');
+			e$.numBox = jQuery('.prsch_input_wrap .num_input_box');
+			e$.latestBox = jQuery('.prsch_input_wrap .latest_box');
+			e$.latestList = e$.latestBox.find('li');
+			e$.btnSch = jQuery(".prsch_input_wrap .num_input_box .btn_action");
+			e$.boxH = e$.latestBox.innerHeight();
+			e$.boxT = e$.boxH / 4;
+		},
+		fnEvent : function () {
+			var e$ = this;
+			e$.body.on('click',function(e){
+				if (e$.latestBox.hasClass('open')) {
+					e$.numBox.css('top',0);
+					e$.latestBox.removeClass('open');
+				} else if (jQuery(e.target).is(e$.schInp)) {
+					e$.numBox.css('top',-e$.boxT)
+					e$.latestBox.addClass('open');
+				}
+			});
+			e$.schInp.on("keyup",function () {
+				e$.numBox.css('top',-e$.boxT)
+				e$.latestBox.addClass('open');
+			});
+			e$.btnSch.on("keyup",function () {
+				e$.numBox.css('top',0);
+				e$.latestBox.removeClass('open');
+			});
+		},
+		fnValue : function() {
+			var e$ = this;
+			e$.latestList.on('click',function () {
+				var txt = jQuery(this).text();
+				jQuery('.inputtxt').val(txt);
+				return false;
+			});
+		}
+	};
+	numInputEvnt.init();
+</script>
+</div>
+</body>
+</html>
