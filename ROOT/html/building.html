@@ -104,7 +104,7 @@
 			e$.latestList.on('click',function () {
 				var txt = jQuery(this).text();
 				jQuery('.inputtxt').val(txt);
-				return false;		// a링크 클릭 후 최상단으로 이동되는 것을 막기
+				// return false;		// a링크 클릭 후 최상단으로 이동되는 것을 막기 but, 이 경우엔 제거해야 맞음. a클릭 후 latestBox닫히는 등의 이벤트가 있기 때문에!!
 			});
 		}
 	};
