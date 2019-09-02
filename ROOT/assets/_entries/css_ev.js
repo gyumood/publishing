@@ -1,1 +1,0 @@
-require('scss/ev.scss');

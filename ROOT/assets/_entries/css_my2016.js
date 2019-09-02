@@ -1,1 +1,0 @@
-require('scss/my2016.scss');
