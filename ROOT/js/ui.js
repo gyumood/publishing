@@ -5741,7 +5741,8 @@ var dealerEwGuide =  {
 var numInputEvnt = {
 	init : function () {
 		this.cacheElement();
-		this.fnEvent();
+		this.fnClose();
+		this.fnOpen();
 		this.fnValue();
 	},
 	cacheElement : function() {
@@ -5755,20 +5756,26 @@ var numInputEvnt = {
 		e$.boxH = e$.latestBox.innerHeight();
 		e$.boxT = e$.boxH / 4;
 	},
-	fnEvent : function () {
+	fnOpen : function () {
 		var e$ = this;
 		e$.body.on('click',function(e){
-			if (e$.latestBox.hasClass('open')) {
-				e$.numBox.css('top',0);
-				e$.latestBox.removeClass('open');
-			} else if (jQuery(e.target).is(e$.schInp)) {
-				e$.numBox.css('top',-e$.boxT)
+			if (jQuery(e.target).is(e$.schInp)) {
+				e$.numBox.css('top',-e$.boxT);
 				e$.latestBox.addClass('open');
 			}
 		});
-		e$.schInp.on("keyup",function () {
-			e$.numBox.css('top',-e$.boxT)
-			e$.latestBox.addClass('open');
+		e$.schInp.on('keyup',function () {
+				e$.numBox.css('top',-e$.boxT);
+				e$.latestBox.addClass('open');
+		});
+	},
+	fnClose : function () {
+		var e$ = this;
+		e$.body.on('click',function(){
+			if (e$.latestBox.hasClass('open')) {
+				e$.numBox.css('top',0);
+				e$.latestBox.removeClass('open');
+			}
 		});
 		e$.btnSch.on("keyup",function () {
 			e$.numBox.css('top',0);
@@ -5780,7 +5787,6 @@ var numInputEvnt = {
 		e$.latestList.on('click',function () {
 			var txt = jQuery(this).text();
 			jQuery('.inputtxt').val(txt);
-			return false;
 		});
 	}
 }

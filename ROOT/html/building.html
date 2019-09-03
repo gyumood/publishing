@@ -7,7 +7,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/common.css" />
 	<link type="text/css" rel="stylesheet" href="../css/pr_new.css" />
 	<script type="text/javascript" language="javascript" src="../js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" language="javascript" src="../js/ui/ui.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/ui.js"></script>
 </head>
 <body class="pr prpc_search_i01 uibody_header_simple">
 <div class="container" id="containerDIV">
@@ -61,55 +61,7 @@
 <!-- contents end -->
 </div>
 <!-- layout end -->
-<script>
-	var numInputEvnt = {
-		init : function () {
-			this.cacheElement();
-			this.fnEvent();
-			this.fnValue();
-		},
-		cacheElement : function() {
-			var e$ = this;
-			e$.body = jQuery('body');
-			e$.schInp = jQuery('.sch_latest_wrap .inputtxt');
-			e$.numBox = jQuery('.prsch_input_wrap .num_input_box');
-			e$.latestBox = jQuery('.prsch_input_wrap .latest_box');
-			e$.latestList = e$.latestBox.find('li');
-			e$.btnSch = jQuery(".prsch_input_wrap .num_input_box .btn_action");
-			e$.boxH = e$.latestBox.innerHeight();
-			e$.boxT = e$.boxH / 4;
-		},
-		fnEvent : function () {
-			var e$ = this;
-			e$.body.on('click',function(e){
-				if (e$.latestBox.hasClass('open')) {
-					e$.numBox.css('top',0);
-					e$.latestBox.removeClass('open');
-				} else if (jQuery(e.target).is(e$.schInp)) {
-					e$.numBox.css('top',-e$.boxT)
-					e$.latestBox.addClass('open');
-				}
-			});
-			e$.schInp.on("keyup",function () {
-				e$.numBox.css('top',-e$.boxT)
-				e$.latestBox.addClass('open');
-			});
-			e$.btnSch.on("keyup",function () {
-				e$.numBox.css('top',0);
-				e$.latestBox.removeClass('open');
-			});
-		},
-		fnValue : function() {
-			var e$ = this;
-			e$.latestList.on('click',function () {
-				var txt = jQuery(this).text();
-				jQuery('.inputtxt').val(txt);
-				// return false;		// a링크 클릭 후 최상단으로 이동되는 것을 막기 but, 이 경우엔 제거해야 맞음. a클릭 후 latestBox닫히는 등의 이벤트가 있기 때문에!!
-			});
-		}
-	};
-	numInputEvnt.init();
-</script>
+<script>numInputEvnt.init();</script>
 </div>
 </body>
 </html>
